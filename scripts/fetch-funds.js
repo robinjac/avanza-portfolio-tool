@@ -1,4 +1,5 @@
 const https = require("node:https");
+const fs = require("node:fs");
 
 const requestBody = JSON.stringify({
   startIndex: 0,
@@ -32,6 +33,7 @@ const options = {
   method: "POST",
   headers: {
     "Content-Type": "application/json",
+    "Content-Length": 627,
   },
 };
 
@@ -39,16 +41,16 @@ const req = https.request(
   "https://www.avanza.se/_api/fund-guide/list?shouldCheckFondExcludedFromPromotion=true",
   options,
   (res) => {
-    console.log(`STATUS: ${res.statusCode}`);
-    console.log(`HEADERS: ${JSON.stringify(res.headers)}`);
     res.setEncoding("utf8");
 
+    let data = "";
+
     res.on("data", (chunk) => {
-      console.log(`BODY: ${chunk}`);
+      data += chunk;
     });
 
     res.on("end", () => {
-      console.log("No more data in response.");
+      fs.writeFileSync("./funds.json", data);
     });
   }
 );
