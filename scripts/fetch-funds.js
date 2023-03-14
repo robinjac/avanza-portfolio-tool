@@ -1,8 +1,8 @@
 const https = require("node:https");
 const fs = require("node:fs");
 
+let index = 0;
 const funds = { fundListViews: [] };
-const index = 0;
 const numberOfFunds = 1369;
 const delayUntilNextFetch = 500; // In ms
 
@@ -60,6 +60,8 @@ const req = https.request(
       funds.fundListViews = [...funds.fundListViews, ...funds_.fundListViews];
 
       fs.writeFileSync("./funds.json", JSON.stringify(funds));
+
+      setTimeout(() => getData((index += 20)), delayUntilNextFetch);
     });
   }
 );
@@ -69,11 +71,9 @@ req.on("error", (e) => {
 });
 
 const getData = (index_) => {
-  if (index_ + 20 < numberOfFunds) {
+  if (index_ < numberOfFunds) {
     req.write(requestBody(index_));
     console.log("fetching at index: " + index_);
-
-    setTimeout(() => getData(index_ + 20), delayUntilNextFetch);
   } else {
     req.end();
   }
