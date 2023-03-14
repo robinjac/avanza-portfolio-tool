@@ -1,33 +1,39 @@
 const https = require("node:https");
 const fs = require("node:fs");
 
-const requestBody = JSON.stringify({
-  startIndex: 0,
-  managedType: "ANY",
-  sustainabilityProfile: false,
-  svanenMark: false,
-  commonRegionFilter: [],
-  otherRegionFilter: [],
-  alignmentFilter: [],
-  industryFilter: [],
-  fundTypeFilter: [],
-  interestTypeFilter: [],
-  sortField: "developmentOneYear",
-  sortDirection: "DESCENDING",
-  name: "",
-  recommendedHoldingPeriodFilter: [],
-  companyFilter: [],
-  productInvolvementsFilter: [],
-  ratingFilter: [],
-  riskFilter: [],
-  sustainabilityRatingFilter: [],
-  environmentalRatingFilter: [],
-  socialRatingFilter: [],
-  governanceRatingFilter: [],
-  totalFeeMaxOnePercent: false,
-  sustainableDevelopmentGoalsAlignmentFilter: [],
-  euArticleTypeFilter: [],
-});
+const funds = { fundListViews: [] };
+const index = 0;
+const numberOfFunds = 1369;
+const delayUntilNextFetch = 500; // In ms
+
+const requestBody = (index_) =>
+  JSON.stringify({
+    startIndex: index_,
+    managedType: "ANY",
+    sustainabilityProfile: false,
+    svanenMark: false,
+    commonRegionFilter: [],
+    otherRegionFilter: [],
+    alignmentFilter: [],
+    industryFilter: [],
+    fundTypeFilter: [],
+    interestTypeFilter: [],
+    sortField: "developmentOneYear",
+    sortDirection: "DESCENDING",
+    name: "",
+    recommendedHoldingPeriodFilter: [],
+    companyFilter: [],
+    productInvolvementsFilter: [],
+    ratingFilter: [],
+    riskFilter: [],
+    sustainabilityRatingFilter: [],
+    environmentalRatingFilter: [],
+    socialRatingFilter: [],
+    governanceRatingFilter: [],
+    totalFeeMaxOnePercent: false,
+    sustainableDevelopmentGoalsAlignmentFilter: [],
+    euArticleTypeFilter: [],
+  });
 
 const options = {
   method: "POST",
@@ -50,7 +56,10 @@ const req = https.request(
     });
 
     res.on("end", () => {
-      fs.writeFileSync("./funds.json", data);
+      const funds_ = JSON.parse(data);
+      funds.fundListViews = [...funds.fundListViews, ...funds_.fundListViews];
+
+      fs.writeFileSync("./funds.json", JSON.stringify(funds));
     });
   }
 );
@@ -59,6 +68,17 @@ req.on("error", (e) => {
   console.error(`problem with request: ${e.message}`);
 });
 
-// Write data to request body
-req.write(requestBody);
-req.end();
+const getData = (index_) => {
+  if (index_ + 20 < numberOfFunds) {
+    req.write(requestBody(index_ + 20));
+    req.end();
+
+    setTimeout(() => getData(index_ + 20), delayUntilNextFetch);
+  } else {
+    req.write(requestBody(index_));
+    req.end();
+  }
+};
+
+// Start fetching funds data
+getData(index);
