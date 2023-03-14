@@ -70,12 +70,11 @@ req.on("error", (e) => {
 
 const getData = (index_) => {
   if (index_ + 20 < numberOfFunds) {
-    req.write(requestBody(index_ + 20));
-    req.end();
+    req.write(requestBody(index_));
+    console.log("fetching at index: " + index_);
 
     setTimeout(() => getData(index_ + 20), delayUntilNextFetch);
   } else {
-    req.write(requestBody(index_));
     req.end();
   }
 };
