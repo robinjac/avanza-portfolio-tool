@@ -1,12 +1,15 @@
 const https = require("node:https");
 const fs = require("node:fs");
 
-let index = 0;
 const funds = { fundListViews: [] };
 const numberOfFunds = 1369;
-const delayUntilNextFetch = 500; // In ms
+const timeout = 500; // In ms
+const increment = 20; // 20 funds at at time
 
-const requestBody = (index_) =>
+const url =
+  "https://www.avanza.se/_api/fund-guide/list?shouldCheckFondExcludedFromPromotion=true";
+
+const createPayload = (index_) =>
   JSON.stringify({
     startIndex: index_,
     managedType: "ANY",
@@ -35,21 +38,21 @@ const requestBody = (index_) =>
     euArticleTypeFilter: [],
   });
 
-const options = {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json",
-    "Content-Length": 627,
-  },
-};
+const makeRequest = (index_) => {
+  const payload = createPayload(index_);
 
-const req = https.request(
-  "https://www.avanza.se/_api/fund-guide/list?shouldCheckFondExcludedFromPromotion=true",
-  options,
-  (res) => {
-    res.setEncoding("utf8");
+  const options = {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "Content-Length": payload.length,
+    },
+  };
 
+  const req = https.request(url, options, (res) => {
     let data = "";
+
+    res.setEncoding("utf8");
 
     res.on("data", (chunk) => {
       data += chunk;
@@ -61,23 +64,21 @@ const req = https.request(
 
       fs.writeFileSync("./funds.json", JSON.stringify(funds));
 
-      setTimeout(() => getData((index += 20)), delayUntilNextFetch);
+      if (index_ < numberOfFunds) {
+        // Increment with
+        setTimeout(() => makeRequest(index_ + increment), timeout);
+      }
     });
-  }
-);
+  });
 
-req.on("error", (e) => {
-  console.error(`problem with request: ${e.message}`);
-});
+  req.on("error", (e) => {
+    console.error(`problem with request: ${e.message}`);
+  });
 
-const getData = (index_) => {
-  if (index_ < numberOfFunds) {
-    req.write(requestBody(index_));
-    console.log("fetching at index: " + index_);
-  } else {
-    req.end();
-  }
+  req.write(payload);
+  req.end();
+  console.log("fetching at index: " + index_);
 };
 
-// Start fetching funds data
-getData(index);
+// Start at index = 0
+makeRequest(0);
