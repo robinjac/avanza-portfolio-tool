@@ -62,7 +62,7 @@ const makeRequest = (index_) => {
       const funds_ = JSON.parse(data);
       funds.fundListViews = [...funds.fundListViews, ...funds_.fundListViews];
 
-      fs.writeFileSync("./funds.json", JSON.stringify(funds));
+      fs.writeFileSync("./funds.json", JSON.stringify(funds, null, 4));
 
       if (index_ < numberOfFunds) {
         // Increment with
