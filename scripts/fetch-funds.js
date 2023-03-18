@@ -65,7 +65,6 @@ const makeRequest = (index_) => {
       fs.writeFileSync("./funds.json", JSON.stringify(funds, null, 4));
 
       if (index_ < numberOfFunds) {
-        // Increment with
         setTimeout(() => makeRequest(index_ + increment), timeout);
       }
     });
