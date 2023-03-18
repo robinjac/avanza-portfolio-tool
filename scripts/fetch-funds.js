@@ -1,7 +1,7 @@
 const https = require("node:https");
 const fs = require("node:fs");
 
-const funds = { fundListViews: [] };
+let funds = [];
 const numberOfFunds = 1369;
 const timeout = 500; // In ms
 const increment = 20; // 20 funds at at time
@@ -59,8 +59,7 @@ const makeRequest = (index_) => {
     });
 
     res.on("end", () => {
-      const funds_ = JSON.parse(data);
-      funds.fundListViews = [...funds.fundListViews, ...funds_.fundListViews];
+      funds = [...funds, ...JSON.parse(data).fundListViews];
 
       fs.writeFileSync("./funds.json", JSON.stringify(funds, null, 4));
 
