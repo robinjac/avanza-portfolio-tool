@@ -61,7 +61,7 @@ const makeRequest = (index_) => {
     res.on("end", () => {
       funds = [...funds, ...JSON.parse(data).fundListViews];
 
-      fs.writeFileSync("./funds.json", JSON.stringify(funds, null, 4));
+      fs.writeFileSync("../assets/funds.json", JSON.stringify(funds, null, 4));
 
       if (index_ < numberOfFunds) {
         setTimeout(() => makeRequest(index_ + increment), timeout);
