@@ -1,5 +1,7 @@
 const fs = require("node:fs");
 
-const funds = JSON.parse(fs.readFileSync("./funds.json", "utf-8"));
+const filePath = process.argv[2];
 
-console.log("Number of funds fetched: " + funds.length);
+const funds = JSON.parse(fs.readFileSync(filePath, "utf-8"));
+
+console.log("Number of funds: " + funds.length);
