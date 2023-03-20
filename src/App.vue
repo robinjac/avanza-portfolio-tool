@@ -14,8 +14,7 @@ export default {
 </script>
 
 <template>
-  <div>
-    <h2>List of funds:</h2>
+  <v-container>
     <v-table>
       <thead>
         <tr>
@@ -28,5 +27,5 @@ export default {
         </tr>
       </tbody>
     </v-table>
-  </div>
+  </v-container>
 </template>
