@@ -1,5 +1,9 @@
 /// <reference types="vite/client" />
 
+type NumericValues = {
+  readonly [key: string]: number;
+};
+
 interface ProductInvolvementView {
   product: string;
   productDescription: string;
