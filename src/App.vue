@@ -15,11 +15,13 @@ const numericOnlyProps: string[] = Object.entries(funds[0])
   .filter(([, value]) => typeof value === "number")
   .map(([prop]) => prop);
 
+let selectedProps = defaultProps;
+
 export default {
   data() {
     return {
       funds,
-      defaultProps,
+      selectedProps,
       availableProps: numericOnlyProps,
     };
   },
@@ -35,13 +37,15 @@ export default {
       <thead>
         <tr>
           <th class="text-left">name</th>
-          <th v-for="prop in defaultProps" class="text-left">{{ prop }}</th>
+          <th v-for="prop in selectedProps" class="text-left">{{ prop }}</th>
         </tr>
       </thead>
       <tbody>
         <tr v-for="fund in funds" :key="fund.isin">
           <td>{{ fund.name }}</td>
-          <td v-for="prop in defaultProps">{{ ((fund as unknown) as NumericValues)[prop] }}</td>
+          <td v-for="prop in selectedProps">
+            {{ (fund as unknown as NumericValues)[prop] }}
+          </td>
         </tr>
       </tbody>
     </v-table>
