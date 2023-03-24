@@ -25,14 +25,25 @@ export default {
       availableProps: numericOnlyProps,
     };
   },
-  mounted() {
-    // Fetch data from API
+  methods: {
+    handleSelect(selected: string[]): void {
+      this.selectedProps = [...selected];
+    },
   },
 };
 </script>
 
 <template>
   <v-container>
+    <v-select
+      clearable
+      label="Selected columns"
+      :items="availableProps"
+      :model-value="selectedProps"
+      @update:model-value="handleSelect"
+      multiple
+      variant="solo"
+    ></v-select>
     <v-table>
       <thead>
         <tr>
