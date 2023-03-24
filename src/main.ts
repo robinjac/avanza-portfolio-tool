@@ -10,12 +10,16 @@ import { createVuetify } from "vuetify";
 import * as components from "vuetify/components";
 import * as directives from "vuetify/directives";
 
+// Material blueprint
+import { md3 } from "vuetify/blueprints";
+
 // Pinia
 import { createPinia } from "pinia";
 
 const vuetify = createVuetify({
   components,
   directives,
+  blueprint: md3,
 });
 
 createApp(App).use(vuetify).use(createPinia()).mount("#app");
