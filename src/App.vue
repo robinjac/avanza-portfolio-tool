@@ -27,6 +27,12 @@ export default {
     handleSelect(newSelectedColumns: string[]): void {
       this.selectedColumns = [...newSelectedColumns];
     },
+    handleClear(): void {
+      this.selectedColumns = [];
+    },
+    handleReset(): void {
+      this.selectedColumns = defaultSelectedColumns;
+    },
   },
 };
 </script>
@@ -49,8 +55,17 @@ export default {
 
     <v-row align="end">
       <v-sheet class="pa-2 ma-2">
-        <v-btn class="ml-6" size="small" variant="outlined"> Clear </v-btn>
-        <v-btn class="mx-2" size="small" variant="text"> Reset </v-btn>
+        <v-btn
+          @click="handleClear"
+          class="ml-6"
+          size="small"
+          variant="outlined"
+        >
+          Clear
+        </v-btn>
+        <v-btn @click="handleReset" class="mx-2" size="small" variant="text">
+          Reset
+        </v-btn>
       </v-sheet>
     </v-row>
 
