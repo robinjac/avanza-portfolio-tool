@@ -3,7 +3,7 @@ import fundsData from "../assets/funds.json";
 
 const funds = fundsData as Fund[];
 
-const defaultProps = [
+const defaultSelectedColumns = [
   "developmentOneYear",
   "developmentFiveYears",
   "rating",
@@ -11,23 +11,21 @@ const defaultProps = [
   "totalFee",
 ];
 
-const numericOnlyProps: string[] = Object.entries(funds[0])
+const numericOnlyColumns: string[] = Object.entries(funds[0])
   .filter(([, value]) => typeof value === "number")
   .map(([prop]) => prop);
-
-let selectedProps = defaultProps;
 
 export default {
   data() {
     return {
       funds,
-      selectedProps,
-      availableProps: numericOnlyProps,
+      selectedColumns: defaultSelectedColumns,
+      availableColumns: numericOnlyColumns,
     };
   },
   methods: {
-    handleSelect(selected: string[]): void {
-      this.selectedProps = [...selected];
+    handleSelect(newSelectedColumns: string[]): void {
+      this.selectedColumns = [...newSelectedColumns];
     },
   },
 };
@@ -38,8 +36,8 @@ export default {
     <v-select
       clearable
       label="Selected columns"
-      :items="availableProps"
-      :model-value="selectedProps"
+      :items="availableColumns"
+      :model-value="selectedColumns"
       @update:model-value="handleSelect"
       multiple
       variant="solo"
@@ -48,14 +46,16 @@ export default {
       <thead>
         <tr>
           <th class="text-left">name</th>
-          <th v-for="prop in selectedProps" class="text-left">{{ prop }}</th>
+          <th v-for="column in selectedColumns" class="text-left">
+            {{ column }}
+          </th>
         </tr>
       </thead>
       <tbody>
         <tr v-for="fund in funds" :key="fund.isin">
           <td>{{ fund.name }}</td>
-          <td v-for="prop in selectedProps">
-            {{ (fund as unknown as NumericValues)[prop] }}
+          <td v-for="column in selectedColumns">
+            {{ (fund as unknown as NumericValues)[column] }}
           </td>
         </tr>
       </tbody>
