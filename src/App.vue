@@ -23,18 +23,46 @@ const numericOnlyColumns: string[] = Object.entries(funds[0])
   .filter(([, value]) => typeof value === "number")
   .map(([prop]) => prop);
 
-const columnNamesDict: { [name: string]: string } = {};
+const columnKeys: StringDict = {};
 
 // Create the mapping
 for (const column of numericOnlyColumns) {
-  columnNamesDict[formatColumnName(column)] = column;
+  columnKeys[formatColumnName(column)] = column;
 }
+
+const mapToDataTableHead = (columnName: string): DataTableHead => ({
+  title: columnName,
+  key: columnKeys[columnName],
+});
+
+const selectColumnKeys =
+  (selectedColumns: string[]) =>
+  (fund: Fund): PartialFund => {
+    const fund_: PartialFund = {};
+
+    fund_.name = fund.name;
+
+    for (const column of selectedColumns) {
+      const key = columnKeys[column];
+
+      fund_[key] = (fund as unknown as NumericValues)[key];
+    }
+
+    return fund_;
+  };
+
+const defaultItems = funds.map(selectColumnKeys(defaultSelectedColumns));
+
+console.log(defaultItems);
 
 export default {
   data() {
     return {
-      funds,
-      columnNamesDict,
+      headers: [
+        { title: "Name", key: "name" },
+        ...defaultSelectedColumns.map(mapToDataTableHead),
+      ],
+      items: defaultItems,
       defaultSelectedColumns,
       selectedColumns: defaultSelectedColumns,
       availableColumns: numericOnlyColumns.map(formatColumnName),
@@ -43,12 +71,27 @@ export default {
   methods: {
     handleSelect(newSelectedColumns: string[]): void {
       this.selectedColumns = [...newSelectedColumns];
+      this.headers = [
+        { title: "Name", key: "name" },
+        ...newSelectedColumns.map(mapToDataTableHead),
+      ];
+
+      this.items = funds.map(selectColumnKeys(newSelectedColumns));
     },
     handleClear(): void {
       this.selectedColumns = [];
+      this.headers = [{ title: "Name", key: "name" }];
+
+      this.items = funds.map(selectColumnKeys([]));
     },
     handleReset(): void {
       this.selectedColumns = defaultSelectedColumns;
+      this.headers = [
+        { title: "Name", key: "name" },
+        ...defaultSelectedColumns.map(mapToDataTableHead),
+      ];
+
+      this.items = funds.map(selectColumnKeys(defaultSelectedColumns));
     },
   },
 };
@@ -96,26 +139,11 @@ export default {
     <v-row>
       <v-col>
         <v-card>
-          <v-table>
-            <thead>
-              <tr>
-                <th class="text-left">Name</th>
-                <th v-for="column in selectedColumns" class="text-left">
-                  {{ column }}
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr v-for="fund in funds" :key="fund.isin">
-                <td>{{ fund.name }}</td>
-                <td v-for="column in selectedColumns">
-                  {{
-                    (fund as unknown as NumericValues)[columnNamesDict[column]]
-                  }}
-                </td>
-              </tr>
-            </tbody>
-          </v-table>
+          <v-data-table
+            :headers="headers"
+            :items="items"
+            multi-sort
+          ></v-data-table>
         </v-card>
       </v-col>
     </v-row>
