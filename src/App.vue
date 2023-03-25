@@ -3,13 +3,21 @@ import fundsData from "../assets/funds.json";
 
 const funds = fundsData as Fund[];
 
+// Capitalize the first letter in the first word and separate words by whitespace
+const formatColumnName = (name: string): string => {
+  return name
+    .split(/(?=[A-Z])/)
+    .map((name_) => name_.charAt(0).toUpperCase() + name_.slice(1))
+    .join(" ");
+};
+
 const defaultSelectedColumns = [
   "developmentOneYear",
   "developmentFiveYears",
   "rating",
   "risk",
   "totalFee",
-];
+].map(formatColumnName);
 
 const numericOnlyColumns: string[] = Object.entries(funds[0])
   .filter(([, value]) => typeof value === "number")
@@ -26,7 +34,7 @@ export default {
   },
   methods: {
     handleSelect(newSelectedColumns: string[]): void {
-      this.selectedColumns = [...newSelectedColumns];
+      this.selectedColumns = [...newSelectedColumns.map(formatColumnName)];
     },
     handleClear(): void {
       this.selectedColumns = [];
@@ -83,7 +91,7 @@ export default {
           <v-table>
             <thead>
               <tr>
-                <th class="text-left">name</th>
+                <th class="text-left">Name</th>
                 <th v-for="column in selectedColumns" class="text-left">
                   {{ column }}
                 </th>
