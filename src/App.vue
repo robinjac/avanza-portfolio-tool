@@ -23,18 +23,26 @@ const numericOnlyColumns: string[] = Object.entries(funds[0])
   .filter(([, value]) => typeof value === "number")
   .map(([prop]) => prop);
 
+const columnNamesDict: { [name: string]: string } = {};
+
+// Create the mapping
+for (const column of numericOnlyColumns) {
+  columnNamesDict[formatColumnName(column)] = column;
+}
+
 export default {
   data() {
     return {
       funds,
+      columnNamesDict,
       defaultSelectedColumns,
       selectedColumns: defaultSelectedColumns,
-      availableColumns: numericOnlyColumns,
+      availableColumns: numericOnlyColumns.map(formatColumnName),
     };
   },
   methods: {
     handleSelect(newSelectedColumns: string[]): void {
-      this.selectedColumns = [...newSelectedColumns.map(formatColumnName)];
+      this.selectedColumns = [...newSelectedColumns];
     },
     handleClear(): void {
       this.selectedColumns = [];
@@ -101,7 +109,9 @@ export default {
               <tr v-for="fund in funds" :key="fund.isin">
                 <td>{{ fund.name }}</td>
                 <td v-for="column in selectedColumns">
-                  {{ (fund as unknown as NumericValues)[column] }}
+                  {{
+                    (fund as unknown as NumericValues)[columnNamesDict[column]]
+                  }}
                 </td>
               </tr>
             </tbody>
