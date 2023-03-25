@@ -10,6 +10,9 @@ import { createVuetify } from "vuetify";
 import * as components from "vuetify/components";
 import * as directives from "vuetify/directives";
 
+// Data table
+import { VDataTable } from "vuetify/labs/VDataTable";
+
 // Material blueprint
 import { md3 } from "vuetify/blueprints";
 
@@ -17,7 +20,10 @@ import { md3 } from "vuetify/blueprints";
 import { createPinia } from "pinia";
 
 const vuetify = createVuetify({
-  components,
+  components: {
+    VDataTable,
+    ...components,
+  },
   directives,
   blueprint: md3,
 });
