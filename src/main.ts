@@ -16,9 +16,6 @@ import { VDataTable } from "vuetify/labs/VDataTable";
 // Material blueprint
 import { md3 } from "vuetify/blueprints";
 
-// Pinia
-import { createPinia } from "pinia";
-
 const vuetify = createVuetify({
   components: {
     VDataTable,
@@ -28,4 +25,4 @@ const vuetify = createVuetify({
   blueprint: md3,
 });
 
-createApp(App).use(vuetify).use(createPinia()).mount("#app");
+createApp(App).use(vuetify).mount("#app");

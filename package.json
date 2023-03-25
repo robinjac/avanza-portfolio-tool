@@ -13,7 +13,6 @@
     "count:partial-funds": "node ./scripts/count-funds.js ./assets/partial-funds.json"
   },
   "dependencies": {
-    "pinia": "^2.0.28",
     "vue": "^3.2.45",
     "vuetify": "^3.1.10"
   },
