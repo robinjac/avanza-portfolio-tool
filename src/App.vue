@@ -19,6 +19,7 @@ export default {
   data() {
     return {
       funds,
+      defaultSelectedColumns,
       selectedColumns: defaultSelectedColumns,
       availableColumns: numericOnlyColumns,
     };
@@ -40,7 +41,7 @@ export default {
 <template>
   <v-container>
     <v-row>
-      <v-col>
+      <v-col cols="10">
         <v-select
           label="Selected columns"
           :items="availableColumns"
@@ -51,22 +52,27 @@ export default {
           hide-details
         ></v-select>
       </v-col>
-    </v-row>
-
-    <v-row align="end">
-      <v-sheet class="pa-2 ma-2">
-        <v-btn
-          @click="handleClear"
-          class="ml-6"
-          size="small"
-          variant="outlined"
-        >
-          Clear
-        </v-btn>
-        <v-btn @click="handleReset" class="mx-2" size="small" variant="text">
-          Reset
-        </v-btn>
-      </v-sheet>
+      <v-col>
+        <v-sheet class="d-flex justify-center my-4">
+          <v-btn
+            :disabled="selectedColumns.length === 0"
+            @click="handleClear"
+            size="small"
+            variant="outlined"
+          >
+            clear
+          </v-btn>
+          <v-btn
+            :disabled="selectedColumns === defaultSelectedColumns"
+            @click="handleReset"
+            class="mx-2"
+            size="small"
+            variant="text"
+          >
+            default
+          </v-btn>
+        </v-sheet>
+      </v-col>
     </v-row>
 
     <v-row>
