@@ -47,6 +47,8 @@ export default {
           :items="availableColumns"
           :model-value="selectedColumns"
           @update:model-value="handleSelect"
+          chips
+          closable-chips
           multiple
           variant="solo"
           hide-details
