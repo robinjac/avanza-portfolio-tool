@@ -38,8 +38,7 @@ interface FundTag {
   fundTagCategory: string;
 }
 
-
-type PartialFund = {[name:string]: string | number };
+type PartialFund = { [name: string]: string | number };
 
 interface Fund {
   isin: string;
