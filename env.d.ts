@@ -1,7 +1,30 @@
 /// <reference types="vite/client" />
 
 type NumericValues = {
-  readonly [key: string]: number;
+  [key: string]: number;
+};
+
+type StringDict = {
+  [key: string]: string;
+};
+
+type DataTableHead = {
+  key: string;
+  value?: SelectItemKey;
+  title: string;
+
+  colspan?: number;
+  rowspan?: number;
+
+  fixed?: boolean;
+  align?: "start" | "end";
+
+  width?: number;
+  minWidth?: string;
+  maxWidth?: string;
+
+  sortable?: boolean;
+  sort?: (a: T, b: T) => number;
 };
 
 interface ProductInvolvementView {
@@ -14,6 +37,9 @@ interface FundTag {
   title: string;
   fundTagCategory: string;
 }
+
+
+type PartialFund = {[name:string]: string | number };
 
 interface Fund {
   isin: string;
