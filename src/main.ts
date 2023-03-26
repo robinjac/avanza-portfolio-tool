@@ -10,17 +10,11 @@ import { createVuetify } from "vuetify";
 import * as components from "vuetify/components";
 import * as directives from "vuetify/directives";
 
-// Data table
-import { VDataTable } from "vuetify/labs/VDataTable";
-
 // Material blueprint
 import { md3 } from "vuetify/blueprints";
 
 const vuetify = createVuetify({
-  components: {
-    VDataTable,
-    ...components,
-  },
+  components,
   directives,
   blueprint: md3,
 });
