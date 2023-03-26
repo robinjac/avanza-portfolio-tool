@@ -38,6 +38,7 @@ export default {
       defaultSelectedColumns,
       selectedColumns: defaultSelectedColumns,
       availableColumns: numericOnlyColumns.map(formatColumnName),
+      nrOfRows: 10,
     };
   },
   methods: {
@@ -106,14 +107,17 @@ export default {
               </tr>
             </thead>
             <tbody>
-              <tr v-for="fund in funds.slice(0,10)" :key="fund.isin">
-                <td>{{ fund.name }}</td>
+              <tr v-for="fund in funds.slice(0, nrOfRows)" :key="fund.isin">
+                <td style="min-width: 300px">{{ fund.name }}</td>
                 <td v-for="column in selectedColumns">
                   {{ (fund as unknown as NumericValues)[columnKeys[column]] }}
                 </td>
               </tr>
             </tbody>
           </v-table>
+          <div class="d-flex justify-center align-center mt-4 mb-2">
+            <v-pagination :length="funds.length"></v-pagination>
+          </div>
         </v-card>
       </v-col>
     </v-row>
