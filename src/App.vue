@@ -34,6 +34,7 @@ export default {
   data() {
     return {
       funds,
+      page: 1,
       columnKeys,
       defaultSelectedColumns,
       selectedColumns: defaultSelectedColumns,
@@ -50,6 +51,9 @@ export default {
     },
     handleReset(): void {
       this.selectedColumns = defaultSelectedColumns;
+    },
+    handlePagination(newPage: number) {
+      this.page = newPage;
     },
   },
 };
@@ -107,7 +111,13 @@ export default {
               </tr>
             </thead>
             <tbody>
-              <tr v-for="fund in funds.slice(0, nrOfRows)" :key="fund.isin">
+              <tr
+                v-for="fund in funds.slice(
+                  (page - 1) * nrOfRows,
+                  page * nrOfRows
+                )"
+                :key="fund.isin"
+              >
                 <td style="min-width: 300px">{{ fund.name }}</td>
                 <td v-for="column in selectedColumns">
                   {{ (fund as unknown as NumericValues)[columnKeys[column]] }}
@@ -116,7 +126,11 @@ export default {
             </tbody>
           </v-table>
           <div class="d-flex justify-center align-center mt-4 mb-2">
-            <v-pagination :length="funds.length"></v-pagination>
+            <v-pagination
+              @update:model-value="handlePagination"
+              total-visible="5"
+              :length="funds.length"
+            ></v-pagination>
           </div>
         </v-card>
       </v-col>
