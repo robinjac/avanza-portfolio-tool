@@ -104,6 +104,13 @@ export default {
         return 0;
       }
     },
+    formatNumber(num: number | null): number | null {
+      if (typeof num === "number") {
+        return Math.round(num * 100) / 100;
+      }
+
+      return num;
+    },
   },
 };
 </script>
@@ -191,7 +198,11 @@ export default {
                     'text-right': index === selectedColumns.length - 1,
                   }"
                 >
-                  {{ (fund as unknown as NumericValues)[columnKeys[column]] }}
+                  {{
+                    formatNumber(
+                      (fund as unknown as NumericValues)[columnKeys[column]]
+                    )
+                  }}
                 </td>
               </tr>
             </tbody>
