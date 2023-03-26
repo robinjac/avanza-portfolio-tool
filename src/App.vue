@@ -30,6 +30,33 @@ for (const column of numericOnlyColumns) {
   columnKeys[formatColumnName(column)] = column;
 }
 
+const sorter = (
+  f1: NumericValues,
+  f2: NumericValues,
+  index: number,
+  columnsSelected: string[]
+): 0 | 1 | -1 => {
+  const column = columnsSelected[index];
+  const key = columnKeys[column];
+
+  const v1 = f1[key];
+  const v2 = f2[key];
+
+  if (v1 > v2) {
+    return 1;
+  }
+
+  if (v1 < v2) {
+    return -1;
+  }
+
+  if (index === columnsSelected.length - 1) {
+    return 0;
+  }
+
+  return sorter(f1, f2, index + 1, columnsSelected);
+};
+
 export default {
   data() {
     return {
@@ -65,104 +92,112 @@ export default {
         this.columnsSelected = [...this.columnsSelected, selectedColumn];
       }
     },
+    handleSort(fund1: Fund, fund2: Fund): 0 | 1 | -1 {
+      if (this.columnsSelected.length > 0) {
+        return sorter(
+          fund1 as unknown as NumericValues,
+          fund2 as unknown as NumericValues,
+          0,
+          this.columnsSelected
+        );
+      } else {
+        return 0;
+      }
+    },
   },
 };
 </script>
 
 <template>
-  <v-container>
-    <v-card>
-      <v-toolbar flat color="blue-grey" dark> </v-toolbar>
-      <v-row>
-        <v-col cols="10">
-          <v-select
-            label="Selected columns"
-            :items="availableColumns"
-            :model-value="selectedColumns"
-            @update:model-value="handleSelect"
-            chips
-            closable-chips
-            multiple
-            variant="solo"
-            hide-details
-            class="mt-4 ml-4"
-          ></v-select>
-        </v-col>
-        <v-col>
-          <v-sheet class="d-flex justify-center my-4">
-            <v-btn
-              :disabled="selectedColumns.length === 0"
-              @click="handleClear"
-              size="small"
-              variant="outlined"
-            >
-              clear
-            </v-btn>
-            <v-btn
-              :disabled="selectedColumns === defaultSelectedColumns"
-              @click="handleReset"
-              class="mx-2"
-              size="small"
-              variant="text"
-            >
-              default
-            </v-btn>
-          </v-sheet>
-        </v-col>
-      </v-row>
+  <v-card>
+    <v-row>
+      <v-col cols="9">
+        <v-select
+          label="Selected columns"
+          :items="availableColumns"
+          :model-value="selectedColumns"
+          @update:model-value="handleSelect"
+          chips
+          closable-chips
+          multiple
+          variant="solo"
+          hide-details
+          class="mt-4 ml-4"
+        ></v-select>
+      </v-col>
+      <v-col>
+        <v-sheet class="d-flex justify-center my-4">
+          <v-btn
+            :disabled="selectedColumns.length === 0"
+            @click="handleClear"
+            size="small"
+            variant="outlined"
+          >
+            clear
+          </v-btn>
+          <v-btn
+            :disabled="selectedColumns === defaultSelectedColumns"
+            @click="handleReset"
+            class="mx-2"
+            size="small"
+            variant="text"
+          >
+            default
+          </v-btn>
+        </v-sheet>
+      </v-col>
+    </v-row>
 
-      <v-row>
-        <v-col>
-          <v-card>
-            <v-table>
-              <thead>
-                <tr>
-                  <th class="text-left">Name</th>
-                  <th
-                    v-ripple
-                    @click="() => handleColumnSelection(column)"
-                    class="text-left"
-                    style="cursor: pointer"
-                    v-for="column in selectedColumns"
-                  >
-                    <v-badge
-                      v-if="columnsSelected.includes(column)"
-                      floating
-                      :content="columnsSelected.indexOf(column) + 1"
-                    >
-                      {{ column }}
-                    </v-badge>
-                    <template v-else>
-                      {{ column }}
-                    </template>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr
-                  v-for="fund in funds.slice(
-                    (page - 1) * nrOfRows,
-                    page * nrOfRows
-                  )"
-                  :key="fund.isin"
+    <v-row>
+      <v-col>
+        <v-card>
+          <v-table>
+            <thead>
+              <tr>
+                <th class="text-left">Name</th>
+                <th
+                  v-ripple
+                  @click="() => handleColumnSelection(column)"
+                  class="text-left"
+                  style="cursor: pointer"
+                  v-for="column in selectedColumns"
                 >
-                  <td style="min-width: 300px">{{ fund.name }}</td>
-                  <td v-for="column in selectedColumns">
-                    {{ (fund as unknown as NumericValues)[columnKeys[column]] }}
-                  </td>
-                </tr>
-              </tbody>
-            </v-table>
-            <div class="d-flex justify-center align-center mt-4 mb-2">
-              <v-pagination
-                @update:model-value="handlePagination"
-                total-visible="4"
-                :length="funds.length"
-              ></v-pagination>
-            </div>
-          </v-card>
-        </v-col>
-      </v-row>
-    </v-card>
-  </v-container>
+                  <v-badge
+                    v-if="columnsSelected.includes(column)"
+                    floating
+                    :content="columnsSelected.indexOf(column) + 1"
+                  >
+                    {{ column }}
+                  </v-badge>
+                  <template v-else>
+                    {{ column }}
+                  </template>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr
+                v-for="fund in funds
+                  .sort(handleSort)
+                  .slice((page - 1) * nrOfRows, page * nrOfRows)"
+                :key="fund.isin"
+              >
+                <td style="min-width: 300px">{{ fund.name }}</td>
+                <td v-for="column in selectedColumns">
+                  {{ (fund as unknown as NumericValues)[columnKeys[column]] }}
+                </td>
+              </tr>
+            </tbody>
+          </v-table>
+          <div class="d-flex justify-center align-center mt-4 pb-2">
+            <v-pagination
+              @update:model-value="handlePagination"
+              total-visible="4"
+              :length="funds.length"
+            ></v-pagination>
+          </div>
+        </v-card>
+      </v-col>
+    </v-row>
+  </v-card>
 </template>
