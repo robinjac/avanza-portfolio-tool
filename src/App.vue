@@ -33,6 +33,7 @@ for (const column of numericOnlyColumns) {
 export default {
   data() {
     return {
+      columnsSelected: [] as string[],
       funds,
       page: 1,
       columnKeys,
@@ -54,6 +55,15 @@ export default {
     },
     handlePagination(newPage: number) {
       this.page = newPage;
+    },
+    handleColumnSelection(selectedColumn: string) {
+      if (this.columnsSelected.includes(selectedColumn)) {
+        this.columnsSelected = this.columnsSelected.filter(
+          (column) => column !== selectedColumn
+        );
+      } else {
+        this.columnsSelected = [...this.columnsSelected, selectedColumn];
+      }
     },
   },
 };
@@ -108,8 +118,23 @@ export default {
               <thead>
                 <tr>
                   <th class="text-left">Name</th>
-                  <th v-for="column in selectedColumns" class="text-left">
-                    {{ column }}
+                  <th
+                    v-ripple
+                    @click="() => handleColumnSelection(column)"
+                    class="text-left"
+                    style="cursor: pointer"
+                    v-for="column in selectedColumns"
+                  >
+                    <v-badge
+                      v-if="columnsSelected.includes(column)"
+                      floating
+                      :content="columnsSelected.indexOf(column) + 1"
+                    >
+                      {{ column }}
+                    </v-badge>
+                    <template v-else>
+                      {{ column }}
+                    </template>
                   </th>
                 </tr>
               </thead>
