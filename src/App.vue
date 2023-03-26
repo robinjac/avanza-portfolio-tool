@@ -161,7 +161,7 @@ export default {
           <v-table>
             <thead>
               <tr>
-                <th class="text-left">Name</th>
+                <th class="text-left font-weight-bold">Name</th>
                 <th
                   v-ripple
                   @click="() => handleColumnSelection(column)"
@@ -169,6 +169,7 @@ export default {
                   v-for="(column, index) in selectedColumns"
                   :class="{
                     'text-right': index === selectedColumns.length - 1,
+                    'font-weight-bold': true,
                   }"
                 >
                   <v-badge
