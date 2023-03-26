@@ -158,9 +158,11 @@ export default {
                 <th
                   v-ripple
                   @click="() => handleColumnSelection(column)"
-                  class="text-left"
                   style="cursor: pointer"
-                  v-for="column in selectedColumns"
+                  v-for="(column, index) in selectedColumns"
+                  :class="{
+                    'text-right': index === selectedColumns.length - 1,
+                  }"
                 >
                   <v-badge
                     v-if="columnsSelected.includes(column)"
@@ -183,7 +185,12 @@ export default {
                 :key="fund.isin"
               >
                 <td style="min-width: 300px">{{ fund.name }}</td>
-                <td v-for="column in selectedColumns">
+                <td
+                  v-for="(column, index) in selectedColumns"
+                  :class="{
+                    'text-right': index === selectedColumns.length - 1,
+                  }"
+                >
                   {{ (fund as unknown as NumericValues)[columnKeys[column]] }}
                 </td>
               </tr>
