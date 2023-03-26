@@ -53,8 +53,6 @@ const selectColumnKeys =
 
 const defaultItems = funds.map(selectColumnKeys(defaultSelectedColumns));
 
-console.log(defaultItems);
-
 export default {
   data() {
     return {
