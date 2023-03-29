@@ -44,11 +44,11 @@ const sorter = (
   const v1 = f1[key];
   const v2 = f2[key];
 
-  if (v1 > v2 + similarity) {
+  if (v1 > v2 - similarity) {
     return dir;
   }
 
-  if (v1 < v2 - similarity) {
+  if (v1 < v2 + similarity) {
     return -dir as 1 | -1;
   }
 
@@ -70,21 +70,11 @@ export default {
       selectedColumns: defaultSelectedColumns,
       availableColumns: numericOnlyColumns.map(formatColumnName),
       nrOfRows: 10,
+      sensitivity: 1,
+      direction: 1,
     };
   },
   methods: {
-    handleSelect(newSelectedColumns: string[]): void {
-      this.selectedColumns = [...newSelectedColumns];
-    },
-    handleClear(): void {
-      this.selectedColumns = [];
-    },
-    handleReset(): void {
-      this.selectedColumns = defaultSelectedColumns;
-    },
-    handlePagination(newPage: number) {
-      this.page = newPage;
-    },
     handleColumnSelection(selectedColumn: string) {
       if (this.columnsSelected.includes(selectedColumn)) {
         this.columnsSelected = this.columnsSelected.filter(
@@ -101,8 +91,8 @@ export default {
           fund2 as unknown as NumericValues,
           0,
           this.columnsSelected,
-          4,
-          1
+          this.sensitivity,
+          this.direction as -1 | 1
         );
       } else {
         return 0;
@@ -126,8 +116,7 @@ export default {
         <v-select
           label="Selected columns"
           :items="availableColumns"
-          :model-value="selectedColumns"
-          @update:model-value="handleSelect"
+          v-model="selectedColumns"
           chips
           closable-chips
           multiple
@@ -140,7 +129,7 @@ export default {
         <v-sheet class="d-flex justify-center my-4">
           <v-btn
             :disabled="selectedColumns.length === 0"
-            @click="handleClear"
+            @click="() => (selectedColumns = [])"
             size="small"
             variant="outlined"
           >
@@ -148,7 +137,7 @@ export default {
           </v-btn>
           <v-btn
             :disabled="selectedColumns === defaultSelectedColumns"
-            @click="handleReset"
+            @click="() => (selectedColumns = defaultSelectedColumns)"
             class="mx-2"
             size="small"
             variant="text"
@@ -159,21 +148,24 @@ export default {
       </v-col>
     </v-row>
 
-    <v-row style="height: 100px">
+    <v-row>
       <v-col class="ml-4" cols="5">
-        <v-btn size="small" variant="outlined" class="mx-2 mb-2">Clear</v-btn>
         <v-btn
+          @click="() => (columnsSelected = [])"
+          size="small"
+          variant="outlined"
+          class="mx-2"
+          >Clear</v-btn
+        >
+        <v-btn
+          @click="() => (direction = -direction)"
           size="small"
           variant="text"
-          class="mb-2"
-          prepend-icon="mdi-arrow-up"
-          >Highest</v-btn
+          :prepend-icon="direction < 0 ? 'mdi-arrow-up' : 'mdi-arrow-down'"
         >
-        <v-slider label="Sensitivity">
-          <template v-slot:append>
-            <v-chip size="large"> 50 </v-chip>
-          </template>
-        </v-slider>
+          <template v-if="direction < 0"> Highest </template>
+          <template v-else> Lowest </template>
+        </v-btn>
       </v-col>
     </v-row>
 
@@ -232,7 +224,7 @@ export default {
           </v-table>
           <div class="d-flex justify-center align-center mt-4 pb-2">
             <v-pagination
-              @update:model-value="handlePagination"
+              v-model="page"
               total-visible="4"
               :length="funds.length"
             ></v-pagination>
