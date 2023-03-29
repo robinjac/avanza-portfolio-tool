@@ -35,7 +35,8 @@ const sorter = (
   f2: NumericValues,
   index: number,
   columnsSelected: string[],
-  similarity: number
+  similarity: number,
+  dir: 1 | -1
 ): 0 | 1 | -1 => {
   const column = columnsSelected[index];
   const key = columnKeys[column];
@@ -44,18 +45,18 @@ const sorter = (
   const v2 = f2[key];
 
   if (v1 > v2 + similarity) {
-    return 1;
+    return dir;
   }
 
   if (v1 < v2 - similarity) {
-    return -1;
+    return -dir as 1 | -1;
   }
 
   if (index === columnsSelected.length - 1) {
     return 0;
   }
 
-  return sorter(f1, f2, index + 1, columnsSelected, similarity);
+  return sorter(f1, f2, index + 1, columnsSelected, similarity, dir);
 };
 
 export default {
@@ -100,7 +101,8 @@ export default {
           fund2 as unknown as NumericValues,
           0,
           this.columnsSelected,
-          4
+          4,
+          1
         );
       } else {
         return 0;
@@ -119,7 +121,7 @@ export default {
 
 <template>
   <v-card>
-    <v-row>
+    <v-row class="mb-4">
       <v-col cols="9">
         <v-select
           label="Selected columns"
@@ -154,6 +156,24 @@ export default {
             default
           </v-btn>
         </v-sheet>
+      </v-col>
+    </v-row>
+
+    <v-row style="height: 100px">
+      <v-col class="ml-4" cols="5">
+        <v-btn size="small" variant="outlined" class="mx-2 mb-2">Clear</v-btn>
+        <v-btn
+          size="small"
+          variant="text"
+          class="mb-2"
+          prepend-icon="mdi-arrow-up"
+          >Highest</v-btn
+        >
+        <v-slider label="Sensitivity">
+          <template v-slot:append>
+            <v-chip size="large"> 50 </v-chip>
+          </template>
+        </v-slider>
       </v-col>
     </v-row>
 
