@@ -34,7 +34,8 @@ const sorter = (
   f1: NumericValues,
   f2: NumericValues,
   index: number,
-  columnsSelected: string[]
+  columnsSelected: string[],
+  similarity: number
 ): 0 | 1 | -1 => {
   const column = columnsSelected[index];
   const key = columnKeys[column];
@@ -42,11 +43,11 @@ const sorter = (
   const v1 = f1[key];
   const v2 = f2[key];
 
-  if (v1 > v2) {
+  if (v1 > v2 + similarity) {
     return 1;
   }
 
-  if (v1 < v2) {
+  if (v1 < v2 - similarity) {
     return -1;
   }
 
@@ -54,7 +55,7 @@ const sorter = (
     return 0;
   }
 
-  return sorter(f1, f2, index + 1, columnsSelected);
+  return sorter(f1, f2, index + 1, columnsSelected, similarity);
 };
 
 export default {
@@ -98,7 +99,8 @@ export default {
           fund1 as unknown as NumericValues,
           fund2 as unknown as NumericValues,
           0,
-          this.columnsSelected
+          this.columnsSelected,
+          4
         );
       } else {
         return 0;
