@@ -11,13 +11,20 @@ const formatColumnName = (name: string): string => {
     .join(" ");
 };
 
-const defaultSelectedColumns = [
+const defaultColumnNames: string[] = [
   "developmentOneYear",
   "developmentFiveYears",
   "rating",
   "risk",
   "totalFee",
-].map(formatColumnName);
+];
+
+const defaultSelectedColumns: SelectedColumn[] = defaultColumnNames
+  .map(formatColumnName)
+  .map((name) => ({
+    name,
+    sortOrder: 1,
+  }));
 
 const numericOnlyColumns: string[] = Object.entries(funds[0])
   .filter(([, value]) => typeof value === "number")
@@ -34,35 +41,34 @@ const sorter = (
   f1: NumericValues,
   f2: NumericValues,
   index: number,
-  columnsSelected: string[],
-  similarity: number,
-  dir: 1 | -1
+  columnsSelected: SelectedColumn[],
+  similarity: number
 ): 0 | 1 | -1 => {
   const column = columnsSelected[index];
-  const key = columnKeys[column];
+  const key = columnKeys[column.name];
 
   const v1 = f1[key];
   const v2 = f2[key];
 
   if (v1 > v2 - similarity) {
-    return dir;
+    return column.sortOrder;
   }
 
   if (v1 < v2 + similarity) {
-    return -dir as 1 | -1;
+    return -column.sortOrder as 1 | -1;
   }
 
   if (index === columnsSelected.length - 1) {
     return 0;
   }
 
-  return sorter(f1, f2, index + 1, columnsSelected, similarity, dir);
+  return sorter(f1, f2, index + 1, columnsSelected, similarity);
 };
 
 export default {
   data() {
     return {
-      columnsSelected: [] as string[],
+      columnsSelected: [] as SelectedColumn[],
       funds,
       page: 1,
       columnKeys,
@@ -71,11 +77,10 @@ export default {
       availableColumns: numericOnlyColumns.map(formatColumnName),
       nrOfRows: 10,
       sensitivity: 1,
-      direction: 1,
     };
   },
   methods: {
-    handleColumnSelection(selectedColumn: string) {
+    handleColumnSelection(selectedColumn: SelectedColumn) {
       if (this.columnsSelected.includes(selectedColumn)) {
         this.columnsSelected = this.columnsSelected.filter(
           (column) => column !== selectedColumn
@@ -91,8 +96,7 @@ export default {
           fund2 as unknown as NumericValues,
           0,
           this.columnsSelected,
-          this.sensitivity,
-          this.direction as -1 | 1
+          this.sensitivity
         );
       } else {
         return 0;
@@ -157,15 +161,6 @@ export default {
           class="mx-2"
           >Clear</v-btn
         >
-        <v-btn
-          @click="() => (direction = -direction)"
-          size="small"
-          variant="text"
-          :prepend-icon="direction < 0 ? 'mdi-arrow-up' : 'mdi-arrow-down'"
-        >
-          <template v-if="direction < 0"> Highest </template>
-          <template v-else> Lowest </template>
-        </v-btn>
       </v-col>
     </v-row>
 
@@ -181,21 +176,34 @@ export default {
                   @click="() => handleColumnSelection(column)"
                   style="cursor: pointer"
                   v-for="(column, index) in selectedColumns"
-                  :class="{
-                    'text-right': index === selectedColumns.length - 1,
-                    'font-weight-bold': true,
-                  }"
                 >
-                  <v-badge
-                    v-if="columnsSelected.includes(column)"
-                    floating
-                    :content="columnsSelected.indexOf(column) + 1"
+                  <div
+                    :class="{
+                      'justify-end': index === selectedColumns.length - 1,
+                      'font-weight-bold d-flex align-center': true,
+                    }"
+                    style="padding-right: 0.75rem"
                   >
-                    {{ column }}
-                  </v-badge>
-                  <template v-else>
-                    {{ column }}
-                  </template>
+                    <v-btn
+                      @click.stop="() => (column.sortOrder = -column.sortOrder as -1 | 1)"
+                      :icon="
+                        column.sortOrder < 0 ? 'mdi-arrow-up' : 'mdi-arrow-down'
+                      "
+                      variant="text"
+                      size="small"
+                      v-if="columnsSelected.includes(column)"
+                    ></v-btn>
+                    <v-badge
+                      v-if="columnsSelected.includes(column)"
+                      floating
+                      :content="columnsSelected.indexOf(column) + 1"
+                    >
+                      {{ column.name }}
+                    </v-badge>
+                    <template v-else>
+                      {{ column.name }}
+                    </template>
+                  </div>
                 </th>
               </tr>
             </thead>
@@ -215,7 +223,9 @@ export default {
                 >
                   {{
                     formatNumber(
-                      (fund as unknown as NumericValues)[columnKeys[column]]
+                      (fund as unknown as NumericValues)[
+                        columnKeys[column.name]
+                      ]
                     )
                   }}
                 </td>

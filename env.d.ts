@@ -8,6 +8,11 @@ type StringDict = {
   [key: string]: string;
 };
 
+type SelectedColumn = {
+  name: string;
+  sortOrder: 1 | -1;
+};
+
 type DataTableHead = {
   key: string;
   value?: SelectItemKey;
