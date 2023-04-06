@@ -14,9 +14,9 @@ import * as directives from "vuetify/directives";
 import { md3 } from "vuetify/blueprints";
 
 const vuetify = createVuetify({
-  components,
-  directives,
-  blueprint: md3,
+    components,
+    directives,
+    blueprint: md3,
 });
 
 createApp(App).use(vuetify).mount("#app");
