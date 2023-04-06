@@ -119,12 +119,12 @@ export default {
                 return 0;
             }
         },
-        formatNumber(num: number | null): number | null {
+        formatNumber(num: number | null): string {
             if (typeof num === "number") {
-                return Math.round(num * 100) / 100;
+                return (Math.round(num * 10) / 10).toString();
             }
 
-            return num;
+            return "-";
         },
     },
 };
