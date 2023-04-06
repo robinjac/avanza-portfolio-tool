@@ -11,20 +11,13 @@ const formatColumnName = (name: string): string => {
     .join(" ");
 };
 
-const defaultColumnNames: string[] = [
+const defaultSelectedColumns: string[] = [
   "developmentOneYear",
   "developmentFiveYears",
   "rating",
   "risk",
   "totalFee",
-];
-
-const defaultSelectedColumns: SelectedColumn[] = defaultColumnNames
-  .map(formatColumnName)
-  .map((name) => ({
-    name,
-    sortOrder: 1,
-  }));
+].map(formatColumnName);
 
 const numericOnlyColumns: string[] = Object.entries(funds[0])
   .filter(([, value]) => typeof value === "number")
@@ -80,13 +73,51 @@ export default {
     };
   },
   methods: {
-    handleColumnSelection(selectedColumn: SelectedColumn) {
-      if (this.columnsSelected.includes(selectedColumn)) {
+    handleColumnSelection(selectedColumn: string) {
+      if (this.columnsContains(selectedColumn)) {
         this.columnsSelected = this.columnsSelected.filter(
-          (column) => column !== selectedColumn
+          (column) => column.name !== selectedColumn
         );
       } else {
-        this.columnsSelected = [...this.columnsSelected, selectedColumn];
+        this.columnsSelected = [
+          ...this.columnsSelected,
+          { name: selectedColumn, sortOrder: 1 },
+        ];
+      }
+    },
+    columnsContains(columnName: string): boolean {
+      if (
+        this.columnsSelected.find(({ name }) => name === columnName) ===
+        undefined
+      ) {
+        return false;
+      } else {
+        return true;
+      }
+    },
+    columnRank(columnName: string): number {
+      return (
+        this.columnsSelected.map(({ name }) => name).indexOf(columnName) + 1
+      );
+    },
+    columnSortOrder(columnName: string): -1 | 1 {
+      const column = this.columnsSelected.find(
+        ({ name }) => name === columnName
+      );
+
+      if (column !== undefined) {
+        return column.sortOrder;
+      } else {
+        return 1;
+      }
+    },
+    setSortOrder(columnName: string) {
+      const column = this.columnsSelected.find(
+        ({ name }) => name === columnName
+      );
+
+      if (column !== undefined) {
+        column.sortOrder = -column.sortOrder as -1 | 1;
       }
     },
     handleSort(fund1: Fund, fund2: Fund): 0 | 1 | -1 {
@@ -185,23 +216,25 @@ export default {
                     style="padding-right: 0.75rem"
                   >
                     <v-btn
-                      @click.stop="() => (column.sortOrder = -column.sortOrder as -1 | 1)"
+                      @click.stop="() => setSortOrder(column)"
                       :icon="
-                        column.sortOrder < 0 ? 'mdi-arrow-up' : 'mdi-arrow-down'
+                        columnSortOrder(column) < 0
+                          ? 'mdi-arrow-up'
+                          : 'mdi-arrow-down'
                       "
                       variant="text"
                       size="small"
-                      v-if="columnsSelected.includes(column)"
+                      v-if="columnsContains(column)"
                     ></v-btn>
                     <v-badge
-                      v-if="columnsSelected.includes(column)"
+                      v-if="columnsContains(column)"
                       floating
-                      :content="columnsSelected.indexOf(column) + 1"
+                      :content="columnRank(column)"
                     >
-                      {{ column.name }}
+                      {{ column }}
                     </v-badge>
                     <template v-else>
-                      {{ column.name }}
+                      {{ column }}
                     </template>
                   </div>
                 </th>
@@ -223,9 +256,7 @@ export default {
                 >
                   {{
                     formatNumber(
-                      (fund as unknown as NumericValues)[
-                        columnKeys[column.name]
-                      ]
+                      (fund as unknown as NumericValues)[columnKeys[column]]
                     )
                   }}
                 </td>
