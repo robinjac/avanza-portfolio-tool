@@ -1,15 +1,8 @@
 <script lang="ts">
 import fundsData from "../assets/funds.json";
+import { rankSort, formatColumnName, createColumnMap } from "./helpers";
 
 const funds = fundsData as Fund[];
-
-// Capitalize the first letter in the first word and separate words by whitespace
-const formatColumnName = (name: string): string => {
-    return name
-        .split(/(?=[A-Z])/)
-        .map((name_) => name_.charAt(0).toUpperCase() + name_.slice(1))
-        .join(" ");
-};
 
 const defaultSelectedColumns: string[] = [
     "developmentOneYear",
@@ -23,40 +16,7 @@ const numericOnlyColumns: string[] = Object.entries(funds[0])
     .filter(([, value]) => typeof value === "number")
     .map(([prop]) => prop);
 
-const columnKeys: StringDict = {};
-
-// Create the mapping
-for (const column of numericOnlyColumns) {
-    columnKeys[formatColumnName(column)] = column;
-}
-
-const sorter = (
-    f1: NumericValues,
-    f2: NumericValues,
-    index: number,
-    columnsSelected: SelectedColumn[],
-    similarity: number
-): 0 | 1 | -1 => {
-    const column = columnsSelected[index];
-    const key = columnKeys[column.name];
-
-    const v1 = f1[key];
-    const v2 = f2[key];
-
-    if (v1 > v2 - similarity) {
-        return column.sortOrder;
-    }
-
-    if (v1 < v2 + similarity) {
-        return -column.sortOrder as 1 | -1;
-    }
-
-    if (index === columnsSelected.length - 1) {
-        return 0;
-    }
-
-    return sorter(f1, f2, index + 1, columnsSelected, similarity);
-};
+const columnKeys: StringDict = createColumnMap({}, numericOnlyColumns);
 
 export default {
     data() {
@@ -108,12 +68,13 @@ export default {
         },
         handleSort(fund1: Fund, fund2: Fund): 0 | 1 | -1 {
             if (this.columnsSelected.length > 0) {
-                return sorter(
+                return rankSort(
                     fund1 as unknown as NumericValues,
                     fund2 as unknown as NumericValues,
                     0,
                     this.columnsSelected,
-                    this.sensitivity
+                    this.sensitivity,
+                    columnKeys
                 );
             } else {
                 return 0;
