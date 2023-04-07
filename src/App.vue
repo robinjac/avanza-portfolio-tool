@@ -175,7 +175,9 @@ export default {
                         </thead>
                         <tbody>
                             <tr
-                                v-for="fund in funds.sort(handleSort).slice((page - 1) * nrOfRows, page * nrOfRows)"
+                                v-for="fund in [...funds]
+                                    .sort(handleSort)
+                                    .slice((page - 1) * nrOfRows, page * nrOfRows)"
                                 :key="fund.isin"
                             >
                                 <td style="min-width: 300px">
@@ -193,7 +195,7 @@ export default {
                         </tbody>
                     </v-table>
                     <div class="d-flex justify-center align-center mt-4 pb-2">
-                        <v-pagination v-model="page" total-visible="4" :length="funds.length"></v-pagination>
+                        <v-pagination v-model="page" total-visible="4" :length="funds.length / 10"></v-pagination>
                     </div>
                 </v-card>
             </v-col>
