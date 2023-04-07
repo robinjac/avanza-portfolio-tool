@@ -1,6 +1,6 @@
 <script lang="ts">
 import fundsData from "../assets/funds.json";
-import { rankSort, formatColumnName, createColumnMap } from "./helpers";
+import { rankSort, formatColumnName, createColumnMap, formatNumber } from "./helpers";
 
 const funds = fundsData as Fund[];
 
@@ -82,10 +82,10 @@ export default {
         },
         formatNumber(num: number | null): string {
             if (typeof num === "number") {
-                return (Math.round(num * 10) / 10).toString();
-            }
-
+                return formatNumber(num).toString();
+            } else {
             return "-";
+            }
         },
     },
 };

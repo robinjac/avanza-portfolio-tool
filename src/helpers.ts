@@ -41,3 +41,5 @@ export const createColumnMap = (columnMapping: StringDict, columns: string[]): S
 
     return columnMapping;
 };
+
+export const formatNumber = (num: number): number => Math.round(num * 10) / 10;
