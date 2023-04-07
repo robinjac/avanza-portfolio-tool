@@ -29,7 +29,6 @@ export default {
             selectedColumns: defaultSelectedColumns,
             availableColumns: numericOnlyColumns.map(formatColumnName),
             nrOfRows: 10,
-            sensitivity: 1,
         };
     },
     methods: {
@@ -73,7 +72,6 @@ export default {
                     fund2 as unknown as NumericValues,
                     0,
                     this.columnsSelected,
-                    this.sensitivity,
                     columnKeys
                 );
             } else {
@@ -84,7 +82,7 @@ export default {
             if (typeof num === "number") {
                 return formatNumber(num).toString();
             } else {
-            return "-";
+                return "-";
             }
         },
     },
@@ -195,7 +193,7 @@ export default {
                         </tbody>
                     </v-table>
                     <div class="d-flex justify-center align-center mt-4 pb-2">
-                        <v-pagination v-model="page" total-visible="4" :length="funds.length / 10"></v-pagination>
+                        <v-pagination v-model="page" total-visible="4" :length="Math.round(funds.length / nrOfRows)"></v-pagination>
                     </div>
                 </v-card>
             </v-col>
