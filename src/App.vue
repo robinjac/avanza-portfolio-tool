@@ -92,7 +92,7 @@ export default {
 <template>
     <v-card>
         <v-row class="mb-4">
-            <v-col cols="9">
+            <v-col>
                 <v-select
                     label="Selected columns"
                     :items="availableColumns"
@@ -100,31 +100,19 @@ export default {
                     chips
                     closable-chips
                     multiple
+                    clearable
                     variant="solo"
                     hide-details
-                    class="mt-4 ml-4"
                 ></v-select>
-            </v-col>
-            <v-col>
-                <v-sheet class="d-flex justify-center my-4">
-                    <v-btn
-                        :disabled="selectedColumns.length === 0"
-                        @click="() => (selectedColumns = [])"
-                        size="small"
-                        variant="outlined"
-                    >
-                        clear
-                    </v-btn>
-                    <v-btn
-                        :disabled="selectedColumns === defaultSelectedColumns"
-                        @click="() => (selectedColumns = defaultSelectedColumns)"
-                        class="mx-2"
-                        size="small"
-                        variant="text"
-                    >
-                        default
-                    </v-btn>
-                </v-sheet>
+                <v-btn
+                    :disabled="selectedColumns === defaultSelectedColumns"
+                    @click="() => (selectedColumns = defaultSelectedColumns)"
+                    size="small"
+                    class="mt-2"
+                    variant="text"
+                >
+                    default
+                </v-btn>
             </v-col>
         </v-row>
 
@@ -193,7 +181,11 @@ export default {
                         </tbody>
                     </v-table>
                     <div class="d-flex justify-center align-center mt-4 pb-2">
-                        <v-pagination v-model="page" total-visible="4" :length="Math.round(funds.length / nrOfRows)"></v-pagination>
+                        <v-pagination
+                            v-model="page"
+                            total-visible="4"
+                            :length="Math.round(funds.length / nrOfRows)"
+                        ></v-pagination>
                     </div>
                 </v-card>
             </v-col>
