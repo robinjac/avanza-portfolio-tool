@@ -39,6 +39,11 @@ export default {
                 this.columnsSelected = [...this.columnsSelected, { name: selectedColumn, sortOrder: 1 }];
             }
         },
+        handleVSelect(selectedColumns: string[]) {
+            this.selectedColumns = selectedColumns;
+
+            this.columnsSelected = [];
+        },
         columnsContains(columnName: string): boolean {
             if (this.columnsSelected.find(({ name }) => name === columnName) === undefined) {
                 return false;
@@ -85,6 +90,9 @@ export default {
                 return "-";
             }
         },
+        test(e) {
+            console.log(e);
+        },
     },
 };
 </script>
@@ -94,31 +102,36 @@ export default {
         <v-row class="mb-4">
             <v-col>
                 <v-select
-                    label="Selected columns"
+                    label="No selected columns"
                     :items="availableColumns"
                     v-model="selectedColumns"
+                    @update:model-value="handleVSelect"
                     chips
                     closable-chips
                     multiple
                     clearable
+                    single-line
                     variant="solo"
                     hide-details
-                ></v-select>
+                >
+                </v-select>
                 <v-btn
                     :disabled="selectedColumns === defaultSelectedColumns"
-                    @click="() => (selectedColumns = defaultSelectedColumns)"
+                    @click="() => handleVSelect(defaultSelectedColumns)"
                     size="small"
                     class="mt-2"
                     variant="text"
                 >
                     default
                 </v-btn>
-            </v-col>
-        </v-row>
-
-        <v-row>
-            <v-col class="ml-4" cols="5">
-                <v-btn @click="() => (columnsSelected = [])" size="small" variant="outlined" class="mx-2">Clear</v-btn>
+                <v-btn
+                    :disabled="columnsSelected.length === 0"
+                    @click="() => (columnsSelected = [])"
+                    size="small"
+                    variant="text"
+                    class="mt-2"
+                    >reset</v-btn
+                >
             </v-col>
         </v-row>
 
@@ -140,7 +153,9 @@ export default {
                                             'justify-end': index === selectedColumns.length - 1,
                                             'font-weight-bold d-flex align-center': true,
                                         }"
-                                        style="padding-right: 0.75rem"
+                                        :style="{
+                                            'padding-right': columnsContains(column) ? '0.35rem' : undefined,
+                                        }"
                                     >
                                         <v-btn
                                             @click.stop="() => setSortOrder(column)"
