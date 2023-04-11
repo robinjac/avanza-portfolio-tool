@@ -33,7 +33,7 @@ export const rankSort = (
     const v1 = f1[key] ?? -Infinity;
     const v2 = f2[key] ?? -Infinity;
 
-    if (distance(v1, v2) >= threshold(v1, 3)) {
+    if (distance(v1, v2) >= threshold(v1, 8)) {
         if (v1 < v2) {
             return column.sortOrder;
         }
