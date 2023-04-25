@@ -5,8 +5,6 @@ const baseURL = process.cwd();
 
 const funds = JSON.parse(readFileSync(path.resolve(baseURL, "./assets/funds-transformed.json"), "utf-8"));
 
-console.log(funds);
-
 const toURL = (id) => `https://www.avanza.se/_api/fund-guide/chart/${id}/infinity`;
 
 const datapoints = [];
