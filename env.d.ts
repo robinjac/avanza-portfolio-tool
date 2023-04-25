@@ -120,3 +120,16 @@ interface ReducedFund {
     Category: string;
     Company: string;
 }
+
+interface Point {
+    x: number;
+    y: number;
+}
+
+interface DataPoints {
+    dataSeries: Point[];
+    id: number;
+    name: string;
+    fromDate: string;
+    toDate: string;
+}
