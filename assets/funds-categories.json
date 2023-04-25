@@ -1,0 +1,5077 @@
+{
+    "26": [
+        "Sverige"
+    ],
+    "32": [
+        "ASEAN"
+    ],
+    "35": [
+        "Asien & Australien"
+    ],
+    "51": [
+        "Asien ex Japan"
+    ],
+    "58": [
+        "Asien ex Japan"
+    ],
+    "68": [
+        "Kina"
+    ],
+    "72": [
+        "Kina"
+    ],
+    "73": [
+        "Kina"
+    ],
+    "76": [
+        "Indien"
+    ],
+    "79": [
+        "Australien & Nya Zeeland"
+    ],
+    "80": [
+        "Kina & närliggande"
+    ],
+    "81": [
+        "Indonesien"
+    ],
+    "85": [
+        "Thailand"
+    ],
+    "94": [
+        "Kina & närliggande"
+    ],
+    "104": [
+        "Kina & närliggande"
+    ],
+    "106": [
+        "Kina"
+    ],
+    "109": [
+        "Kina & närliggande"
+    ],
+    "118": [
+        "Kina"
+    ],
+    "121": [
+        "Indien"
+    ],
+    "122": [
+        "Kina"
+    ],
+    "123": [
+        "Kina & närliggande"
+    ],
+    "129": [
+        "Asien ex Japan"
+    ],
+    "132": [
+        "Asien ex Japan"
+    ],
+    "134": [
+        "Asien ex Japan"
+    ],
+    "135": [
+        "Asien ex Japan"
+    ],
+    "142": [
+        "Asien ex Japan"
+    ],
+    "146": [
+        "Asien ex Japan"
+    ],
+    "148": [
+        "Asien ex Japan"
+    ],
+    "154": [
+        "Asien ex Japan"
+    ],
+    "156": [
+        "Asien ex Japan"
+    ],
+    "167": [
+        "Asien & Australien ex Japan & Kina"
+    ],
+    "180": [
+        "Tillväxtmarknader"
+    ],
+    "187": [
+        "Asien ex Japan"
+    ],
+    "192": [
+        "Blandfond - SEK",
+        "Försiktig"
+    ],
+    "206": [
+        "Blandfond - SEK",
+        "Balanserad"
+    ],
+    "208": [
+        "Blandfond - SEK",
+        "Aggressiv"
+    ],
+    "209": [
+        "Blandfond - SEK",
+        "Balanserad"
+    ],
+    "210": [
+        "Blandfond - SEK",
+        "Balanserad"
+    ],
+    "229": [
+        "Blandfond - SEK",
+        "Balanserad"
+    ],
+    "230": [
+        "Blandfond - SEK",
+        "Balanserad"
+    ],
+    "235": [
+        "Blandfond - SEK",
+        "Balanserad"
+    ],
+    "236": [
+        "Blandfond - SEK",
+        "Balanserad"
+    ],
+    "242": [
+        "Blandfond - euro",
+        "Balanserad"
+    ],
+    "247": [
+        "Blandfond - SEK",
+        "Aggressiv"
+    ],
+    "274": [
+        "Blandfond - euro",
+        "Balanserad"
+    ],
+    "278": [
+        "Blandfond - SEK",
+        "Balanserad"
+    ],
+    "281": [
+        "Blandfond - SEK",
+        "Balanserad"
+    ],
+    "291": [
+        "Blandfond - SEK",
+        "Flexibel"
+    ],
+    "328": [
+        "USA",
+        "Värdebolag"
+    ],
+    "347": [
+        "Branschfond",
+        "Fastighetsbolag"
+    ],
+    "348": [
+        "Branschfond",
+        "Fastighetsbolag övriga"
+    ],
+    "350": [
+        "Branschfond",
+        "Fastighetsbolag övriga"
+    ],
+    "359": [
+        "USA",
+        "Mix bolag"
+    ],
+    "363": [
+        "Branschfond",
+        "Ny teknik"
+    ],
+    "364": [
+        "Branschfond",
+        "Ny teknik"
+    ],
+    "366": [
+        "Branschfond",
+        "Ny teknik"
+    ],
+    "372": [
+        "Branschfond",
+        "Ny teknik"
+    ],
+    "373": [
+        "Branschfond",
+        "Ny teknik"
+    ],
+    "379": [
+        "Branschfond",
+        "Ny teknik"
+    ],
+    "380": [
+        "Global",
+        "Stor utdelning"
+    ],
+    "396": [
+        "Branschfond",
+        "Ny teknik"
+    ],
+    "397": [
+        "Branschfond",
+        "Ny teknik"
+    ],
+    "422": [
+        "Branschfond",
+        "Ny teknik"
+    ],
+    "431": [
+        "Branschfond",
+        "Ny teknik"
+    ],
+    "445": [
+        "Branschfond",
+        "Läkemedel"
+    ],
+    "453": [
+        "Branschfond",
+        "Läkemedel"
+    ],
+    "455": [
+        "Branschfond",
+        "Bioteknik"
+    ],
+    "457": [
+        "Branschfond",
+        "Läkemedel"
+    ],
+    "459": [
+        "Branschfond",
+        "Bioteknik"
+    ],
+    "464": [
+        "Branschfond",
+        "Läkemedel"
+    ],
+    "471": [
+        "Branschfond",
+        "Bioteknik"
+    ],
+    "473": [
+        "Branschfond",
+        "Läkemedel"
+    ],
+    "475": [
+        "Branschfond",
+        "Läkemedel"
+    ],
+    "478": [
+        "Branschfond",
+        "Bioteknik"
+    ],
+    "491": [
+        "Branschfond",
+        "Ny energi"
+    ],
+    "492": [
+        "Branschfond",
+        "Ädelmetaller"
+    ],
+    "504": [
+        "Branschfond",
+        "Konsument"
+    ],
+    "510": [
+        "Global",
+        "Mix bolag"
+    ],
+    "521": [
+        "Branschfond",
+        "Finans"
+    ],
+    "522": [
+        "Branschfond",
+        "Konsument"
+    ],
+    "540": [
+        "Branschfond",
+        "Energi"
+    ],
+    "541": [
+        "Branschfond",
+        "Finans"
+    ],
+    "547": [
+        "Branschfond",
+        "Ny energi"
+    ],
+    "552": [
+        "Global",
+        "Värdebolag"
+    ],
+    "562": [
+        "Europa",
+        "Småbolag"
+    ],
+    "573": [
+        "Europa",
+        "Mix bolag"
+    ],
+    "574": [
+        "Europa",
+        "Tillväxtbolag"
+    ],
+    "581": [
+        "Europa",
+        "Mix bolag"
+    ],
+    "586": [
+        "Europa",
+        "Mix bolag"
+    ],
+    "596": [
+        "Europa",
+        "Mix bolag"
+    ],
+    "599": [
+        "Europa",
+        "Mix bolag"
+    ],
+    "618": [
+        "Europa",
+        "Mix bolag"
+    ],
+    "620": [
+        "Global",
+        "Mix bolag"
+    ],
+    "621": [
+        "Europa",
+        "Värdebolag"
+    ],
+    "630": [
+        "Europa",
+        "Tillväxtbolag"
+    ],
+    "632": [
+        "Europa",
+        "Mix bolag"
+    ],
+    "633": [
+        "Europa",
+        "Tillväxtbolag"
+    ],
+    "637": [
+        "Europa",
+        "Mix bolag"
+    ],
+    "656": [
+        "Europa",
+        "Flexibel storlek bolag"
+    ],
+    "669": [
+        "Europa",
+        "Tillväxtbolag"
+    ],
+    "674": [
+        "Europa",
+        "Mix bolag"
+    ],
+    "676": [
+        "Europa",
+        "Värdebolag"
+    ],
+    "701": [
+        "Europa",
+        "Småbolag"
+    ],
+    "708": [
+        "Europa",
+        "Tillväxtbolag"
+    ],
+    "715": [
+        "Europa",
+        "Mix bolag"
+    ],
+    "717": [
+        "Europa",
+        "Tillväxtbolag"
+    ],
+    "721": [
+        "Europa",
+        "Mix bolag"
+    ],
+    "722": [
+        "Europa",
+        "Flexibel storlek bolag"
+    ],
+    "728": [
+        "Europa",
+        "Värdebolag"
+    ],
+    "734": [
+        "Euroland"
+    ],
+    "735": [
+        "Euroland"
+    ],
+    "736": [
+        "Europa",
+        "Mix bolag"
+    ],
+    "774": [
+        "Tyskland"
+    ],
+    "776": [
+        "Italien"
+    ],
+    "777": [
+        "Schweiz"
+    ],
+    "838": [
+        "Ränte - euro obligationer",
+        "Korta"
+    ],
+    "841": [
+        "Ränte - euro penningmarknad"
+    ],
+    "847": [
+        "Ränte - euro obligationer",
+        "Statliga"
+    ],
+    "869": [
+        "Ränte - euro obligationer",
+        "Företag korta"
+    ],
+    "906": [
+        "Ränte - euro obligationer",
+        "Högrisk"
+    ],
+    "909": [
+        "Ränte - euro obligationer",
+        "Högrisk"
+    ],
+    "929": [
+        "Europa",
+        "Småbolag"
+    ],
+    "932": [
+        "Europa",
+        "Småbolag"
+    ],
+    "936": [
+        "Europa",
+        "Småbolag"
+    ],
+    "942": [
+        "Europa",
+        "Småbolag"
+    ],
+    "952": [
+        "Europa",
+        "Småbolag"
+    ],
+    "961": [
+        "Global",
+        "Tillväxtbolag"
+    ],
+    "972": [
+        "Europa",
+        "Medelstora bolag"
+    ],
+    "973": [
+        "Euroland"
+    ],
+    "981": [
+        "Norden"
+    ],
+    "1022": [
+        "Blandfond - Generation 2031-2035"
+    ],
+    "1023": [
+        "Blandfond - Generation 2021-2025"
+    ],
+    "1024": [
+        "Blandfond - Generation 2041-2045"
+    ],
+    "1029": [
+        "Blandfond - Generation 2046+"
+    ],
+    "1040": [
+        "Blandfond - Generation 2016-2020"
+    ],
+    "1047": [
+        "Hedgefond",
+        "Övriga"
+    ],
+    "1100": [
+        "Hedgefond",
+        "Global makro",
+        "Övriga"
+    ],
+    "1121": [
+        "Hedgefond",
+        "Övriga"
+    ],
+    "1254": [
+        "Japan"
+    ],
+    "1263": [
+        "Japan"
+    ],
+    "1264": [
+        "Japan"
+    ],
+    "1268": [
+        "Japan"
+    ],
+    "1272": [
+        "Japan"
+    ],
+    "1285": [
+        "Japan"
+    ],
+    "1288": [
+        "Japan"
+    ],
+    "1316": [
+        "Japan"
+    ],
+    "1324": [
+        "Japan"
+    ],
+    "1333": [
+        "Japan"
+    ],
+    "1339": [
+        "Japan",
+        "Små-/medelstora bolag"
+    ],
+    "1358": [
+        "Latinamerika"
+    ],
+    "1362": [
+        "Latinamerika"
+    ],
+    "1373": [
+        "Latinamerika"
+    ],
+    "1376": [
+        "Latinamerika"
+    ],
+    "1380": [
+        "Ränte - dollar obligationer",
+        "Medellånga"
+    ],
+    "1462": [
+        "USA",
+        "Mix bolag"
+    ],
+    "1464": [
+        "USA",
+        "Tillväxtbolag"
+    ],
+    "1474": [
+        "USA",
+        "Mix bolag"
+    ],
+    "1476": [
+        "USA",
+        "Tillväxtbolag"
+    ],
+    "1478": [
+        "USA",
+        "Mix bolag"
+    ],
+    "1482": [
+        "USA",
+        "Tillväxtbolag"
+    ],
+    "1484": [
+        "USA",
+        "Värdebolag"
+    ],
+    "1505": [
+        "USA",
+        "Mix bolag"
+    ],
+    "1506": [
+        "USA",
+        "Mix bolag"
+    ],
+    "1512": [
+        "USA",
+        "Tillväxtbolag"
+    ],
+    "1542": [
+        "USA",
+        "Medelstora bolag"
+    ],
+    "1546": [
+        "USA",
+        "Värdebolag"
+    ],
+    "1556": [
+        "USA",
+        "Mix bolag"
+    ],
+    "1557": [
+        "USA",
+        "Mix bolag"
+    ],
+    "1561": [
+        "USA",
+        "Stor Utdelning"
+    ],
+    "1573": [
+        "USA",
+        "Mix bolag"
+    ],
+    "1599": [
+        "USA",
+        "Medelstora bolag"
+    ],
+    "1600": [
+        "USA",
+        "Småbolag"
+    ],
+    "1602": [
+        "USA",
+        "Småbolag"
+    ],
+    "1604": [
+        "USA",
+        "Medelstora bolag"
+    ],
+    "1607": [
+        "USA",
+        "Flexibel storlek bolag"
+    ],
+    "1619": [
+        "USA",
+        "Småbolag"
+    ],
+    "1630": [
+        "Norden"
+    ],
+    "1632": [
+        "Norden"
+    ],
+    "1636": [
+        "Norden"
+    ],
+    "1643": [
+        "Norden"
+    ],
+    "1644": [
+        "Norden",
+        "Små-/medelstora bolag"
+    ],
+    "1647": [
+        "Finland"
+    ],
+    "1651": [
+        "Norden"
+    ],
+    "1660": [
+        "Norden"
+    ],
+    "1663": [
+        "Finland"
+    ],
+    "1674": [
+        "Finland"
+    ],
+    "1678": [
+        "Norden",
+        "Små-/medelstora bolag"
+    ],
+    "1681": [
+        "Norden",
+        "Små-/medelstora bolag"
+    ],
+    "1682": [
+        "Norden",
+        "Små-/medelstora bolag"
+    ],
+    "1689": [
+        "Ränte - tillväxtm",
+        "Obligationer",
+        "Lokal valuta"
+    ],
+    "1703": [
+        "Ränte - euro globala",
+        "Flexibel",
+        "Säkrade"
+    ],
+    "1731": [
+        "Ränte - SEK obligationer",
+        "Mix"
+    ],
+    "1825": [
+        "Ränte - euro obligationer",
+        "Företag"
+    ],
+    "1833": [
+        "Ränte - SEK obligationer",
+        "Företag"
+    ],
+    "1840": [
+        "Europa",
+        "Mix bolag"
+    ],
+    "1870": [
+        "Sverige"
+    ],
+    "1871": [
+        "Global",
+        "Tillväxtbolag"
+    ],
+    "1877": [
+        "Global",
+        "Tillväxtbolag"
+    ],
+    "1886": [
+        "Global & Sverige"
+    ],
+    "1887": [
+        "Global",
+        "Mix bolag"
+    ],
+    "1892": [
+        "Sverige"
+    ],
+    "1895": [
+        "Sverige"
+    ],
+    "1896": [
+        "Sverige"
+    ],
+    "1901": [
+        "Sverige"
+    ],
+    "1907": [
+        "Sverige"
+    ],
+    "1910": [
+        "Sverige"
+    ],
+    "1919": [
+        "Sverige"
+    ],
+    "1933": [
+        "Branschfond",
+        "Ny teknik"
+    ],
+    "1942": [
+        "Sverige"
+    ],
+    "1943": [
+        "Sverige",
+        "Små-/medelstora bolag"
+    ],
+    "1948": [
+        "Sverige"
+    ],
+    "1949": [
+        "Sverige"
+    ],
+    "1950": [
+        "Sverige"
+    ],
+    "1959": [
+        "Sverige"
+    ],
+    "1960": [
+        "Sverige"
+    ],
+    "1961": [
+        "Sverige"
+    ],
+    "1963": [
+        "Sverige"
+    ],
+    "1964": [
+        "Sverige"
+    ],
+    "1971": [
+        "Sverige"
+    ],
+    "1983": [
+        "Sverige"
+    ],
+    "1984": [
+        "Sverige"
+    ],
+    "1996": [
+        "Sverige",
+        "Små-/medelstora bolag"
+    ],
+    "2003": [
+        "Sverige",
+        "Små-/medelstora bolag"
+    ],
+    "2006": [
+        "Sverige",
+        "Små-/medelstora bolag"
+    ],
+    "2007": [
+        "Sverige",
+        "Små-/medelstora bolag"
+    ],
+    "2008": [
+        "Sverige",
+        "Små-/medelstora bolag"
+    ],
+    "2010": [
+        "Sverige",
+        "Små-/medelstora bolag"
+    ],
+    "2011": [
+        "Sverige",
+        "Små-/medelstora bolag"
+    ],
+    "2012": [
+        "Sverige",
+        "Små-/medelstora bolag"
+    ],
+    "2013": [
+        "Sverige",
+        "Små-/medelstora bolag"
+    ],
+    "2014": [
+        "Sverige",
+        "Små-/medelstora bolag"
+    ],
+    "2016": [
+        "Sverige"
+    ],
+    "2026": [
+        "Ränte - SEK obligationer",
+        "Korta"
+    ],
+    "2028": [
+        "Ränte - SEK obligationer",
+        "Korta"
+    ],
+    "2032": [
+        "Ränte - SEK obligationer",
+        "Korta"
+    ],
+    "2034": [
+        "Ränte - SEK obligationer",
+        "Medellånga"
+    ],
+    "2052": [
+        "Ränte - SEK obligationer",
+        "Korta"
+    ],
+    "2058": [
+        "Ränte - SEK obligationer",
+        "Korta"
+    ],
+    "2063": [
+        "Ränte - SEK obligationer",
+        "Korta"
+    ],
+    "2066": [
+        "Ränte - SEK obligationer",
+        "Företag"
+    ],
+    "2069": [
+        "Ränte - SEK obligationer",
+        "Företag"
+    ],
+    "2075": [
+        "Ränte - SEK obligationer",
+        "Mix"
+    ],
+    "2077": [
+        "Ränte - SEK obligationer",
+        "Mix"
+    ],
+    "2078": [
+        "Ränte - SEK obligationer",
+        "Företag"
+    ],
+    "2079": [
+        "Ränte - SEK obligationer",
+        "Mix"
+    ],
+    "2084": [
+        "Ränte - SEK obligationer",
+        "Korta"
+    ],
+    "2087": [
+        "Ränte - SEK obligationer",
+        "Flexibel",
+        "Högrisk"
+    ],
+    "2088": [
+        "Ränte - SEK obligationer",
+        "Mix"
+    ],
+    "2098": [
+        "Ränte - SEK obligationer",
+        "Mix"
+    ],
+    "2103": [
+        "Ränte - SEK obligationer",
+        "Reala"
+    ],
+    "2108": [
+        "Ränte - SEK obligationer",
+        "Reala"
+    ],
+    "2109": [
+        "Ränte - SEK obligationer",
+        "Mix"
+    ],
+    "2111": [
+        "Ränte - SEK obligationer",
+        "Mix"
+    ],
+    "2112": [
+        "Ränte - SEK obligationer",
+        "Företag"
+    ],
+    "2117": [
+        "Ränte - SEK obligationer",
+        "Medellånga"
+    ],
+    "2122": [
+        "Ränte - SEK obligationer",
+        "Mix"
+    ],
+    "2123": [
+        "Ränte - SEK obligationer",
+        "Reala"
+    ],
+    "2128": [
+        "Ränte - SEK obligationer",
+        "Mix"
+    ],
+    "2131": [
+        "Ränte - SEK obligationer",
+        "Företag"
+    ],
+    "2136": [
+        "Tillväxtmarknader"
+    ],
+    "2138": [
+        "Tillväxtmarknader"
+    ],
+    "2143": [
+        "Tillväxtmarknader"
+    ],
+    "2145": [
+        "Tillväxtmarknader"
+    ],
+    "2151": [
+        "Tillväxtmarknader"
+    ],
+    "2155": [
+        "Tillväxtmarknader"
+    ],
+    "2156": [
+        "Tillväxtmarknader"
+    ],
+    "2158": [
+        "Afrika och Mellanöstern"
+    ],
+    "2164": [
+        "Tillväxtmarknader"
+    ],
+    "2178": [
+        "Tillväxtmarknader"
+    ],
+    "2179": [
+        "Tillväxtmarknader"
+    ],
+    "2186": [
+        "Tillväxtmarknader"
+    ],
+    "2187": [
+        "Tillväxtmarknader"
+    ],
+    "2191": [
+        "Övriga aktiefonder"
+    ],
+    "2197": [
+        "Tillväxtmarknader"
+    ],
+    "2240": [
+        "Global",
+        "Tillväxtbolag"
+    ],
+    "2241": [
+        "Global",
+        "Små/medelstora bolag"
+    ],
+    "2246": [
+        "Global",
+        "Mix bolag"
+    ],
+    "2247": [
+        "Global",
+        "Tillväxtbolag"
+    ],
+    "2253": [
+        "Global",
+        "Mix bolag"
+    ],
+    "2254": [
+        "Global",
+        "Värdebolag"
+    ],
+    "2284": [
+        "Global",
+        "Tillväxtbolag"
+    ],
+    "2285": [
+        "Global",
+        "Tillväxtbolag"
+    ],
+    "2289": [
+        "Global",
+        "Tillväxtbolag"
+    ],
+    "2294": [
+        "Europa",
+        "Flexibel storlek bolag"
+    ],
+    "2300": [
+        "Global & Sverige"
+    ],
+    "2328": [
+        "Global",
+        "Värdebolag"
+    ],
+    "2332": [
+        "Global",
+        "Mix bolag"
+    ],
+    "2338": [
+        "Branschfond",
+        "Ny teknik"
+    ],
+    "2344": [
+        "Branschfond",
+        "Industrimaterial"
+    ],
+    "2354": [
+        "Global",
+        "Flexibel"
+    ],
+    "2362": [
+        "Global",
+        "Små/medelstora bolag"
+    ],
+    "2368": [
+        "Global",
+        "Mix bolag"
+    ],
+    "2370": [
+        "Global",
+        "Mix bolag"
+    ],
+    "2375": [
+        "Europa",
+        "Stor utdelning"
+    ],
+    "2376": [
+        "Global",
+        "Tillväxtbolag"
+    ],
+    "2382": [
+        "Global",
+        "Mix bolag"
+    ],
+    "2384": [
+        "Global",
+        "Värdebolag"
+    ],
+    "2410": [
+        "Branschfond",
+        "Miljö"
+    ],
+    "2411": [
+        "Global",
+        "Mix bolag"
+    ],
+    "2412": [
+        "Global",
+        "Små/medelstora bolag"
+    ],
+    "2435": [
+        "Global",
+        "Mix bolag"
+    ],
+    "2439": [
+        "Blandfond - dollar",
+        "Balanserad"
+    ],
+    "2453": [
+        "Global",
+        "Mix bolag"
+    ],
+    "2481": [
+        "Ränte - globala obligationer"
+    ],
+    "2482": [
+        "Ränte - globala obligationer"
+    ],
+    "2545": [
+        "Ränte - SEK obligationer",
+        "Företag"
+    ],
+    "2572": [
+        "Övriga aktiefonder"
+    ],
+    "2585": [
+        "Östeuropa"
+    ],
+    "2742": [
+        "Global",
+        "Flexibel"
+    ],
+    "2743": [
+        "Blandfond - SEK",
+        "Balanserad"
+    ],
+    "2801": [
+        "Sverige",
+        "Små-/medelstora bolag"
+    ],
+    "2802": [
+        "Ränte - SEK obligationer",
+        "Korta"
+    ],
+    "2821": [
+        "Branschfond",
+        "Råvaror"
+    ],
+    "2983": [
+        "Branschfond",
+        "Läkemedel"
+    ],
+    "3022": [
+        "Asien ex Japan",
+        "Små-/medelstora bolag"
+    ],
+    "3061": [
+        "Kina"
+    ],
+    "3062": [
+        "Hongkong"
+    ],
+    "3063": [
+        "Indien"
+    ],
+    "3066": [
+        "Euroland",
+        "Medelstora bolag"
+    ],
+    "3070": [
+        "Tillväxtmarknader"
+    ],
+    "3101": [
+        "Indien"
+    ],
+    "3141": [
+        "Brasilien"
+    ],
+    "3242": [
+        "Japan"
+    ],
+    "4761": [
+        "Kina"
+    ],
+    "4762": [
+        "Indien"
+    ],
+    "4764": [
+        "Europa",
+        "Småbolag"
+    ],
+    "4765": [
+        "Japan"
+    ],
+    "4766": [
+        "USA",
+        "Tillväxtbolag"
+    ],
+    "12266": [
+        "Asien & Australien ex Japan"
+    ],
+    "12267": [
+        "Branschfond",
+        "Fastighetsbolag Europa"
+    ],
+    "12268": [
+        "Branschfond",
+        "Ny teknik"
+    ],
+    "12270": [
+        "Europa",
+        "Mix bolag"
+    ],
+    "12274": [
+        "Europa",
+        "Småbolag"
+    ],
+    "12275": [
+        "Japan"
+    ],
+    "13286": [
+        "Europa",
+        "Värdebolag"
+    ],
+    "13291": [
+        "Blandfond - euro",
+        "Flexibel",
+        "Global"
+    ],
+    "15147": [
+        "Norge"
+    ],
+    "15185": [
+        "Global",
+        "Tillväxtbolag"
+    ],
+    "15208": [
+        "Europa ex Storbr"
+    ],
+    "15209": [
+        "Tillväxtmarknader"
+    ],
+    "15211": [
+        "Europa",
+        "Mix bolag"
+    ],
+    "15212": [
+        "Europa",
+        "Småbolag"
+    ],
+    "15213": [
+        "Ränte - euro obligationer",
+        "Företag"
+    ],
+    "15214": [
+        "Ränte - tillväxtmarknader",
+        "Obligationer"
+    ],
+    "16389": [
+        "Blandfond - SEK",
+        "Balanserad"
+    ],
+    "16527": [
+        "Tillväxtmarknader"
+    ],
+    "18067": [
+        "Indien"
+    ],
+    "20249": [
+        "Blandfond - euro",
+        "Balanserad",
+        "Global"
+    ],
+    "20251": [
+        "Europa",
+        "Mix bolag"
+    ],
+    "20949": [
+        "Branschfond",
+        "Konsument"
+    ],
+    "20993": [
+        "Sverige"
+    ],
+    "24328": [
+        "Sverige"
+    ],
+    "26767": [
+        "Kina"
+    ],
+    "26827": [
+        "Ränte - SEK obligationer",
+        "Reala"
+    ],
+    "29854": [
+        "Europa",
+        "Värdebolag"
+    ],
+    "32347": [
+        "Turkiet"
+    ],
+    "33107": [
+        "Ränte - globala obligationer"
+    ],
+    "33211": [
+        "Taiwan"
+    ],
+    "33231": [
+        "Branschfond",
+        "Råvaror"
+    ],
+    "33233": [
+        "Global",
+        "Mix bolag"
+    ],
+    "33236": [
+        "Latinamerika"
+    ],
+    "34460": [
+        "Global",
+        "Värdebolag"
+    ],
+    "35169": [
+        "Thailand"
+    ],
+    "38388": [
+        "Euroland"
+    ],
+    "38392": [
+        "Hedgefond",
+        "Övriga"
+    ],
+    "38393": [
+        "Ränte - tillväxtmarknader",
+        "Obligationer"
+    ],
+    "39648": [
+        "Global",
+        "Värdebolag"
+    ],
+    "39649": [
+        "BRIC"
+    ],
+    "40567": [
+        "Blandfond - SEK",
+        "Balanserad"
+    ],
+    "41567": [
+        "Sverige"
+    ],
+    "41815": [
+        "BRIC"
+    ],
+    "43947": [
+        "Indien"
+    ],
+    "45489": [
+        "Blandfond - SEK",
+        "Balanserad"
+    ],
+    "48768": [
+        "Tillväxtmarknader"
+    ],
+    "56067": [
+        "Indien"
+    ],
+    "56127": [
+        "Ränte - SEK obligationer",
+        "Korta"
+    ],
+    "57027": [
+        "Japan"
+    ],
+    "57889": [
+        "Global",
+        "Mix bolag"
+    ],
+    "58850": [
+        "Global",
+        "Flexibel"
+    ],
+    "61547": [
+        "BRIC"
+    ],
+    "61548": [
+        "Asien ex Japan"
+    ],
+    "63727": [
+        "Branschfond",
+        "Miljö"
+    ],
+    "64529": [
+        "Tillväxtmarknader"
+    ],
+    "64710": [
+        "Sverige",
+        "Små-/medelstora bolag"
+    ],
+    "65407": [
+        "Europa",
+        "Flexibel storlek bolag"
+    ],
+    "65465": [
+        "Ränte - euro globala obl företag",
+        "Säkrade"
+    ],
+    "65466": [
+        "Ränte - DKK obligationer",
+        "Inhemska"
+    ],
+    "68707": [
+        "Turkiet"
+    ],
+    "69959": [
+        "Indien"
+    ],
+    "70031": [
+        "Asien ex Japan",
+        "Små-/medelstora bolag"
+    ],
+    "70074": [
+        "Tillväxtmarknader"
+    ],
+    "70110": [
+        "Ränte - euro obligationer",
+        "Högrisk"
+    ],
+    "70196": [
+        "Global",
+        "Mix bolag"
+    ],
+    "70206": [
+        "Tillväxtmarknader"
+    ],
+    "70211": [
+        "Branschfond",
+        "Fastighetsbolag USA"
+    ],
+    "70220": [
+        "Latinamerika"
+    ],
+    "70331": [
+        "USA",
+        "Tillväxtbolag"
+    ],
+    "70356": [
+        "Europa",
+        "Mix bolag"
+    ],
+    "70371": [
+        "Indien"
+    ],
+    "70501": [
+        "Ränte - euro obligationer",
+        "Högrisk"
+    ],
+    "70541": [
+        "Global",
+        "Mix bolag"
+    ],
+    "70560": [
+        "Branschfond",
+        "Fastighetsbolag Asien"
+    ],
+    "70668": [
+        "Branschfond",
+        "Fastighetsbolag"
+    ],
+    "70670": [
+        "Lång/kort",
+        "Europa"
+    ],
+    "70685": [
+        "Norden",
+        "Små-/medelstora bolag"
+    ],
+    "70737": [
+        "Global",
+        "Mix bolag"
+    ],
+    "70759": [
+        "Indien"
+    ],
+    "70768": [
+        "Branschfond",
+        "Fastighetsbolag"
+    ],
+    "70789": [
+        "Tillväxtmarknader"
+    ],
+    "70879": [
+        "Asien ex Japan"
+    ],
+    "71042": [
+        "Ränte - tillväxtmarknader",
+        "Obligationer"
+    ],
+    "71104": [
+        "Ränte - euro obligationer",
+        "Företag"
+    ],
+    "71134": [
+        "USA",
+        "Värdebolag"
+    ],
+    "71214": [
+        "Blandfond - euro",
+        "Försiktig"
+    ],
+    "71285": [
+        "Branschfond",
+        "Energi"
+    ],
+    "71318": [
+        "Global",
+        "Mix bolag"
+    ],
+    "71332": [
+        "Indien"
+    ],
+    "73515": [
+        "Ränte - euro obligationer",
+        "Högrisk"
+    ],
+    "73607": [
+        "Ränte - dollar obligationer",
+        "Högrisk"
+    ],
+    "73884": [
+        "Hedgefond",
+        "Modellbaserad terminshandel",
+        "Övriga"
+    ],
+    "74107": [
+        "Norge"
+    ],
+    "74108": [
+        "Global",
+        "Tillväxtbolag"
+    ],
+    "74110": [
+        "Tillväxtmarknader"
+    ],
+    "74111": [
+        "Norden",
+        "Små-/medelstora bolag"
+    ],
+    "75253": [
+        "Blandfond - SEK",
+        "Flexibel"
+    ],
+    "76979": [
+        "ASEAN"
+    ],
+    "76993": [
+        "Spanien"
+    ],
+    "79691": [
+        "Europa",
+        "Mix bolag"
+    ],
+    "79692": [
+        "Norden"
+    ],
+    "79694": [
+        "Global",
+        "Tillväxtbolag"
+    ],
+    "82967": [
+        "Ränte - tillväxtmarknader",
+        "Obligationer"
+    ],
+    "84666": [
+        "USA",
+        "Tillväxtbolag"
+    ],
+    "84669": [
+        "Indien"
+    ],
+    "84671": [
+        "Ränte - tillväxtm",
+        "Obligationer",
+        "Lokal valuta"
+    ],
+    "86207": [
+        "Norden"
+    ],
+    "86249": [
+        "Lång/kort",
+        "Övriga"
+    ],
+    "86287": [
+        "Branschfond",
+        "Ny energi"
+    ],
+    "86668": [
+        "Tillväxtmarknader",
+        "Små-/medelstora bolag"
+    ],
+    "87987": [
+        "Sverige"
+    ],
+    "89347": [
+        "Övriga aktiefonder"
+    ],
+    "91107": [
+        "Sverige"
+    ],
+    "92827": [
+        "Ränte - SEK obligationer",
+        "Korta"
+    ],
+    "92871": [
+        "Europa",
+        "Tillväxtbolag"
+    ],
+    "93828": [
+        "Blandfond - SEK",
+        "Försiktig"
+    ],
+    "94867": [
+        "Ränte - SEK obligationer",
+        "Företag"
+    ],
+    "96927": [
+        "USA",
+        "Mix bolag"
+    ],
+    "100848": [
+        "Korea"
+    ],
+    "106728": [
+        "Hedgefond",
+        "Marknadsneutral",
+        "Övriga"
+    ],
+    "106729": [
+        "Lång/kort",
+        "Övriga"
+    ],
+    "111428": [
+        "Tillväxtmarknader",
+        "Små-/medelstora bolag"
+    ],
+    "111430": [
+        "Branschfond",
+        "Miljö"
+    ],
+    "112622": [
+        "Branschfond",
+        "Energi"
+    ],
+    "113999": [
+        "USA",
+        "Småbolag"
+    ],
+    "114006": [
+        "Tillväxtmarknader"
+    ],
+    "117408": [
+        "Kina"
+    ],
+    "118348": [
+        "Europa",
+        "Mix bolag"
+    ],
+    "118857": [
+        "Global",
+        "Mix bolag"
+    ],
+    "119488": [
+        "Branschfond",
+        "Miljö"
+    ],
+    "119590": [
+        "Branschfond",
+        "Finans"
+    ],
+    "121011": [
+        "Branschfond",
+        "Miljö"
+    ],
+    "122368": [
+        "Global",
+        "Tillväxtbolag"
+    ],
+    "123809": [
+        "Asien ex Japan"
+    ],
+    "123990": [
+        "Brasilien"
+    ],
+    "124511": [
+        "Japan"
+    ],
+    "130487": [
+        "Branschfond",
+        "Miljö"
+    ],
+    "131309": [
+        "Tillväxtmarknader",
+        "Små-/medelstora bolag"
+    ],
+    "132510": [
+        "Sverige",
+        "Små-/medelstora bolag"
+    ],
+    "133428": [
+        "Asien & Australien ex Japan"
+    ],
+    "137448": [
+        "Sverige",
+        "Små-/medelstora bolag"
+    ],
+    "139416": [
+        "Afrika och Mellanöstern"
+    ],
+    "140888": [
+        "Sverige"
+    ],
+    "143228": [
+        "Branschfond",
+        "Bioteknik"
+    ],
+    "143369": [
+        "Asien & Australien"
+    ],
+    "145768": [
+        "Ränte - SEK obligationer",
+        "Företag"
+    ],
+    "147674": [
+        "Global",
+        "Värdebolag"
+    ],
+    "147684": [
+        "Global",
+        "Mix bolag"
+    ],
+    "148528": [
+        "Blandfond - euro",
+        "Försiktig",
+        "Global"
+    ],
+    "148529": [
+        "Blandfond - euro",
+        "Aggressiv",
+        "Global"
+    ],
+    "149930": [
+        "Global",
+        "Mix bolag"
+    ],
+    "150048": [
+        "Sverige"
+    ],
+    "150208": [
+        "USA",
+        "Mix bolag"
+    ],
+    "151033": [
+        "Global",
+        "Mix bolag"
+    ],
+    "151059": [
+        "Europa",
+        "Tillväxtbolag"
+    ],
+    "155009": [
+        "Ränte - övriga obligationer"
+    ],
+    "155010": [
+        "Ränte - SEK obligationer",
+        "Flexibel",
+        "Högrisk"
+    ],
+    "155953": [
+        "Sverige"
+    ],
+    "156028": [
+        "Ränte - SEK obligationer",
+        "Företag"
+    ],
+    "157549": [
+        "Ränte - euro obligationer",
+        "Korta"
+    ],
+    "157697": [
+        "Asien ex Japan",
+        "Små-/medelstora bolag"
+    ],
+    "157699": [
+        "Sverige",
+        "Små-/medelstora bolag"
+    ],
+    "157891": [
+        "Tillväxtmarknader",
+        "Nya"
+    ],
+    "158428": [
+        "Ränte - SEK obligationer",
+        "Företag"
+    ],
+    "159008": [
+        "Ränte - tillväxtm",
+        "Obligationer",
+        "Lokal valuta"
+    ],
+    "159608": [
+        "Sverige"
+    ],
+    "164908": [
+        "Ränte - övriga obligationer"
+    ],
+    "165268": [
+        "Blandfond - SEK",
+        "Balanserad"
+    ],
+    "165269": [
+        "Global",
+        "Flexibel"
+    ],
+    "165270": [
+        "Global",
+        "Mix bolag"
+    ],
+    "165288": [
+        "Ränte - SEK obligationer",
+        "Flexibel",
+        "Högrisk"
+    ],
+    "173520": [
+        "Afrika"
+    ],
+    "173876": [
+        "Tillväxtmarknader"
+    ],
+    "177748": [
+        "Hedgefond",
+        "Volatilitet"
+    ],
+    "180708": [
+        "Ränte - SEK obligationer",
+        "Företag"
+    ],
+    "180868": [
+        "Branschfond",
+        "Jordbruk"
+    ],
+    "181108": [
+        "USA",
+        "Mix bolag"
+    ],
+    "181109": [
+        "Europa",
+        "Mix bolag"
+    ],
+    "181850": [
+        "Asien ex Japan"
+    ],
+    "181868": [
+        "Global & Sverige"
+    ],
+    "184348": [
+        "Ränte - övriga obligationer"
+    ],
+    "186308": [
+        "Kina"
+    ],
+    "187208": [
+        "Norden",
+        "Små-/medelstora bolag"
+    ],
+    "189969": [
+        "Ränte - euro tillväxtm",
+        "Obligationer"
+    ],
+    "190708": [
+        "Ränte - övriga obligationer"
+    ],
+    "192309": [
+        "Branschfond",
+        "Onoterat"
+    ],
+    "192388": [
+        "Hedgefond",
+        "Modellbaserad terminshandel",
+        "Övriga"
+    ],
+    "192934": [
+        "Europa",
+        "Småbolag"
+    ],
+    "195128": [
+        "Japan"
+    ],
+    "195872": [
+        "Norden",
+        "Små-/medelstora bolag"
+    ],
+    "196928": [
+        "Branschfond",
+        "Läkemedel"
+    ],
+    "198168": [
+        "Blandfond - SEK",
+        "Aggressiv"
+    ],
+    "198508": [
+        "Branschfond",
+        "Onoterat"
+    ],
+    "201630": [
+        "Blandfond - SEK",
+        "Försiktig"
+    ],
+    "202311": [
+        "Asien & Australien ex Japan"
+    ],
+    "202408": [
+        "Kina"
+    ],
+    "202568": [
+        "Norge"
+    ],
+    "202868": [
+        "Ränte - SEK obligationer",
+        "Flexibel",
+        "Högrisk"
+    ],
+    "202870": [
+        "Hedgefond",
+        "Multi-strategi",
+        "Övriga"
+    ],
+    "204694": [
+        "Tillväxtmarknader"
+    ],
+    "207548": [
+        "Sverige"
+    ],
+    "209088": [
+        "Sverige"
+    ],
+    "209089": [
+        "Sverige",
+        "Små-/medelstora bolag"
+    ],
+    "212068": [
+        "Indien"
+    ],
+    "212549": [
+        "Ränte - övriga obligationer"
+    ],
+    "214448": [
+        "Blandfond - SEK",
+        "Flexibel"
+    ],
+    "214730": [
+        "Blandfond - SEK",
+        "Flexibel"
+    ],
+    "217470": [
+        "Blandfond - SEK",
+        "Aggressiv"
+    ],
+    "219388": [
+        "Ränte - övriga obligationer"
+    ],
+    "221608": [
+        "Sverige",
+        "Små-/medelstora bolag"
+    ],
+    "227292": [
+        "Branschfond",
+        "Konsument"
+    ],
+    "232949": [
+        "Japan"
+    ],
+    "232950": [
+        "Kina"
+    ],
+    "232951": [
+        "Asien & Australien ex Japan"
+    ],
+    "232953": [
+        "Japan",
+        "Små-/medelstora bolag"
+    ],
+    "232954": [
+        "Global",
+        "Tillväxtbolag"
+    ],
+    "234109": [
+        "Europa",
+        "Mix bolag"
+    ],
+    "235608": [
+        "Ränte - euro globala",
+        "Valutasäkrade"
+    ],
+    "236069": [
+        "Branschfond",
+        "Ädelmetaller"
+    ],
+    "237973": [
+        "Ränte - euro obligationer",
+        "Korta"
+    ],
+    "237974": [
+        "Blandfond - euro",
+        "Balanserad",
+        "Global"
+    ],
+    "237975": [
+        "Ränte - euro obligationer",
+        "Högrisk"
+    ],
+    "237981": [
+        "Europa",
+        "Mix bolag"
+    ],
+    "237986": [
+        "Ränte - euro obligationer",
+        "Medellånga"
+    ],
+    "240788": [
+        "Branschfond",
+        "Infrastruktur"
+    ],
+    "241951": [
+        "Branschfond",
+        "Råvaror"
+    ],
+    "244488": [
+        "ASEAN"
+    ],
+    "244836": [
+        "Ränte - euro obligationer",
+        "Företag"
+    ],
+    "246028": [
+        "Branschfond",
+        "Fastighetsbolag övriga"
+    ],
+    "246208": [
+        "Blandfond - SEK",
+        "Balanserad"
+    ],
+    "250171": [
+        "Branschfond",
+        "Ädelmetaller"
+    ],
+    "252929": [
+        "Ränte - övriga obligationer"
+    ],
+    "252931": [
+        "Ränte - övriga obligationer"
+    ],
+    "252935": [
+        "USA",
+        "Mix bolag"
+    ],
+    "254209": [
+        "Östeuropa ex Ryssland"
+    ],
+    "255288": [
+        "Ränte - SEK obligationer",
+        "Reala"
+    ],
+    "257890": [
+        "Hedgefond",
+        "Marknadsneutral",
+        "Övriga"
+    ],
+    "259057": [
+        "Konvertibler - global",
+        "Valutasäkrad dollar"
+    ],
+    "259101": [
+        "Tillväxtmarknader"
+    ],
+    "259106": [
+        "Ränte - globala obl",
+        "Flexibel"
+    ],
+    "259110": [
+        "Global",
+        "Mix bolag"
+    ],
+    "259136": [
+        "Global",
+        "Små/medelstora bolag"
+    ],
+    "259146": [
+        "Global",
+        "Mix bolag"
+    ],
+    "259164": [
+        "Europa",
+        "Tillväxtbolag"
+    ],
+    "259168": [
+        "Taiwan"
+    ],
+    "261308": [
+        "Ränte - övriga obligationer"
+    ],
+    "262968": [
+        "Ränte - tillväxtm",
+        "Obligationer",
+        "Lokal valuta"
+    ],
+    "263948": [
+        "Ränte - övriga obligationer"
+    ],
+    "263949": [
+        "Ränte - övriga obligationer"
+    ],
+    "263951": [
+        "Övriga aktiefonder"
+    ],
+    "266309": [
+        "Tillväxtmarknader"
+    ],
+    "267332": [
+        "Ränte - SEK obligationer",
+        "Flexibel",
+        "Högrisk"
+    ],
+    "269548": [
+        "Ränte - SEK obligationer",
+        "Flexibel",
+        "Högrisk"
+    ],
+    "273630": [
+        "Global",
+        "Tillväxtbolag"
+    ],
+    "273828": [
+        "Hedgefond",
+        "Multi-strategi",
+        "Övriga"
+    ],
+    "273829": [
+        "Lång/kort",
+        "Övriga"
+    ],
+    "273830": [
+        "Ränte - SEK obligationer",
+        "Företag"
+    ],
+    "276112": [
+        "Sverige",
+        "Små-/medelstora bolag"
+    ],
+    "276448": [
+        "Lång/kort",
+        "Övriga"
+    ],
+    "281283": [
+        "Europa",
+        "Medelstora bolag"
+    ],
+    "281970": [
+        "Brasilien"
+    ],
+    "283139": [
+        "Sverige"
+    ],
+    "283141": [
+        "Ränte - SEK obligationer",
+        "Företag"
+    ],
+    "286152": [
+        "Kina"
+    ],
+    "286894": [
+        "Kina"
+    ],
+    "286898": [
+        "Ränte - euro obligationer",
+        "Högrisk"
+    ],
+    "288001": [
+        "Europa",
+        "Småbolag"
+    ],
+    "288003": [
+        "Europa",
+        "Stor utdelning"
+    ],
+    "289817": [
+        "Ränte - tillväxtm",
+        "Obligationer",
+        "Företag"
+    ],
+    "289895": [
+        "USA",
+        "Mix bolag"
+    ],
+    "289902": [
+        "Europa",
+        "Mix bolag"
+    ],
+    "289909": [
+        "USA",
+        "Tillväxtbolag"
+    ],
+    "289918": [
+        "Ränte - tillväxtmarknader",
+        "Obligationer"
+    ],
+    "289923": [
+        "Ränte - dollar obligationer",
+        "Högrisk"
+    ],
+    "289924": [
+        "Europa",
+        "Småbolag"
+    ],
+    "289925": [
+        "Global",
+        "Små/medelstora bolag"
+    ],
+    "289937": [
+        "Lång/kort",
+        "USA"
+    ],
+    "289940": [
+        "Ränte - tillväxtmarknader",
+        "Obligationer"
+    ],
+    "289948": [
+        "Ränte - euro obligationer",
+        "Flexibel"
+    ],
+    "289964": [
+        "Blandfond - dollar",
+        "Balanserad"
+    ],
+    "289971": [
+        "Råvaror - Blandade"
+    ],
+    "289977": [
+        "Branschfond",
+        "Ny teknik"
+    ],
+    "289981": [
+        "Asien & Australien ex Japan",
+        "Stor utdelning"
+    ],
+    "289989": [
+        "Tillväxtmarknader"
+    ],
+    "290798": [
+        "Europa",
+        "Mix bolag"
+    ],
+    "290802": [
+        "Ränte - tillväxtm",
+        "Obligationer",
+        "Företag"
+    ],
+    "300236": [
+        "Latinamerika"
+    ],
+    "300237": [
+        "Tillväxtmarknader",
+        "Nya"
+    ],
+    "301420": [
+        "Japan",
+        "Små-/medelstora bolag"
+    ],
+    "301423": [
+        "Afrika och Mellanöstern"
+    ],
+    "301426": [
+        "USA",
+        "Medelstora bolag"
+    ],
+    "302705": [
+        "Europa",
+        "Flexibel storlek bolag"
+    ],
+    "302887": [
+        "Tillväxtmarknader"
+    ],
+    "310959": [
+        "Ränte - övriga obligationer"
+    ],
+    "311567": [
+        "Global",
+        "Tillväxtbolag"
+    ],
+    "313047": [
+        "Sverige"
+    ],
+    "315115": [
+        "USA",
+        "Mix bolag"
+    ],
+    "315116": [
+        "Sverige"
+    ],
+    "315589": [
+        "Branschfond",
+        "Miljö"
+    ],
+    "316079": [
+        "Global",
+        "Flexibel"
+    ],
+    "316497": [
+        "Tillväxtmarknader"
+    ],
+    "316507": [
+        "Branschfond",
+        "Råvaror"
+    ],
+    "316508": [
+        "Global",
+        "Stor utdelning"
+    ],
+    "316679": [
+        "Ränte - övriga obligationer"
+    ],
+    "316923": [
+        "Europa",
+        "Stor utdelning"
+    ],
+    "317655": [
+        "Japan"
+    ],
+    "317656": [
+        "USA",
+        "Värdebolag"
+    ],
+    "317657": [
+        "Global",
+        "Stor utdelning"
+    ],
+    "319516": [
+        "Japan"
+    ],
+    "319550": [
+        "Ränte - dollar penningmarknad"
+    ],
+    "320490": [
+        "Ränte - Kina & närliggande",
+        "Högrisk"
+    ],
+    "323517": [
+        "Blandfond - SEK",
+        "Aggressiv"
+    ],
+    "323519": [
+        "Blandfond - SEK",
+        "Försiktig"
+    ],
+    "324195": [
+        "Branschfond",
+        "Fastighetsbolag övriga"
+    ],
+    "324895": [
+        "Kapitalskyddade"
+    ],
+    "325406": [
+        "Branschfond",
+        "Finans"
+    ],
+    "326700": [
+        "Ränte - globala obligationer",
+        "Högrisk"
+    ],
+    "330057": [
+        "Ränte - globala obl",
+        "Flexibel"
+    ],
+    "330741": [
+        "Blandfond - SEK",
+        "Försiktig"
+    ],
+    "331222": [
+        "Blandfond - SEK",
+        "Balanserad"
+    ],
+    "331224": [
+        "Blandfond - SEK",
+        "Aggressiv"
+    ],
+    "333557": [
+        "Ränte - övriga obligationer"
+    ],
+    "334675": [
+        "Blandfond - SEK",
+        "Flexibel"
+    ],
+    "334856": [
+        "Sverige",
+        "Små-/medelstora bolag"
+    ],
+    "334858": [
+        "Branschfond",
+        "Råvaror"
+    ],
+    "334870": [
+        "Blandfond - dollar",
+        "Balanserad"
+    ],
+    "334871": [
+        "Ränte - dollar obligationer",
+        "Högrisk"
+    ],
+    "335015": [
+        "Ränte - SEK obligationer",
+        "Företag"
+    ],
+    "337508": [
+        "Kina"
+    ],
+    "337512": [
+        "Global",
+        "Tillväxtbolag"
+    ],
+    "337517": [
+        "Tillväxtmarknader"
+    ],
+    "337544": [
+        "Branschfond",
+        "Fastighetsbolag"
+    ],
+    "337548": [
+        "Europa",
+        "Mix bolag"
+    ],
+    "337549": [
+        "Asien ex Japan"
+    ],
+    "340063": [
+        "Ränte - NOK obligationer",
+        "Högrisk"
+    ],
+    "340280": [
+        "Indien"
+    ],
+    "342255": [
+        "Ränte - SEK obligationer",
+        "Flexibel",
+        "Högrisk"
+    ],
+    "343415": [
+        "Ränte - globala obligationer",
+        "Högrisk"
+    ],
+    "343418": [
+        "Ränte - Kina",
+        "Mix"
+    ],
+    "343420": [
+        "Asien ex Japan",
+        "Små-/medelstora bolag"
+    ],
+    "345795": [
+        "Ränte - Asien obligationer",
+        "Högrisk"
+    ],
+    "346775": [
+        "Blandfond - SEK",
+        "Försiktig"
+    ],
+    "346835": [
+        "Blandfond - SEK",
+        "Flexibel"
+    ],
+    "346836": [
+        "Blandfond - övriga"
+    ],
+    "346837": [
+        "Ränte - SEK obligationer",
+        "Företag"
+    ],
+    "346935": [
+        "Ränte - SEK obligationer",
+        "Flexibel",
+        "Högrisk"
+    ],
+    "347375": [
+        "Norden"
+    ],
+    "350435": [
+        "Ränte - dollar globala",
+        "Flexibel",
+        "Säkrade"
+    ],
+    "350438": [
+        "Global",
+        "Tillväxtbolag"
+    ],
+    "350439": [
+        "Ränte - Asien obligationer"
+    ],
+    "350445": [
+        "Global",
+        "Stor utdelning"
+    ],
+    "350597": [
+        "Ränte - globala obligationer",
+        "Företag"
+    ],
+    "351739": [
+        "Asien & Australien ex Japan",
+        "Stor utdelning"
+    ],
+    "353095": [
+        "Global",
+        "Tillväxtbolag"
+    ],
+    "353433": [
+        "Ränte - SEK obligationer",
+        "Företag"
+    ],
+    "355598": [
+        "Ränte - SEK obligationer",
+        "Flexibel",
+        "Högrisk"
+    ],
+    "355599": [
+        "Ränte - SEK obligationer",
+        "Företag"
+    ],
+    "364655": [
+        "Tillväxtmarknader"
+    ],
+    "364936": [
+        "Tillväxtmarknader"
+    ],
+    "365049": [
+        "Ränte - SEK obligationer",
+        "Flexibel",
+        "Högrisk"
+    ],
+    "367456": [
+        "Tillväxtmarknader"
+    ],
+    "370857": [
+        "Tillväxtmarknader"
+    ],
+    "374277": [
+        "Ränte - övriga obligationer"
+    ],
+    "374855": [
+        "Asien ex Japan"
+    ],
+    "375216": [
+        "Global",
+        "Mix bolag"
+    ],
+    "375837": [
+        "Ränte - euro globala",
+        "Flexibel",
+        "Säkrade"
+    ],
+    "376316": [
+        "Branschfond",
+        "Fastighetsbolag"
+    ],
+    "376651": [
+        "Asien ex Japan",
+        "Små-/medelstora bolag"
+    ],
+    "376665": [
+        "Global",
+        "Stor utdelning"
+    ],
+    "376714": [
+        "Storbritannien"
+    ],
+    "376718": [
+        "Europa ex Storbr"
+    ],
+    "376791": [
+        "USA",
+        "Mix bolag"
+    ],
+    "376808": [
+        "Blandfond - dollar",
+        "Balanserad"
+    ],
+    "377797": [
+        "Blandfond - SEK",
+        "Balanserad"
+    ],
+    "377801": [
+        "Sverige"
+    ],
+    "377804": [
+        "Blandfond - SEK",
+        "Aggressiv"
+    ],
+    "377805": [
+        "Global",
+        "Mix bolag"
+    ],
+    "377807": [
+        "Blandfond - SEK",
+        "Balanserad"
+    ],
+    "377809": [
+        "Ränte - SEK obligationer",
+        "Företag"
+    ],
+    "378116": [
+        "Sverige",
+        "Små-/medelstora bolag"
+    ],
+    "378656": [
+        "Europa",
+        "Mix bolag"
+    ],
+    "379956": [
+        "Sverige"
+    ],
+    "380137": [
+        "Global",
+        "Mix bolag"
+    ],
+    "380220": [
+        "Ränte - övriga obligationer"
+    ],
+    "381075": [
+        "Global",
+        "Mix bolag"
+    ],
+    "382860": [
+        "Asien ex Japan"
+    ],
+    "383302": [
+        "Ränte - övriga obligationer"
+    ],
+    "383498": [
+        "Tillväxtmarknader"
+    ],
+    "388595": [
+        "Ränte - SEK obligationer",
+        "Företag"
+    ],
+    "389820": [
+        "Ränte - SEK obligationer",
+        "Flexibel",
+        "Högrisk"
+    ],
+    "390076": [
+        "Ränte - euro obligationer",
+        "Statliga"
+    ],
+    "390917": [
+        "Japan"
+    ],
+    "393598": [
+        "Japan"
+    ],
+    "396355": [
+        "Ränte - övriga obligationer"
+    ],
+    "398157": [
+        "Blandfond - SEK",
+        "Balanserad"
+    ],
+    "398162": [
+        "Ränte - övriga obligationer"
+    ],
+    "399049": [
+        "Råvaror - Blandade"
+    ],
+    "399055": [
+        "Branschfond",
+        "Konsument"
+    ],
+    "400357": [
+        "Ränte - SEK obligationer",
+        "Korta"
+    ],
+    "403595": [
+        "Sverige"
+    ],
+    "404075": [
+        "Tillväxtmarknader",
+        "Nya"
+    ],
+    "404610": [
+        "Europa",
+        "Värdebolag"
+    ],
+    "404618": [
+        "Kina"
+    ],
+    "409832": [
+        "Global",
+        "Tillväxtbolag"
+    ],
+    "409833": [
+        "Asien ex Japan"
+    ],
+    "410277": [
+        "USA",
+        "Mix bolag"
+    ],
+    "411236": [
+        "USA",
+        "Mix bolag"
+    ],
+    "414058": [
+        "Asien ex Japan"
+    ],
+    "414066": [
+        "Ränte - Östeuropa obligationer"
+    ],
+    "414960": [
+        "Europa",
+        "Tillväxtbolag"
+    ],
+    "415680": [
+        "Global",
+        "Mix bolag"
+    ],
+    "415681": [
+        "Indien"
+    ],
+    "415683": [
+        "Kina"
+    ],
+    "415687": [
+        "Global",
+        "Mix bolag"
+    ],
+    "415688": [
+        "USA",
+        "Tillväxtbolag"
+    ],
+    "415690": [
+        "Blandfond - SEK",
+        "Flexibel"
+    ],
+    "415796": [
+        "USA",
+        "Småbolag"
+    ],
+    "415797": [
+        "Branschfond",
+        "Ny energi"
+    ],
+    "416235": [
+        "Ränte - övriga obligationer"
+    ],
+    "416236": [
+        "Asien ex Japan"
+    ],
+    "416237": [
+        "Ränte - SEK obligationer",
+        "Flexibel",
+        "Högrisk"
+    ],
+    "416835": [
+        "Sverige"
+    ],
+    "416997": [
+        "Blandfond - SEK",
+        "Flexibel"
+    ],
+    "417020": [
+        "Blandfond - SEK",
+        "Försiktig"
+    ],
+    "417084": [
+        "Ränte - övriga obligationer"
+    ],
+    "417655": [
+        "Global",
+        "Mix bolag"
+    ],
+    "419901": [
+        "Global",
+        "Värdebolag"
+    ],
+    "420143": [
+        "Latinamerika"
+    ],
+    "420192": [
+        "Tillväxtmarknader"
+    ],
+    "421196": [
+        "Global",
+        "Mix bolag"
+    ],
+    "426716": [
+        "Ränte - tillväxtm",
+        "Obligationer",
+        "Företag"
+    ],
+    "427235": [
+        "Övriga aktiefonder"
+    ],
+    "429484": [
+        "Blandfond - SEK",
+        "Flexibel"
+    ],
+    "429935": [
+        "Global",
+        "Mix bolag"
+    ],
+    "430255": [
+        "Sverige"
+    ],
+    "430355": [
+        "Global",
+        "Stor utdelning"
+    ],
+    "430715": [
+        "Tillväxtmarknader",
+        "Nya"
+    ],
+    "431056": [
+        "Asien ex Japan"
+    ],
+    "431316": [
+        "Global",
+        "Mix bolag"
+    ],
+    "435324": [
+        "Asien & Australien ex Japan"
+    ],
+    "435455": [
+        "Blandfond - SEK",
+        "Flexibel"
+    ],
+    "435457": [
+        "Ränte - övriga obligationer"
+    ],
+    "436064": [
+        "Ränte - SEK obligationer",
+        "Företag"
+    ],
+    "436351": [
+        "Global",
+        "Värdebolag"
+    ],
+    "436405": [
+        "Asien ex Japan"
+    ],
+    "436817": [
+        "Global",
+        "Små/medelstora bolag"
+    ],
+    "437855": [
+        "Tillväxtmarknader",
+        "Små-/medelstora bolag"
+    ],
+    "439855": [
+        "Global",
+        "Mix bolag"
+    ],
+    "440901": [
+        "Ränte - tillväxtmarknader",
+        "Obligationer"
+    ],
+    "440909": [
+        "Ränte - Asien obligationer",
+        "Lokal valuta"
+    ],
+    "440935": [
+        "Övriga aktiefonder"
+    ],
+    "440975": [
+        "Ränte - Kina",
+        "Mix"
+    ],
+    "441286": [
+        "Tillväxtmarknader",
+        "Nya"
+    ],
+    "447023": [
+        "Global",
+        "Stor utdelning"
+    ],
+    "447115": [
+        "Ränte - SEK obligationer",
+        "Korta"
+    ],
+    "454936": [
+        "Ränte - övriga obligationer"
+    ],
+    "455060": [
+        "Branschfond",
+        "Konsument"
+    ],
+    "455102": [
+        "Ränte - euro obligationer",
+        "Företag"
+    ],
+    "457575": [
+        "Ränte - övriga obligationer"
+    ],
+    "457577": [
+        "Ränte - övriga obligationer"
+    ],
+    "459035": [
+        "Övriga aktiefonder"
+    ],
+    "459897": [
+        "Norden",
+        "Små-/medelstora bolag"
+    ],
+    "460566": [
+        "Branschfond",
+        "Miljö"
+    ],
+    "462416": [
+        "Hedgefond",
+        "Global makro",
+        "EUR"
+    ],
+    "462915": [
+        "Ränte - dollar globala",
+        "Flexibel",
+        "Säkrade"
+    ],
+    "469956": [
+        "Tillväxtmarknader",
+        "Nya"
+    ],
+    "470076": [
+        "Blandfond - SEK",
+        "Flexibel"
+    ],
+    "470488": [
+        "Global",
+        "Små/medelstora bolag"
+    ],
+    "471796": [
+        "Ränte - SEK obligationer",
+        "Flexibel",
+        "Högrisk"
+    ],
+    "475797": [
+        "Ränte - SEK obligationer",
+        "Företag"
+    ],
+    "476203": [
+        "Global",
+        "Flexibel"
+    ],
+    "476475": [
+        "Ränte - euro tillväxtm",
+        "Obligationer",
+        "Företag"
+    ],
+    "476836": [
+        "Ränte - övriga obligationer"
+    ],
+    "476838": [
+        "Blandfond - SEK",
+        "Balanserad"
+    ],
+    "481107": [
+        "Asien ex Japan",
+        "Små-/medelstora bolag"
+    ],
+    "487076": [
+        "Tillväxtmarknader"
+    ],
+    "490477": [
+        "Ränte - SEK obligationer",
+        "Flexibel",
+        "Högrisk"
+    ],
+    "499515": [
+        "Europa",
+        "Småbolag"
+    ],
+    "499516": [
+        "Ränte - övriga obligationer"
+    ],
+    "502796": [
+        "Global & Sverige"
+    ],
+    "502798": [
+        "Ränte - övriga obligationer"
+    ],
+    "506277": [
+        "Ränte - euro obligationer",
+        "Högrisk"
+    ],
+    "508255": [
+        "Sverige"
+    ],
+    "508256": [
+        "Ränte - euro obligationer",
+        "Korta"
+    ],
+    "508257": [
+        "Ränte - euro obligationer",
+        "Statliga"
+    ],
+    "512555": [
+        "Finland"
+    ],
+    "512556": [
+        "Kina & närliggande"
+    ],
+    "512557": [
+        "Norden"
+    ],
+    "512558": [
+        "Ränte - SEK obligationer",
+        "Företag"
+    ],
+    "512559": [
+        "Branschfond",
+        "Ny energi"
+    ],
+    "512875": [
+        "Sverige"
+    ],
+    "513575": [
+        "Europa",
+        "Flexibel storlek bolag"
+    ],
+    "519995": [
+        "Blandfond - SEK",
+        "Försiktig"
+    ],
+    "523834": [
+        "Ränte - SEK obligationer",
+        "Flexibel",
+        "Högrisk"
+    ],
+    "523895": [
+        "Global",
+        "Flexibel"
+    ],
+    "524110": [
+        "Tillväxtmarknader",
+        "Nya"
+    ],
+    "528375": [
+        "Global",
+        "Mix bolag"
+    ],
+    "528376": [
+        "Blandfond - SEK",
+        "Försiktig"
+    ],
+    "528379": [
+        "Blandfond - SEK",
+        "Balanserad"
+    ],
+    "533855": [
+        "Hedgefond",
+        "Multi-strategi",
+        "Övriga"
+    ],
+    "535296": [
+        "Blandfond - tillväxtmarknader"
+    ],
+    "536695": [
+        "Ränte - SEK obligationer",
+        "Flexibel",
+        "Högrisk"
+    ],
+    "538155": [
+        "Ränte - SEK obligationer",
+        "Flexibel",
+        "Högrisk"
+    ],
+    "544595": [
+        "Asien ex Japan"
+    ],
+    "544596": [
+        "Ränte - SEK obligationer",
+        "Mix"
+    ],
+    "551035": [
+        "Branschfond",
+        "Fastighetsbolag övriga"
+    ],
+    "551875": [
+        "Bull/Bear",
+        "Aktier"
+    ],
+    "551876": [
+        "Bull/Bear",
+        "Aktier"
+    ],
+    "552855": [
+        "Ränte - övriga obligationer"
+    ],
+    "553535": [
+        "Lång/kort",
+        "Övriga"
+    ],
+    "559855": [
+        "Norden"
+    ],
+    "562715": [
+        "Global",
+        "Flexibel"
+    ],
+    "563115": [
+        "Ränte - SEK obligationer",
+        "Mix"
+    ],
+    "573156": [
+        "Norden"
+    ],
+    "589935": [
+        "Sverige",
+        "Små-/medelstora bolag"
+    ],
+    "590078": [
+        "Ränte - euro globala",
+        "Flexibel",
+        "Säkrade"
+    ],
+    "590079": [
+        "Blandfond - euro",
+        "Flexibel",
+        "Global"
+    ],
+    "590080": [
+        "Ränte - dollar obligationer",
+        "Högrisk"
+    ],
+    "590081": [
+        "Ränte - dollar obligationer",
+        "Högrisk"
+    ],
+    "592235": [
+        "Sverige"
+    ],
+    "592236": [
+        "Europa",
+        "Mix bolag"
+    ],
+    "596495": [
+        "Tillväxtmarknader"
+    ],
+    "596635": [
+        "Asien ex Japan"
+    ],
+    "596636": [
+        "USA",
+        "Mix bolag"
+    ],
+    "600075": [
+        "Global",
+        "Mix bolag"
+    ],
+    "600076": [
+        "Japan"
+    ],
+    "600077": [
+        "Branschfond",
+        "Fastighetsbolag"
+    ],
+    "600078": [
+        "Branschfond",
+        "Infrastruktur"
+    ],
+    "600079": [
+        "Branschfond",
+        "Fastighetsbolag Europa"
+    ],
+    "600080": [
+        "Branschfond",
+        "Fastighetsbolag Asien"
+    ],
+    "600081": [
+        "Branschfond",
+        "Infrastruktur"
+    ],
+    "600082": [
+        "Branschfond",
+        "Fastighetsbolag USA"
+    ],
+    "602915": [
+        "Global",
+        "Mix bolag"
+    ],
+    "616835": [
+        "Hedgefond",
+        "Modellbaserad terminshandel",
+        "Övriga"
+    ],
+    "616837": [
+        "Euroland"
+    ],
+    "625255": [
+        "Hedgefond",
+        "Global makro",
+        "Övriga"
+    ],
+    "625256": [
+        "Hedgefond",
+        "Övriga"
+    ],
+    "627796": [
+        "Hedgefond",
+        "Multi-strategi",
+        "Övriga"
+    ],
+    "634355": [
+        "Övriga aktiefonder"
+    ],
+    "644315": [
+        "Global",
+        "Tillväxtbolag"
+    ],
+    "644316": [
+        "Europa",
+        "Tillväxtbolag"
+    ],
+    "645075": [
+        "Ränte - euro förlagsbevis"
+    ],
+    "645076": [
+        "Kina"
+    ],
+    "648075": [
+        "Sverige"
+    ],
+    "650495": [
+        "Tillväxtmarknader"
+    ],
+    "652895": [
+        "Global",
+        "Mix bolag"
+    ],
+    "659035": [
+        "Global",
+        "Mix bolag"
+    ],
+    "659795": [
+        "Sverige",
+        "Små-/medelstora bolag"
+    ],
+    "661875": [
+        "Global",
+        "Flexibel"
+    ],
+    "663195": [
+        "Tillväxtmarknader"
+    ],
+    "666676": [
+        "Branschfond",
+        "Råvaror"
+    ],
+    "670776": [
+        "Branschfond",
+        "Vattenresurser"
+    ],
+    "670777": [
+        "Sverige"
+    ],
+    "679795": [
+        "Branschfond",
+        "Konsument"
+    ],
+    "679796": [
+        "USA",
+        "Småbolag"
+    ],
+    "680575": [
+        "Ränte - övriga obligationer"
+    ],
+    "685395": [
+        "Europa",
+        "Småbolag"
+    ],
+    "686931": [
+        "Ränte - SEK obligationer",
+        "Mix"
+    ],
+    "691674": [
+        "Asien ex Japan"
+    ],
+    "691675": [
+        "Europa",
+        "Flexibel storlek bolag"
+    ],
+    "691677": [
+        "Ränte - tillväxtmarknader",
+        "Obligationer"
+    ],
+    "692753": [
+        "Hedgefond",
+        "Multi-strategi",
+        "Övriga"
+    ],
+    "693833": [
+        "Sverige"
+    ],
+    "693993": [
+        "Ränte - övriga obligationer"
+    ],
+    "693994": [
+        "Global",
+        "Mix bolag"
+    ],
+    "694153": [
+        "Sverige"
+    ],
+    "694253": [
+        "Sverige",
+        "Små-/medelstora bolag"
+    ],
+    "696433": [
+        "Lång/kort",
+        "Övriga"
+    ],
+    "698234": [
+        "Branschfond",
+        "Infrastruktur"
+    ],
+    "700713": [
+        "Euroland"
+    ],
+    "702073": [
+        "Sverige",
+        "Små-/medelstora bolag"
+    ],
+    "708773": [
+        "Global",
+        "Flexibel"
+    ],
+    "713373": [
+        "Blandfond - SEK",
+        "Flexibel"
+    ],
+    "713374": [
+        "Branschfond",
+        "Fastighetsbolag Europa"
+    ],
+    "713375": [
+        "Global",
+        "Tillväxtbolag"
+    ],
+    "713377": [
+        "Global",
+        "Små/medelstora bolag"
+    ],
+    "716053": [
+        "Global",
+        "Mix bolag"
+    ],
+    "716153": [
+        "Global",
+        "Mix bolag"
+    ],
+    "732593": [
+        "Global",
+        "Mix bolag"
+    ],
+    "741453": [
+        "Global",
+        "Mix bolag"
+    ],
+    "746773": [
+        "Ränte - övriga obligationer"
+    ],
+    "746774": [
+        "Ränte - globala obligationer",
+        "Högrisk"
+    ],
+    "759593": [
+        "Branschfond",
+        "Ny teknik"
+    ],
+    "759973": [
+        "Europa",
+        "Småbolag"
+    ],
+    "766773": [
+        "Ränte - SEK obligationer",
+        "Företag"
+    ],
+    "766775": [
+        "Sverige"
+    ],
+    "766777": [
+        "Ränte - övriga obligationer"
+    ],
+    "766778": [
+        "Global",
+        "Flexibel"
+    ],
+    "766853": [
+        "Kina"
+    ],
+    "782933": [
+        "Kina"
+    ],
+    "783993": [
+        "Norge"
+    ],
+    "788393": [
+        "Blandfond - SEK",
+        "Aggressiv"
+    ],
+    "788394": [
+        "Global",
+        "Mix bolag"
+    ],
+    "788395": [
+        "Blandfond - SEK",
+        "Försiktig"
+    ],
+    "788396": [
+        "Blandfond - SEK",
+        "Balanserad"
+    ],
+    "788397": [
+        "Blandfond - SEK",
+        "Balanserad"
+    ],
+    "788398": [
+        "Blandfond - SEK",
+        "Aggressiv"
+    ],
+    "789174": [
+        "Sverige",
+        "Små-/medelstora bolag"
+    ],
+    "789175": [
+        "Sverige",
+        "Små-/medelstora bolag"
+    ],
+    "789993": [
+        "USA",
+        "Värdebolag"
+    ],
+    "791753": [
+        "Norden"
+    ],
+    "792013": [
+        "Lång/kort",
+        "Övriga"
+    ],
+    "795454": [
+        "Ränte - SEK obligationer",
+        "Företag"
+    ],
+    "795773": [
+        "Sverige"
+    ],
+    "799913": [
+        "Global",
+        "Små/medelstora bolag"
+    ],
+    "801494": [
+        "Sverige"
+    ],
+    "801495": [
+        "Blandfond - SEK",
+        "Balanserad"
+    ],
+    "801496": [
+        "Global",
+        "Mix bolag"
+    ],
+    "801497": [
+        "Global",
+        "Mix bolag"
+    ],
+    "801498": [
+        "Sverige"
+    ],
+    "801500": [
+        "Ränte - SEK obligationer",
+        "Mix"
+    ],
+    "801502": [
+        "Ränte - SEK obligationer",
+        "Medellånga"
+    ],
+    "801503": [
+        "Global & Sverige"
+    ],
+    "801504": [
+        "Blandfond - SEK",
+        "Försiktig"
+    ],
+    "801505": [
+        "Blandfond - SEK",
+        "Balanserad"
+    ],
+    "801713": [
+        "Ränte - SEK obligationer",
+        "Mix"
+    ],
+    "801853": [
+        "Blandfond - SEK",
+        "Aggressiv"
+    ],
+    "804453": [
+        "Sverige",
+        "Små-/medelstora bolag"
+    ],
+    "806333": [
+        "Global",
+        "Flexibel"
+    ],
+    "813853": [
+        "Ränte - övriga obligationer"
+    ],
+    "813855": [
+        "Ränte - euro globala",
+        "Valutasäkrade",
+        "Högrisk"
+    ],
+    "814733": [
+        "Blandfond - tillväxtmarknader"
+    ],
+    "818953": [
+        "Ränte - SEK obligationer",
+        "Flexibel",
+        "Högrisk"
+    ],
+    "823613": [
+        "Sverige"
+    ],
+    "823614": [
+        "Sverige"
+    ],
+    "827673": [
+        "Global",
+        "Mix bolag"
+    ],
+    "827894": [
+        "Blandfond - SEK",
+        "Flexibel"
+    ],
+    "830993": [
+        "Global",
+        "Små/medelstora bolag"
+    ],
+    "831733": [
+        "Ränte - euro obligationer",
+        "Statliga"
+    ],
+    "832734": [
+        "Ränte - dollar obligationer",
+        "Företag"
+    ],
+    "836873": [
+        "Europa",
+        "Mix bolag"
+    ],
+    "839253": [
+        "Branschfond",
+        "Fastighetsbolag Europa"
+    ],
+    "841333": [
+        "Blandfond - euro",
+        "Försiktig",
+        "Global"
+    ],
+    "848153": [
+        "Global",
+        "Mix bolag"
+    ],
+    "852914": [
+        "Global & Sverige"
+    ],
+    "853173": [
+        "Global",
+        "Flexibel"
+    ],
+    "853413": [
+        "Ränte - euro tillväxtm",
+        "Obligationer"
+    ],
+    "855014": [
+        "Blandfond - SEK",
+        "Balanserad"
+    ],
+    "855015": [
+        "Sverige"
+    ],
+    "862035": [
+        "Norden"
+    ],
+    "862036": [
+        "Ränte - övriga obligationer"
+    ],
+    "863473": [
+        "Kina"
+    ],
+    "864973": [
+        "Tillväxtmarknader"
+    ],
+    "864974": [
+        "Global",
+        "Flexibel"
+    ],
+    "864975": [
+        "Finland"
+    ],
+    "873613": [
+        "Ränte - SEK obligationer",
+        "Företag"
+    ],
+    "878733": [
+        "Global",
+        "Mix bolag"
+    ],
+    "880673": [
+        "Sverige",
+        "Små-/medelstora bolag"
+    ],
+    "880693": [
+        "Lång/kort",
+        "Övriga"
+    ],
+    "882553": [
+        "Europa",
+        "Mix bolag"
+    ],
+    "882673": [
+        "Kina"
+    ],
+    "882675": [
+        "Asien & Australien"
+    ],
+    "882676": [
+        "Global",
+        "Små/medelstora bolag"
+    ],
+    "882677": [
+        "Europa ex Storbr",
+        "Små-/medelstora"
+    ],
+    "886413": [
+        "Branschfond",
+        "Läkemedel"
+    ],
+    "886613": [
+        "Asien ex Japan"
+    ],
+    "887013": [
+        "Norden"
+    ],
+    "887413": [
+        "Ränte - SEK obligationer",
+        "Företag"
+    ],
+    "888654": [
+        "Kina",
+        "A-aktier"
+    ],
+    "891013": [
+        "Ränte - SEK obligationer",
+        "Företag"
+    ],
+    "891313": [
+        "Ränte - globala obligationer"
+    ],
+    "891315": [
+        "Övriga aktiefonder"
+    ],
+    "891316": [
+        "Ränte - globala obligationer",
+        "Högrisk"
+    ],
+    "891317": [
+        "Ränte - övriga obligationer"
+    ],
+    "894874": [
+        "Ränte - euro obligationer",
+        "Företag"
+    ],
+    "896853": [
+        "Norge"
+    ],
+    "899034": [
+        "Kina",
+        "A-aktier"
+    ],
+    "901093": [
+        "Global",
+        "Flexibel"
+    ],
+    "901673": [
+        "Ränte - SEK obligationer",
+        "Korta"
+    ],
+    "901674": [
+        "Ränte - euro tillväxtm",
+        "Obligationer"
+    ],
+    "907813": [
+        "Blandfond - SEK",
+        "Aggressiv"
+    ],
+    "907814": [
+        "Blandfond - SEK",
+        "Balanserad"
+    ],
+    "907815": [
+        "Blandfond - SEK",
+        "Försiktig"
+    ],
+    "907816": [
+        "USA",
+        "Småbolag"
+    ],
+    "907818": [
+        "Ränte - tillväxtm",
+        "Obligationer",
+        "Lokal valuta"
+    ],
+    "907820": [
+        "Norden"
+    ],
+    "909193": [
+        "Blandfond - SEK",
+        "Balanserad"
+    ],
+    "909774": [
+        "Branschfond",
+        "Vattenresurser"
+    ],
+    "909953": [
+        "Brasilien"
+    ],
+    "910093": [
+        "Tillväxtmarknader"
+    ],
+    "910094": [
+        "Global",
+        "Mix bolag"
+    ],
+    "913953": [
+        "Global",
+        "Tillväxtbolag"
+    ],
+    "916313": [
+        "Branschfond",
+        "Vattenresurser"
+    ],
+    "924973": [
+        "Global",
+        "Flexibel"
+    ],
+    "925393": [
+        "Kina"
+    ],
+    "926113": [
+        "Sverige"
+    ],
+    "927735": [
+        "Branschfond",
+        "Ny teknik"
+    ],
+    "927736": [
+        "Branschfond",
+        "Ny teknik"
+    ],
+    "927737": [
+        "Branschfond",
+        "Ny teknik"
+    ],
+    "929225": [
+        "Branschfond",
+        "Ny teknik"
+    ],
+    "933765": [
+        "Tillväxtmarknader",
+        "Små-/medelstora bolag"
+    ],
+    "934955": [
+        "Övriga aktiefonder"
+    ],
+    "937474": [
+        "Blandfond - SEK",
+        "Flexibel"
+    ],
+    "937914": [
+        "Blandfond - SEK",
+        "Flexibel"
+    ],
+    "944976": [
+        "Tillväxtmarknader"
+    ],
+    "945454": [
+        "Ränte - SEK obligationer",
+        "Företag"
+    ],
+    "949324": [
+        "Ränte - SEK obligationer",
+        "Företag"
+    ],
+    "950780": [
+        "Global",
+        "Mix bolag"
+    ],
+    "950781": [
+        "Ränte - övriga obligationer"
+    ],
+    "951762": [
+        "Global & Sverige"
+    ],
+    "951763": [
+        "Branschfond",
+        "Ny teknik"
+    ],
+    "953014": [
+        "Branschfond",
+        "Ny teknik"
+    ],
+    "953015": [
+        "Blandfond - SEK",
+        "Aggressiv"
+    ],
+    "953456": [
+        "Global",
+        "Flexibel"
+    ],
+    "960930": [
+        "Hedgefond",
+        "Multi-strategi",
+        "EUR"
+    ],
+    "964491": [
+        "Tillväxtmarknader"
+    ],
+    "965034": [
+        "Indien"
+    ],
+    "965035": [
+        "Blandfond - euro",
+        "Balanserad",
+        "Global"
+    ],
+    "965038": [
+        "Ränte - övriga obligationer"
+    ],
+    "965039": [
+        "Ränte - Asien obligationer"
+    ],
+    "965040": [
+        "Japan",
+        "Små-/medelstora bolag"
+    ],
+    "966254": [
+        "Ränte - Kina & närliggande",
+        "Högrisk"
+    ],
+    "972003": [
+        "Euroland"
+    ],
+    "972004": [
+        "Kina"
+    ],
+    "972005": [
+        "USA",
+        "Värdebolag"
+    ],
+    "972534": [
+        "Ränte - dollar obligationer",
+        "Mix"
+    ],
+    "981861": [
+        "Norden"
+    ],
+    "996614": [
+        "Europa",
+        "Flexibel storlek bolag"
+    ],
+    "996615": [
+        "USA",
+        "Flexibel storlek bolag"
+    ],
+    "1006231": [
+        "Global",
+        "Tillväxtbolag"
+    ],
+    "1006233": [
+        "Ränte - tillväxtm",
+        "Obligationer",
+        "Lokal valuta"
+    ],
+    "1009152": [
+        "Ränte - SEK obligationer",
+        "Flexibel",
+        "Högrisk"
+    ],
+    "1009153": [
+        "USA",
+        "Småbolag"
+    ],
+    "1009577": [
+        "Ränte - euro obligationer",
+        "Mix"
+    ],
+    "1011177": [
+        "Branschfond",
+        "Ny teknik"
+    ],
+    "1011194": [
+        "Global",
+        "Mix bolag"
+    ],
+    "1011195": [
+        "Blandfond - SEK",
+        "Balanserad"
+    ],
+    "1011196": [
+        "Norden",
+        "Små-/medelstora bolag"
+    ],
+    "1011197": [
+        "Sverige",
+        "Små-/medelstora bolag"
+    ],
+    "1011686": [
+        "Kina",
+        "A-aktier"
+    ],
+    "1012654": [
+        "Global",
+        "Tillväxtbolag"
+    ],
+    "1013074": [
+        "Sverige"
+    ],
+    "1015114": [
+        "Branschfond",
+        "Ädelmetaller"
+    ],
+    "1020238": [
+        "Tillväxtmarknader"
+    ],
+    "1023645": [
+        "Branschfond",
+        "Miljö"
+    ],
+    "1025147": [
+        "Global",
+        "Små/medelstora bolag"
+    ],
+    "1025148": [
+        "Tillväxtmarknader"
+    ],
+    "1025150": [
+        "USA",
+        "Mix bolag"
+    ],
+    "1029789": [
+        "Sverige",
+        "Små-/medelstora bolag"
+    ],
+    "1034185": [
+        "Blandfond - SEK",
+        "Aggressiv"
+    ],
+    "1038386": [
+        "Hedgefond",
+        "Global makro",
+        "Övriga"
+    ],
+    "1038774": [
+        "Ränte - övriga obligationer"
+    ],
+    "1038776": [
+        "Norden",
+        "Små-/medelstora bolag"
+    ],
+    "1038777": [
+        "Lång/kort",
+        "Övriga"
+    ],
+    "1038778": [
+        "Ränte - övriga obligationer"
+    ],
+    "1039468": [
+        "Sverige",
+        "Små-/medelstora bolag"
+    ],
+    "1040039": [
+        "Branschfond",
+        "Läkemedel"
+    ],
+    "1041067": [
+        "Europa",
+        "Mix bolag"
+    ],
+    "1044018": [
+        "Blandfond - SEK",
+        "Flexibel"
+    ],
+    "1047826": [
+        "Branschfond",
+        "Infrastruktur"
+    ],
+    "1051349": [
+        "Global",
+        "Flexibel"
+    ],
+    "1054935": [
+        "Europa",
+        "Småbolag"
+    ],
+    "1076398": [
+        "Global",
+        "Stor utdelning"
+    ],
+    "1084210": [
+        "Ränte - euro globala",
+        "Flexibel",
+        "Säkrade"
+    ],
+    "1087966": [
+        "Branschfond",
+        "Fastighetsbolag"
+    ],
+    "1088802": [
+        "Kina",
+        "A-aktier"
+    ],
+    "1089362": [
+        "Ränte - SEK obligationer",
+        "Mix"
+    ],
+    "1089363": [
+        "Ränte - SEK obligationer",
+        "Företag"
+    ],
+    "1096712": [
+        "Europa",
+        "Mix bolag"
+    ],
+    "1096906": [
+        "Branschfond",
+        "Industrimaterial"
+    ],
+    "1101836": [
+        "Europa",
+        "Småbolag"
+    ],
+    "1102641": [
+        "Branschfond",
+        "Ny teknik"
+    ],
+    "1106850": [
+        "Ränte - övriga obligationer"
+    ],
+    "1107135": [
+        "Ränte - SEK obligationer",
+        "Flexibel",
+        "Högrisk"
+    ],
+    "1107932": [
+        "Global",
+        "Tillväxtbolag"
+    ],
+    "1120416": [
+        "Norden"
+    ],
+    "1125641": [
+        "Ränte - SEK obligationer",
+        "Flexibel",
+        "Högrisk"
+    ],
+    "1129405": [
+        "Norden",
+        "Små-/medelstora bolag"
+    ],
+    "1130441": [
+        "Övriga"
+    ],
+    "1131557": [
+        "Blandfond - SEK",
+        "Balanserad"
+    ],
+    "1131558": [
+        "Ränte - SEK obligationer",
+        "Flexibel",
+        "Högrisk"
+    ],
+    "1132203": [
+        "Asien ex Japan"
+    ],
+    "1133347": [
+        "Övriga aktiefonder"
+    ],
+    "1140464": [
+        "Sverige",
+        "Små-/medelstora bolag"
+    ],
+    "1141039": [
+        "Europa",
+        "Mix bolag"
+    ],
+    "1141040": [
+        "Sverige"
+    ],
+    "1141041": [
+        "USA",
+        "Mix bolag"
+    ],
+    "1141042": [
+        "Ränte - SEK obligationer",
+        "Företag"
+    ],
+    "1141043": [
+        "Global",
+        "Mix bolag"
+    ],
+    "1141907": [
+        "Global",
+        "Mix bolag"
+    ],
+    "1142277": [
+        "Asien ex Japan"
+    ],
+    "1142574": [
+        "Norden"
+    ],
+    "1145780": [
+        "Branschfond",
+        "Ny teknik"
+    ],
+    "1145781": [
+        "Blandfond - SEK",
+        "Flexibel"
+    ],
+    "1145782": [
+        "Europa",
+        "Mix bolag"
+    ],
+    "1148786": [
+        "Europa",
+        "Mix bolag"
+    ],
+    "1148787": [
+        "Global & Sverige"
+    ],
+    "1149492": [
+        "Sverige",
+        "Små-/medelstora bolag"
+    ],
+    "1149493": [
+        "Branschfond",
+        "Råvaror"
+    ],
+    "1149494": [
+        "Branschfond",
+        "Ädelmetaller"
+    ],
+    "1150169": [
+        "Sverige",
+        "Små-/medelstora bolag"
+    ],
+    "1150816": [
+        "Branschfond",
+        "Konsument"
+    ],
+    "1151002": [
+        "Asien ex Japan"
+    ],
+    "1151003": [
+        "Branschfond",
+        "Ny energi"
+    ],
+    "1151004": [
+        "Branschfond",
+        "Vattenresurser"
+    ],
+    "1151293": [
+        "Sverige"
+    ],
+    "1154803": [
+        "Indien"
+    ],
+    "1158131": [
+        "Branschfond",
+        "Ny teknik"
+    ],
+    "1158132": [
+        "Ränte - Kina",
+        "Inhemska"
+    ],
+    "1158133": [
+        "Kina",
+        "A-aktier"
+    ],
+    "1161195": [
+        "Övriga aktiefonder"
+    ],
+    "1161196": [
+        "Norden"
+    ],
+    "1161889": [
+        "Branschfond",
+        "Ny teknik"
+    ],
+    "1162060": [
+        "Sverige",
+        "Små-/medelstora bolag"
+    ],
+    "1162341": [
+        "Ränte - SEK obligationer",
+        "Företag"
+    ],
+    "1162342": [
+        "Övriga aktiefonder"
+    ],
+    "1165640": [
+        "Global",
+        "Flexibel"
+    ],
+    "1166955": [
+        "Asien & Australien"
+    ],
+    "1166956": [
+        "Asien ex Japan"
+    ],
+    "1166958": [
+        "Branschfond",
+        "Ny energi"
+    ],
+    "1166959": [
+        "Indien"
+    ],
+    "1166960": [
+        "Europa",
+        "Mix bolag"
+    ],
+    "1166961": [
+        "Östeuropa"
+    ],
+    "1166962": [
+        "Branschfond",
+        "Konsument"
+    ],
+    "1166963": [
+        "Ränte - övriga obligationer"
+    ],
+    "1166964": [
+        "USA",
+        "Småbolag"
+    ],
+    "1170516": [
+        "Sverige",
+        "Små-/medelstora bolag"
+    ],
+    "1170517": [
+        "Branschfond",
+        "Fastighetsbolag övriga"
+    ],
+    "1173688": [
+        "Global",
+        "Tillväxtbolag"
+    ],
+    "1173689": [
+        "Övriga aktiefonder"
+    ],
+    "1173690": [
+        "Branschfond",
+        "Läkemedel"
+    ],
+    "1173921": [
+        "Global",
+        "Tillväxtbolag"
+    ],
+    "1183854": [
+        "Global",
+        "Mix bolag"
+    ],
+    "1193260": [
+        "Norden",
+        "Små-/medelstora bolag"
+    ],
+    "1193602": [
+        "Ränte - övriga obligationer"
+    ],
+    "1196130": [
+        "Sverige"
+    ],
+    "1197215": [
+        "Kina",
+        "A-aktier"
+    ],
+    "1198824": [
+        "Ränte - SEK obligationer",
+        "Flexibel",
+        "Högrisk"
+    ],
+    "1200236": [
+        "Ränte - övriga obligationer"
+    ],
+    "1200237": [
+        "Global",
+        "Tillväxtbolag"
+    ],
+    "1205490": [
+        "Blandfond - SEK",
+        "Försiktig"
+    ],
+    "1205491": [
+        "Blandfond - SEK",
+        "Balanserad"
+    ],
+    "1205492": [
+        "Global",
+        "Tillväxtbolag"
+    ],
+    "1205820": [
+        "Branschfond",
+        "Miljö"
+    ],
+    "1214801": [
+        "Ränte - SEK obligationer",
+        "Flexibel",
+        "Högrisk"
+    ],
+    "1214802": [
+        "Global",
+        "Tillväxtbolag"
+    ],
+    "1214803": [
+        "Tillväxtmarknader"
+    ],
+    "1214804": [
+        "Blandfond - euro",
+        "Flexibel",
+        "Global"
+    ],
+    "1214805": [
+        "Global",
+        "Mix bolag"
+    ],
+    "1214806": [
+        "Ränte - euro obligationer",
+        "Företag"
+    ],
+    "1214808": [
+        "Ränte - övriga obligationer"
+    ],
+    "1217309": [
+        "Norden"
+    ],
+    "1219833": [
+        "Ränte - övriga obligationer"
+    ],
+    "1220461": [
+        "Branschfond",
+        "Ny teknik"
+    ],
+    "1225079": [
+        "USA",
+        "Tillväxtbolag"
+    ],
+    "1225080": [
+        "Tillväxtmarknader"
+    ],
+    "1232059": [
+        "Branschfond",
+        "Ny teknik"
+    ],
+    "1232079": [
+        "Global",
+        "Tillväxtbolag"
+    ],
+    "1234479": [
+        "Global",
+        "Mix bolag"
+    ],
+    "1234480": [
+        "Blandfond - SEK",
+        "Balanserad"
+    ],
+    "1236399": [
+        "Sverige",
+        "Små-/medelstora bolag"
+    ],
+    "1237259": [
+        "Branschfond",
+        "Ny teknik"
+    ],
+    "1243379": [
+        "Europa",
+        "Mix bolag"
+    ],
+    "1243399": [
+        "Blandfond - NOK",
+        "Balanserad"
+    ],
+    "1243599": [
+        "Branschfond",
+        "Miljö"
+    ],
+    "1244539": [
+        "Branschfond",
+        "Konsument"
+    ],
+    "1252019": [
+        "Branschfond",
+        "Läkemedel"
+    ],
+    "1252020": [
+        "Branschfond",
+        "Ny energi"
+    ],
+    "1252021": [
+        "Branschfond",
+        "Konsument"
+    ],
+    "1252022": [
+        "Global",
+        "Mix bolag"
+    ],
+    "1252023": [
+        "Övriga aktiefonder"
+    ],
+    "1263179": [
+        "Global",
+        "Mix bolag"
+    ],
+    "1263759": [
+        "Branschfond",
+        "Infrastruktur"
+    ],
+    "1267599": [
+        "Branschfond",
+        "Fastighetsbolag övriga"
+    ],
+    "1270939": [
+        "Sverige"
+    ],
+    "1271439": [
+        "Sverige"
+    ],
+    "1271459": [
+        "Blandfond - SEK",
+        "Balanserad"
+    ],
+    "1275620": [
+        "Branschfond",
+        "Ny energi"
+    ],
+    "1276719": [
+        "Norden"
+    ],
+    "1276720": [
+        "Tillväxtmarknader"
+    ],
+    "1276721": [
+        "Norge"
+    ],
+    "1276722": [
+        "Sverige",
+        "Små-/medelstora bolag"
+    ],
+    "1276723": [
+        "Europa",
+        "Mix bolag"
+    ],
+    "1276724": [
+        "USA",
+        "Tillväxtbolag"
+    ],
+    "1276725": [
+        "Branschfond",
+        "Fastighetsbolag övriga"
+    ],
+    "1276726": [
+        "Global",
+        "Flexibel"
+    ],
+    "1277079": [
+        "Global",
+        "Flexibel"
+    ],
+    "1277999": [
+        "Branschfond",
+        "Fastighetsbolag övriga"
+    ],
+    "1278799": [
+        "Branschfond",
+        "Fastighetsbolag övriga"
+    ],
+    "1280199": [
+        "Norden",
+        "Små-/medelstora bolag"
+    ],
+    "1282299": [
+        "Global",
+        "Mix bolag"
+    ],
+    "1284739": [
+        "Tillväxtmarknader"
+    ],
+    "1285099": [
+        "Branschfond",
+        "Miljö"
+    ],
+    "1286005": [
+        "Branschfond",
+        "Ny teknik"
+    ],
+    "1291159": [
+        "Branschfond",
+        "Ny energi"
+    ],
+    "1292839": [
+        "Europa",
+        "Flexibel storlek bolag"
+    ],
+    "1292840": [
+        "Norden",
+        "Små-/medelstora bolag"
+    ],
+    "1293119": [
+        "Ränte - SEK obligationer",
+        "Mix"
+    ],
+    "1295739": [
+        "Branschfond",
+        "Miljö"
+    ],
+    "1295759": [
+        "Global",
+        "Små/medelstora bolag"
+    ],
+    "1297679": [
+        "Blandfond - SEK",
+        "Balanserad"
+    ],
+    "1301399": [
+        "Branschfond",
+        "Läkemedel"
+    ],
+    "1304759": [
+        "Blandfond - SEK",
+        "Försiktig"
+    ],
+    "1304760": [
+        "Blandfond - SEK",
+        "Försiktig"
+    ],
+    "1304761": [
+        "Blandfond - SEK",
+        "Balanserad"
+    ],
+    "1304762": [
+        "Blandfond - SEK",
+        "Aggressiv"
+    ],
+    "1307479": [
+        "Sverige"
+    ],
+    "1307499": [
+        "USA",
+        "Småbolag"
+    ],
+    "1307500": [
+        "Kina",
+        "A-aktier"
+    ],
+    "1310139": [
+        "Ränte - SEK obligationer",
+        "Flexibel",
+        "Högrisk"
+    ],
+    "1310159": [
+        "Ränte - SEK obligationer",
+        "Företag"
+    ],
+    "1319939": [
+        "Branschfond",
+        "Ny teknik"
+    ],
+    "1319940": [
+        "Branschfond",
+        "Jordbruk"
+    ],
+    "1320939": [
+        "Euroland"
+    ],
+    "1320940": [
+        "ASEAN"
+    ],
+    "1320941": [
+        "Storbritannien",
+        "Flexibel storlex"
+    ],
+    "1321459": [
+        "Norden",
+        "Små-/medelstora bolag"
+    ],
+    "1322459": [
+        "Ränte - SEK obligationer",
+        "Flexibel",
+        "Högrisk"
+    ],
+    "1324839": [
+        "Branschfond",
+        "Miljö"
+    ],
+    "1327039": [
+        "Global",
+        "Flexibel"
+    ],
+    "1333719": [
+        "Ränte - övriga obligationer"
+    ],
+    "1334999": [
+        "Branschfond",
+        "Kommunikation"
+    ],
+    "1335000": [
+        "Europa",
+        "Småbolag"
+    ],
+    "1335001": [
+        "Global",
+        "Stor utdelning"
+    ],
+    "1335002": [
+        "Ränte - globala obligationer",
+        "Företag"
+    ],
+    "1335003": [
+        "Branschfond",
+        "Miljö"
+    ],
+    "1340059": [
+        "Ränte - övriga obligationer"
+    ],
+    "1340459": [
+        "Ränte - övriga obligationer"
+    ],
+    "1340460": [
+        "Norge"
+    ],
+    "1340461": [
+        "Norge"
+    ],
+    "1341499": [
+        "Global",
+        "Tillväxtbolag"
+    ],
+    "1342559": [
+        "Branschfond",
+        "Fastighetsbolag övriga"
+    ],
+    "1344319": [
+        "Kina",
+        "A-aktier"
+    ],
+    "1356639": [
+        "Global",
+        "Värdebolag"
+    ],
+    "1358060": [
+        "Global",
+        "Mix bolag"
+    ],
+    "1360913": [
+        "Norge"
+    ],
+    "1369439": [
+        "Norden",
+        "Små-/medelstora bolag"
+    ],
+    "1370204": [
+        "Östeuropa ex Ryssland"
+    ],
+    "1370205": [
+        "Östeuropa ex Ryssland"
+    ],
+    "1373839": [
+        "Global",
+        "Små/medelstora bolag"
+    ],
+    "1375940": [
+        "Norden",
+        "Små-/medelstora bolag"
+    ],
+    "1377710": [
+        "USA",
+        "Mix bolag"
+    ],
+    "1386016": [
+        "Råvaror - Blandade"
+    ],
+    "1403179": [
+        "Global",
+        "Flexibel"
+    ],
+    "1404559": [
+        "Global",
+        "Mix bolag"
+    ],
+    "1407519": [
+        "Ränte - SEK obligationer",
+        "Företag"
+    ],
+    "1420539": [
+        "Global",
+        "Mix bolag"
+    ],
+    "1424713": [
+        "Ränte - globala obligationer",
+        "Högrisk"
+    ],
+    "1424714": [
+        "Ränte - globala obligationer",
+        "Företag"
+    ],
+    "1424715": [
+        "Övriga aktiefonder"
+    ],
+    "1427104": [
+        "Global",
+        "Mix bolag"
+    ],
+    "1428359": [
+        "Branschfond",
+        "Miljö"
+    ],
+    "1428360": [
+        "Europa",
+        "Värdebolag"
+    ],
+    "1428361": [
+        "Global",
+        "Stor utdelning"
+    ],
+    "1428362": [
+        "Branschfond",
+        "Infrastruktur"
+    ],
+    "1428363": [
+        "Global",
+        "Flexibel"
+    ],
+    "1428364": [
+        "Global",
+        "Mix bolag"
+    ],
+    "1428365": [
+        "Global",
+        "Mix bolag"
+    ],
+    "1428366": [
+        "Japan",
+        "Små-/medelstora bolag"
+    ],
+    "1428367": [
+        "Global",
+        "Flexibel"
+    ],
+    "1432959": [
+        "Norden",
+        "Små-/medelstora bolag"
+    ],
+    "1445330": [
+        "Global",
+        "Mix bolag"
+    ],
+    "1445331": [
+        "Europa",
+        "Mix bolag"
+    ],
+    "1445332": [
+        "Global",
+        "Mix bolag"
+    ],
+    "1445333": [
+        "Global",
+        "Mix bolag"
+    ],
+    "1445334": [
+        "USA",
+        "Mix bolag"
+    ],
+    "1451841": [
+        "Branschfond",
+        "Ny energi"
+    ],
+    "1451859": [
+        "Global",
+        "Små/medelstora bolag"
+    ],
+    "1460439": [
+        "Europa",
+        "Småbolag"
+    ],
+    "1471966": [
+        "Global",
+        "Små/medelstora bolag"
+    ],
+    "1474099": [
+        "Sverige"
+    ],
+    "1475439": [
+        "Sverige",
+        "Små-/medelstora bolag"
+    ],
+    "1476267": [
+        "Norge"
+    ],
+    "1478119": [
+        "Branschfond",
+        "Fastighetsbolag"
+    ],
+    "1483999": [
+        "Sverige",
+        "Små-/medelstora bolag"
+    ],
+    "1485364": [
+        "Global",
+        "Mix bolag"
+    ],
+    "1485365": [
+        "Blandfond - SEK",
+        "Försiktig"
+    ],
+    "1485366": [
+        "Euroland"
+    ],
+    "1485379": [
+        "Europa",
+        "Småbolag"
+    ],
+    "1485380": [
+        "Europa",
+        "Småbolag"
+    ],
+    "1490199": [
+        "Branschfond",
+        "Ny teknik"
+    ],
+    "1498760": [
+        "Japan"
+    ],
+    "1498779": [
+        "Kina"
+    ],
+    "1498799": [
+        "Global",
+        "Mix bolag"
+    ],
+    "1503839": [
+        "Global",
+        "Små/medelstora bolag"
+    ],
+    "1506919": [
+        "Norden"
+    ],
+    "1506920": [
+        "Branschfond",
+        "Läkemedel"
+    ],
+    "1507719": [
+        "Ränte - globala obligationer"
+    ],
+    "1507720": [
+        "Ränte - NOK obligationer",
+        "Högrisk"
+    ],
+    "1508177": [
+        "Global",
+        "Stor utdelning"
+    ],
+    "1508179": [
+        "Global",
+        "Stor utdelning"
+    ],
+    "1508199": [
+        "Ränte - SEK obligationer",
+        "Mix"
+    ],
+    "1509079": [
+        "Europa",
+        "Mix bolag"
+    ],
+    "1509080": [
+        "Branschfond",
+        "Finans"
+    ],
+    "1509081": [
+        "Tillväxtmarknader"
+    ],
+    "1509082": [
+        "Global",
+        "Mix bolag"
+    ],
+    "1509083": [
+        "Global",
+        "Mix bolag"
+    ],
+    "1509084": [
+        "Norden"
+    ],
+    "1509085": [
+        "Norge"
+    ],
+    "1509086": [
+        "Branschfond",
+        "Ny teknik"
+    ],
+    "1509087": [
+        "Branschfond",
+        "Kommunikation"
+    ],
+    "1509088": [
+        "USA",
+        "Mix bolag"
+    ],
+    "1513539": [
+        "Sverige"
+    ],
+    "1513540": [
+        "Norden"
+    ],
+    "1513541": [
+        "Norden"
+    ],
+    "1514499": [
+        "Ränte - övriga obligationer"
+    ],
+    "1515259": [
+        "Branschfond",
+        "Råvaror"
+    ],
+    "1526839": [
+        "Global",
+        "Mix bolag"
+    ],
+    "1528539": [
+        "Global",
+        "Tillväxtbolag"
+    ],
+    "1528559": [
+        "Branschfond",
+        "Infrastruktur"
+    ],
+    "1529359": [
+        "Blandfond - euro",
+        "Balanserad",
+        "Global"
+    ],
+    "1529360": [
+        "Tillväxtmarknader"
+    ],
+    "1529361": [
+        "Ränte - dollar globala obl företag",
+        "Säkrade"
+    ],
+    "1529362": [
+        "Branschfond",
+        "Industrimaterial"
+    ],
+    "1533579": [
+        "Global",
+        "Flexibel"
+    ],
+    "1533580": [
+        "Branschfond",
+        "Ny teknik"
+    ],
+    "1533581": [
+        "Global",
+        "Mix bolag"
+    ],
+    "1533582": [
+        "Global",
+        "Mix bolag"
+    ],
+    "1533583": [
+        "Global",
+        "Mix bolag"
+    ],
+    "1533584": [
+        "Branschfond",
+        "Miljö"
+    ],
+    "1533585": [
+        "Global",
+        "Mix bolag"
+    ],
+    "1533586": [
+        "Global",
+        "Tillväxtbolag"
+    ],
+    "1533588": [
+        "Kina",
+        "A-aktier"
+    ],
+    "1534499": [
+        "Branschfond",
+        "Ny teknik"
+    ],
+    "1534739": [
+        "Lång/kort",
+        "Övriga"
+    ],
+    "1534740": [
+        "Östeuropa"
+    ],
+    "1534741": [
+        "Östeuropa"
+    ],
+    "1534742": [
+        "Branschfond",
+        "Bioteknik"
+    ],
+    "1541799": [
+        "Ränte - euro globala",
+        "Valutasäkrade",
+        "Högrisk"
+    ],
+    "1542852": [
+        "Tillväxtmarknader"
+    ],
+    "1547259": [
+        "Global",
+        "Små/medelstora bolag"
+    ],
+    "1547279": [
+        "Branschfond",
+        "Ny energi"
+    ],
+    "1547299": [
+        "Norden"
+    ],
+    "1547319": [
+        "Asien ex Japan",
+        "Små-/medelstora bolag"
+    ],
+    "1547320": [
+        "Global",
+        "Flexibel"
+    ],
+    "1547321": [
+        "Branschfond",
+        "Onoterat"
+    ],
+    "1547322": [
+        "Indien"
+    ],
+    "1547323": [
+        "Branschfond",
+        "Ny teknik"
+    ],
+    "1547324": [
+        "Tillväxtmarknader"
+    ],
+    "1551840": [
+        "Hedgefond",
+        "Global makro",
+        "EUR"
+    ],
+    "1555319": [
+        "Ränte - NOK obligationer",
+        "Medellånga"
+    ],
+    "1570539": [
+        "Ränte - SEK obligationer",
+        "Flexibel",
+        "Högrisk"
+    ]
+}

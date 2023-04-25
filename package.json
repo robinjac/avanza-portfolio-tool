@@ -16,7 +16,8 @@
         "fetch:funds": "node scripts/fetch-funds",
         "fetch:datapoints": "node scripts/fetch-datapoints",
         "transform:funds": "node scripts/transform-funds",
-        "transform:datapoints": "node scripts/transform-datapoints"
+        "transform:datapoints": "node scripts/transform-datapoints",
+        "extract:categories": "node scripts/extract-categories"
     },
     "dependencies": {
         "node-fetch": "^3.3.1",
