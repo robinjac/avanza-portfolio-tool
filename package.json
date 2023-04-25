@@ -19,7 +19,8 @@
         "transform:funds": "node scripts/transform-funds",
         "transform:datapoints": "node scripts/transform-datapoints",
         "extract:categories": "node scripts/extract-categories",
-        "extract:sectors": "node scripts/extract-sectors"
+        "extract:sectors": "node scripts/extract-sectors",
+        "extract:countries": "node scripts/extract-countries"
     },
     "dependencies": {
         "node-fetch": "^3.3.1",
