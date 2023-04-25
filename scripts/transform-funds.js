@@ -6,6 +6,7 @@ const baseURL = process.cwd();
 const funds = JSON.parse(readFileSync(path.resolve(baseURL, "./assets/funds.json"), "utf-8"));
 
 const fields = [
+    "orderbookId",
     "isin",
     "name",
     "rating",
@@ -29,6 +30,7 @@ const fields = [
 ];
 
 const toLabel = {
+    orderbookId: "Id",
     isin: "ISIN",
     name: "Name",
     rating: "Rating",

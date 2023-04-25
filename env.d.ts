@@ -98,6 +98,7 @@ interface Fund {
 }
 
 interface ReducedFund {
+    Id: number;
     ISIN: string;
     Name: string;
     Rating: number;
