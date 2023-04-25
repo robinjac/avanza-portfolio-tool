@@ -18,7 +18,8 @@
         "fetch:portfolio": "node scripts/fetch-portfolio",
         "transform:funds": "node scripts/transform-funds",
         "transform:datapoints": "node scripts/transform-datapoints",
-        "extract:categories": "node scripts/extract-categories"
+        "extract:categories": "node scripts/extract-categories",
+        "extract:sectors": "node scripts/extract-sectors"
     },
     "dependencies": {
         "node-fetch": "^3.3.1",
