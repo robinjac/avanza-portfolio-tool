@@ -5,6 +5,6 @@ const filePath = process.argv[2];
 
 const baseURL = process.cwd();
 
-const funds = JSON.parse(readFileSync(path.resolve(baseURL, filePath), "utf-8"));
+const things = JSON.parse(readFileSync(path.resolve(baseURL, filePath), "utf-8"));
 
-console.log("Number of funds: " + funds.length);
+console.log("Number of things: " + things.length);

@@ -10,8 +10,9 @@
         "build-only": "vite build",
         "type-check": "vue-tsc --noEmit",
         "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-        "count:funds": "node scripts/count-funds ./assets/funds.json",
-        "count:partial-funds": "node scripts/count-funds ./assets/partial-funds.json",
+        "count:funds": "node scripts/count ./assets/funds.json",
+        "count:partial-funds": "node scripts/count ./assets/partial-funds.json",
+        "count:datapoints": "node scripts/count ./assets/datapoints.json",
         "fetch:funds": "node scripts/fetch-funds",
         "fetch:datapoints": "node scripts/fetch-datapoints",
         "transform:funds": "node scripts/transform-funds"
