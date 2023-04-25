@@ -15,7 +15,8 @@
         "count:datapoints": "node scripts/count ./assets/datapoints.json",
         "fetch:funds": "node scripts/fetch-funds",
         "fetch:datapoints": "node scripts/fetch-datapoints",
-        "transform:funds": "node scripts/transform-funds"
+        "transform:funds": "node scripts/transform-funds",
+        "transform:datapoints": "node scripts/transform-datapoints"
     },
     "dependencies": {
         "node-fetch": "^3.3.1",
