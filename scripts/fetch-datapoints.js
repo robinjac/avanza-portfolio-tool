@@ -26,4 +26,4 @@ for (const { Id } of funds) {
     datapoints.push(fundData);
 }
 
-writeFileSync(path.resolve(baseURL, "./assets/funds-datapoints.json"), JSON.stringify(datapoints, null, 4));
+writeFileSync(path.resolve(baseURL, "./assets/datapoints.json"), JSON.stringify(datapoints, null, 4));
