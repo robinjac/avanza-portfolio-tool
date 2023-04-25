@@ -5,6 +5,7 @@ const baseURL = process.cwd();
 
 const funds = JSON.parse(readFileSync(path.resolve(baseURL, "./assets/funds.json"), "utf-8"));
 
+// Select only these fields from the complete data
 const fields = [
     "orderbookId",
     "isin",
