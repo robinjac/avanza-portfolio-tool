@@ -96,3 +96,26 @@ interface Fund {
     productInvolvements: string[];
     productInvolvementViews: ProductInvolvementView[];
 }
+
+interface ReducedFund {
+    ISIN: string;
+    Name: string;
+    Rating: number;
+    Risk: number;
+    "1 Day": number;
+    "1 Week": number;
+    "1 Month": number;
+    "3 Months": number;
+    "1 Year": number;
+    "This Year": number;
+    "3 Years": number;
+    "5 Years": number;
+    "10 Years": number;
+    Sharpe: number;
+    StdDev: number;
+    Benchmark: string;
+    Fee: number;
+    Owners: number;
+    Category: string;
+    Company: string;
+}
