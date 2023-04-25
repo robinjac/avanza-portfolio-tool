@@ -15,6 +15,7 @@
         "count:datapoints": "node scripts/count ./assets/datapoints.json",
         "fetch:funds": "node scripts/fetch-funds",
         "fetch:datapoints": "node scripts/fetch-datapoints",
+        "fetch:portfolio": "node scripts/fetch-portfolio",
         "transform:funds": "node scripts/transform-funds",
         "transform:datapoints": "node scripts/transform-datapoints",
         "extract:categories": "node scripts/extract-categories"
