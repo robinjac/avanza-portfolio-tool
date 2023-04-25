@@ -1,5 +1,8 @@
-const https = require("node:https");
-const fs = require("node:fs");
+import https from "node:https";
+import { writeFileSync } from "node:fs";
+import path from "node:path";
+
+const baseURL = process.cwd();
 
 let funds = [];
 const numberOfFunds = 1369;
@@ -60,7 +63,7 @@ const makeRequest = (index_) => {
         res.on("end", () => {
             funds = [...funds, ...JSON.parse(data).fundListViews];
 
-            fs.writeFileSync("../assets/funds.json", JSON.stringify(funds, null, 4));
+            writeFileSync(path.resolve(baseURL, "./assets/funds.json"), JSON.stringify(funds, null, 4));
 
             if (index_ < numberOfFunds) {
                 setTimeout(() => makeRequest(index_ + increment), timeout);

@@ -2,6 +2,7 @@
     "name": "avanza-portfolio-tool",
     "version": "0.0.0",
     "private": true,
+    "type": "module",
     "scripts": {
         "dev": "vite",
         "build": "run-p type-check build-only",
@@ -9,8 +10,9 @@
         "build-only": "vite build",
         "type-check": "vue-tsc --noEmit",
         "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-        "count:funds": "node ./scripts/count-funds.js ./assets/funds.json",
-        "count:partial-funds": "node ./scripts/count-funds.js ./assets/partial-funds.json"
+        "count:funds": "node scripts/count-funds ./assets/funds.json",
+        "count:partial-funds": "node scripts/count-funds ./assets/partial-funds.json",
+        "fetch:funds": "node scripts/fetch-funds"
     },
     "dependencies": {
         "node-fetch": "^3.3.1",
