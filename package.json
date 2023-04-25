@@ -13,6 +13,8 @@
         "count:funds": "node scripts/count ./assets/funds.json",
         "count:partial-funds": "node scripts/count ./assets/partial-funds.json",
         "count:datapoints": "node scripts/count ./assets/datapoints.json",
+        "count:holdings": "node scripts/count ./assets/holdings.json",
+        "count:holdings-buyable": "node scripts/count ./assets/holdings-buyable.json",
         "fetch:funds": "node scripts/fetch-funds",
         "fetch:datapoints": "node scripts/fetch-datapoints",
         "fetch:portfolio": "node scripts/fetch-portfolio",
@@ -20,7 +22,8 @@
         "transform:datapoints": "node scripts/transform-datapoints",
         "extract:categories": "node scripts/extract-categories",
         "extract:sectors": "node scripts/extract-sectors",
-        "extract:countries": "node scripts/extract-countries"
+        "extract:countries": "node scripts/extract-countries",
+        "extract:holdings": "node scripts/extract-holdings"
     },
     "dependencies": {
         "node-fetch": "^3.3.1",
