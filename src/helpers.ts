@@ -24,14 +24,12 @@ export const rankSort = (
     f1: NumericValues,
     f2: NumericValues,
     index: number,
-    columnsSelected: SelectedColumn[],
-    columnKeys: StringDict
+    columnsSelected: SelectedColumn[]
 ): 0 | 1 | -1 => {
     const column = columnsSelected[index];
-    const key = columnKeys[column.name];
 
-    const v1 = f1[key] ?? -Infinity;
-    const v2 = f2[key] ?? -Infinity;
+    const v1 = f1[column.name] ?? -Infinity;
+    const v2 = f2[column.name] ?? -Infinity;
 
     if (distance(v1, v2) >= threshold(v1, 8)) {
         if (v1 < v2) {
@@ -48,22 +46,7 @@ export const rankSort = (
     }
 
     // Values are considered equal, we check the next selected column
-    return rankSort(f1, f2, index + 1, columnsSelected, columnKeys);
-};
-
-export const formatColumnName = (name: string): string => {
-    return name
-        .split(/(?=[A-Z])/)
-        .map((name_) => name_.charAt(0).toUpperCase() + name_.slice(1))
-        .join(" ");
-};
-
-export const createColumnMap = (columnMapping: StringDict, columns: string[]): StringDict => {
-    for (const column of columns) {
-        columnMapping[formatColumnName(column)] = column;
-    }
-
-    return columnMapping;
+    return rankSort(f1, f2, index + 1, columnsSelected);
 };
 
 export const formatNumber = (num: number): number => Math.round(num * 10) / 10;

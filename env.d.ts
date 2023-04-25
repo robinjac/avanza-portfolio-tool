@@ -4,10 +4,6 @@ type NumericValues = {
     [key: string]: number;
 };
 
-type StringDict = {
-    [key: string]: string;
-};
-
 type SelectedColumn = {
     name: string;
     sortOrder: 1 | -1;
@@ -42,8 +38,6 @@ interface FundTag {
     title: string;
     fundTagCategory: string;
 }
-
-type PartialFund = { [name: string]: string | number };
 
 interface Fund {
     isin: string;
@@ -98,7 +92,7 @@ interface Fund {
 }
 
 interface ReducedFund {
-    Id: number;
+    Id: string;
     ISIN: string;
     Name: string;
     Rating: number;
@@ -128,7 +122,7 @@ interface Point {
 
 interface DataPoints {
     dataSeries: Point[];
-    id: number;
+    id: string;
     name: string;
     fromDate: string;
     toDate: string;

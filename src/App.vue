@@ -1,22 +1,14 @@
 <script lang="ts">
-import fundsData from "../assets/funds.json";
-import { rankSort, formatColumnName, createColumnMap, formatNumber } from "./helpers";
+import fundsData from "../assets/funds-transformed.json";
+import { rankSort, formatNumber } from "./helpers";
 
-const funds = fundsData as Fund[];
+const funds = fundsData as ReducedFund[];
 
-const defaultSelectedColumns: string[] = [
-    "developmentOneYear",
-    "developmentFiveYears",
-    "rating",
-    "risk",
-    "totalFee",
-].map(formatColumnName);
+const defaultSelectedColumns: string[] = ["1 Year", "5 Years", "Rating", "Risk", "Fee"];
 
 const numericOnlyColumns: string[] = Object.entries(funds[0])
     .filter(([, value]) => typeof value === "number")
     .map(([prop]) => prop);
-
-const columnKeys: StringDict = createColumnMap({}, numericOnlyColumns);
 
 export default {
     data() {
@@ -24,10 +16,9 @@ export default {
             columnsSelected: [] as SelectedColumn[],
             funds,
             page: 1,
-            columnKeys,
             defaultSelectedColumns,
             selectedColumns: defaultSelectedColumns,
-            availableColumns: numericOnlyColumns.map(formatColumnName),
+            availableColumns: numericOnlyColumns,
             nrOfRows: 10,
         };
     },
@@ -70,14 +61,13 @@ export default {
                 column.sortOrder = -column.sortOrder as -1 | 1;
             }
         },
-        handleSort(fund1: Fund, fund2: Fund): 0 | 1 | -1 {
+        handleSort(fund1: ReducedFund, fund2: ReducedFund): 0 | 1 | -1 {
             if (this.columnsSelected.length > 0) {
                 return rankSort(
                     fund1 as unknown as NumericValues,
                     fund2 as unknown as NumericValues,
                     0,
-                    this.columnsSelected,
-                    columnKeys
+                    this.columnsSelected
                 );
             } else {
                 return 0;
@@ -176,10 +166,10 @@ export default {
                                 v-for="fund in [...funds]
                                     .sort(handleSort)
                                     .slice((page - 1) * nrOfRows, page * nrOfRows)"
-                                :key="fund.isin"
+                                :key="fund.Id"
                             >
                                 <td style="min-width: 300px">
-                                    {{ fund.name }}
+                                    {{ fund.Name }}
                                 </td>
                                 <td
                                     v-for="(column, index) in selectedColumns"
@@ -187,7 +177,7 @@ export default {
                                         'text-right': index === selectedColumns.length - 1,
                                     }"
                                 >
-                                    {{ formatNumber((fund as unknown as NumericValues)[columnKeys[column]]) }}
+                                    {{ formatNumber((fund as unknown as NumericValues)[column]) }}
                                 </td>
                             </tr>
                         </tbody>
