@@ -19,9 +19,9 @@ for (const { Id } of funds) {
         },
     });
 
-    const fundData = await response.json();
+    const data = await response.json();
 
-    portfolioData.push(fundData);
+    portfolioData.push({id: Id, ...data});
 }
 
 writeFileSync(path.resolve(baseURL, "./assets/portfolio-data.json"), JSON.stringify(portfolioData, null, 4));
