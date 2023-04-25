@@ -1,10 +1,11 @@
-import https from "node:https";
 import { writeFileSync } from "node:fs";
 import path from "node:path";
+import fetch from "node-fetch";
 
 const baseURL = process.cwd();
-
 let funds = [];
+
+// Configurations
 const numberOfFunds = 1369;
 const timeout = 500; // In ms
 const increment = 20; // 20 funds at at time
@@ -40,44 +41,33 @@ const createPayload = (index_) =>
         euArticleTypeFilter: [],
     });
 
-const makeRequest = (index_) => {
+const makeRequest = async (index_) => {
     const payload = createPayload(index_);
 
-    const options = {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-            "Content-Length": payload.length,
-        },
-    };
-
-    const req = https.request(url, options, (res) => {
-        let data = "";
-
-        res.setEncoding("utf8");
-
-        res.on("data", (chunk) => {
-            data += chunk;
+    try {
+        const response = await fetch(url, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "Content-Length": payload.length,
+            },
+            body: payload,
         });
 
-        res.on("end", () => {
-            funds = [...funds, ...JSON.parse(data).fundListViews];
+        const json = await response.json();
 
-            writeFileSync(path.resolve(baseURL, "./assets/funds.json"), JSON.stringify(funds, null, 4));
+        funds = [...funds, ...json.fundListViews];
 
-            if (index_ < numberOfFunds) {
-                setTimeout(() => makeRequest(index_ + increment), timeout);
-            }
-        });
-    });
+        writeFileSync(path.resolve(baseURL, "./assets/funds.json"), JSON.stringify(funds, null, 4));
 
-    req.on("error", (e) => {
-        console.error(`problem with request: ${e.message}`);
-    });
+        if (index_ < numberOfFunds) {
+            setTimeout(() => makeRequest(index_ + increment), timeout);
+        }
 
-    req.write(payload);
-    req.end();
-    console.log("fetching at index: " + index_);
+        console.log("fetching at index: " + index_);
+    } catch ({ message }) {
+        console.error(`problem with request: ${message}`);
+    }
 };
 
 // Start at index = 0
