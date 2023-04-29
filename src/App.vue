@@ -45,7 +45,7 @@ export default {
         columnRank(columnName: string): number {
             return this.columnsSelected.map(({ name }) => name).indexOf(columnName) + 1;
         },
-        columnSortOrder(columnName: string): -1 | 1 {
+        columnSortOrder(columnName: string): SortOrder {
             const column = this.columnsSelected.find(({ name }) => name === columnName);
 
             if (column !== undefined) {
@@ -61,17 +61,8 @@ export default {
                 column.sortOrder = -column.sortOrder as -1 | 1;
             }
         },
-        handleSort(fund1: ReducedFund, fund2: ReducedFund): 0 | 1 | -1 {
-            if (this.columnsSelected.length > 0) {
-                return rankSort(
-                    fund1 as unknown as NumericValues,
-                    fund2 as unknown as NumericValues,
-                    0,
-                    this.columnsSelected
-                );
-            } else {
-                return 0;
-            }
+        handleSort(fund1: ReducedFund, fund2: ReducedFund): SortOrder {
+            return rankSort(fund1 as unknown as NumericValues, fund2 as unknown as NumericValues, this.columnsSelected);
         },
         formatNumber(num: number | null): string {
             if (typeof num === "number") {

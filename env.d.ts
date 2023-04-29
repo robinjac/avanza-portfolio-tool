@@ -6,8 +6,10 @@ type NumericValues = {
 
 type SelectedColumn = {
     name: string;
-    sortOrder: 1 | -1;
+    sortOrder: SortOrder;
 };
+
+type SortOrder = 1 | -1 | 0;
 
 type DataTableHead = {
     key: string;

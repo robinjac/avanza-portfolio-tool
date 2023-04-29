@@ -20,33 +20,27 @@ function threshold(num: number, sensitivity: number): number {
     }
 }
 
-export const rankSort = (
-    f1: NumericValues,
-    f2: NumericValues,
-    index: number,
-    columnsSelected: SelectedColumn[]
-): 0 | 1 | -1 => {
-    const column = columnsSelected[index];
-
-    const v1 = f1[column.name] ?? -Infinity;
-    const v2 = f2[column.name] ?? -Infinity;
-
-    if (distance(v1, v2) >= threshold(v1, 8)) {
-        if (v1 < v2) {
-            return column.sortOrder;
-        }
-
-        if (v1 > v2) {
-            return -column.sortOrder as 1 | -1;
-        }
-    }
-
-    if (index === columnsSelected.length - 1) {
-        return 0;
-    }
-
-    // Values are considered equal, we check the next selected column
-    return rankSort(f1, f2, index + 1, columnsSelected);
-};
-
 export const formatNumber = (num: number): number => Math.round(num * 10) / 10;
+
+export const rankSort = (a: NumericValues, b: NumericValues, columns: SelectedColumn[]): SortOrder => {
+    let index = 0;
+    let comparison = 0;
+
+    while (comparison === 0 && index < columns.length) {
+        const ratio = columns[index];
+        const x = a[ratio.name] ?? -Infinity;
+        const y = b[ratio.name] ?? -Infinity;
+
+        if (distance(x, y) > threshold(x, 8)) {
+            if (x < y) {
+                comparison = columns[index].sortOrder;
+            } else {
+                comparison = -columns[index].sortOrder;
+            }
+        }
+
+        index++;
+    }
+
+    return comparison as SortOrder;
+};
