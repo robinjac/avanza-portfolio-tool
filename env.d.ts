@@ -46,6 +46,7 @@ interface FundTag {
     fundTagCategory: string;
 }
 
+/*
 interface Fund {
     isin: string;
     name: string;
@@ -96,12 +97,9 @@ interface Fund {
     sustainabilityRatingCategoryName: string;
     productInvolvements: string[];
     productInvolvementViews: ProductInvolvementView[];
-}
+}*/
 
-interface ReducedFund {
-    Id: string;
-    ISIN: string;
-    Name: string;
+type FundData = {
     Rating: number;
     Risk: number;
     "1 Day": number;
@@ -115,9 +113,16 @@ interface ReducedFund {
     "10 Years": number;
     Sharpe: number;
     StdDev: number;
-    Benchmark: string;
     Fee: number;
     Owners: number;
+};
+
+interface Fund {
+    Id: string;
+    ISIN: string;
+    Name: string;
+    Data: FundData;
+    Benchmark: string;
     Category: string;
     Company: string;
 }

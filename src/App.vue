@@ -2,13 +2,9 @@
 import fundsData from "../assets/funds-transformed.json";
 import { rankSort, formatNumber } from "./helpers";
 
-const funds = fundsData as ReducedFund[];
+const funds = fundsData as Fund[];
 
 const defaultSelectedColumns: string[] = ["1 Year", "5 Years", "Rating", "Risk", "Fee"];
-
-const numericOnlyColumns: string[] = Object.entries(funds[0])
-    .filter(([, value]) => typeof value === "number")
-    .map(([prop]) => prop);
 
 export default {
     data() {
@@ -18,7 +14,7 @@ export default {
             page: 1,
             defaultSelectedColumns,
             selectedColumns: defaultSelectedColumns,
-            availableColumns: numericOnlyColumns,
+            availableColumns: Object.keys(funds[0].Data),
             nrOfRows: 10,
         };
     },
@@ -61,7 +57,7 @@ export default {
                 column.sortOrder = -column.sortOrder as -1 | 1;
             }
         },
-        handleSort(fund1: ReducedFund, fund2: ReducedFund): SortOrder {
+        handleSort(fund1: Fund, fund2: Fund): SortOrder {
             return rankSort(fund1 as unknown as NumericValues, fund2 as unknown as NumericValues, this.columnsSelected);
         },
         formatNumber(num: number | null): string {

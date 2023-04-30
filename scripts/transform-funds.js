@@ -54,13 +54,39 @@ const toLabel = {
     companyName: "Company",
 };
 
+const numeric = [
+    "1 Day",
+    "1 Week",
+    "1 Month",
+    "3 Months",
+    "1 Year",
+    "This Year",
+    "3 Years",
+    "5 Years",
+    "10 Years",
+    "Sharpe",
+    "StdDev",
+    "Fee",
+    "Owners",
+    "Rating",
+    "Risk",
+];
+
 const fundsTransformed = funds.map((fund) => {
     return Object.keys(fund)
         .filter((key) => fields.includes(key))
-        .reduce((obj, key) => {
-            obj[toLabel[key]] = fund[key];
-            return obj;
-        }, {});
+        .reduce(
+            (obj, key) => {
+                const label = toLabel[key];
+                if (numeric.includes(label)) {
+                    obj.Data[label] = fund[key];
+                } else {
+                    obj[label] = fund[key];
+                }
+                return obj;
+            },
+            { Data: {} }
+        );
 });
 
 writeFileSync(path.resolve(baseURL, "./assets/funds-transformed.json"), JSON.stringify(fundsTransformed, null, 4));
