@@ -11,6 +11,11 @@ type SelectedColumn = {
 
 type SortOrder = 1 | -1 | 0;
 
+type Outlier = {
+    outliers: number[];
+    percentage: number;
+};
+
 type DataTableHead = {
     key: string;
     value?: SelectItemKey;
