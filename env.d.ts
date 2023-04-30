@@ -35,16 +35,16 @@ type DataTableHead = {
     sort?: (a: T, b: T) => number;
 };
 
-interface ProductInvolvementView {
+type ProductInvolvementView = {
     product: string;
     productDescription: string;
     value: number;
-}
+};
 
-interface FundTag {
+type FundTag = {
     title: string;
     fundTagCategory: string;
-}
+};
 
 /*
 interface Fund {
@@ -117,7 +117,7 @@ type FundData = {
     Owners: number;
 };
 
-interface Fund {
+type Fund = {
     Id: string;
     ISIN: string;
     Name: string;
@@ -125,17 +125,17 @@ interface Fund {
     Benchmark: string;
     Category: string;
     Company: string;
-}
+};
 
-interface Point {
+type Point = {
     x: number;
     y: number;
-}
+};
 
-interface DataPoints {
+type DataPoints = {
     dataSeries: Point[];
     id: string;
     name: string;
     fromDate: string;
     toDate: string;
-}
+};
