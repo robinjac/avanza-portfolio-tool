@@ -58,7 +58,7 @@ export default {
             }
         },
         handleSort(fund1: Fund, fund2: Fund): SortOrder {
-            return rankSort(fund1 as unknown as NumericValues, fund2 as unknown as NumericValues, this.columnsSelected);
+            return rankSort(fund1.Data as unknown as NumericValues, fund2.Data as unknown as NumericValues, this.columnsSelected);
         },
         formatNumber(num: number | null): string {
             if (typeof num === "number") {
@@ -164,7 +164,7 @@ export default {
                                         'text-right': index === selectedColumns.length - 1,
                                     }"
                                 >
-                                    {{ formatNumber((fund as unknown as NumericValues)[column]) }}
+                                    {{ formatNumber((fund.Data as unknown as NumericValues)[column]) }}
                                 </td>
                             </tr>
                         </tbody>
