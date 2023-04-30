@@ -23,7 +23,8 @@
         "extract:categories": "node scripts/extract-categories",
         "extract:sectors": "node scripts/extract-sectors",
         "extract:countries": "node scripts/extract-countries",
-        "extract:holdings": "node scripts/extract-holdings"
+        "extract:holdings": "node scripts/extract-holdings",
+        "extract:metadata": "node scripts/extract-metadata"
     },
     "dependencies": {
         "node-fetch": "^3.3.1",
