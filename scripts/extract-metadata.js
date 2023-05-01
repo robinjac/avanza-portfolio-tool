@@ -64,7 +64,7 @@ for (const [key, values] of Object.entries(metadata)) {
         Mode: mode(values),
         Median: median(values),
         OutliersPercentage: percentage,
-        StdDev: Math.sqrt(variance(values, mean(values))),
+        Variance: variance(values, mean(values)),
     };
 
     if (percentage !== 0) {
@@ -76,7 +76,7 @@ for (const [key, values] of Object.entries(metadata)) {
             Mean: mean(normalized),
             Mode: mode(normalized),
             Median: median(normalized),
-            StdDev: Math.sqrt(variance(normalized, mean(normalized))),
+            Variance: variance(normalized, mean(normalized)),
         };
     }
 

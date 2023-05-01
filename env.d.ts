@@ -35,6 +35,17 @@ type DataTableHead = {
     sort?: (a: T, b: T) => number;
 };
 
+type Meta = {
+    Min: number;
+    Max: number;
+    Mean: number;
+    Mode: number;
+    Median: number;
+    Variance: number;
+};
+
+type FundMeta = { [name: string]: { Normalized: Meta | null; OutliersPercentage: number } & Meta };
+
 type FundData = {
     Rating: number;
     Risk: number;
