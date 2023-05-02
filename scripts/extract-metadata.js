@@ -41,6 +41,15 @@ const IQROutliers = (data, k) => {
     return { outliers, percentage };
 };
 
+const minmax = (min, max) => (x) => (x - min) / (max - min);
+
+const percentile = (data, p) => {
+    const sortedArr = data.slice().sort((a, b) => a - b);
+    const index = Math.ceil((sortedArr.length - 1) * p);
+
+    return sortedArr[index];
+};
+
 for (const { Data } of funds) {
     for (const [key, value] of Object.entries(Data)) {
         if (value !== null) {
@@ -55,27 +64,33 @@ for (const { Data } of funds) {
 
 for (const [key, values] of Object.entries(metadata)) {
     const { outliers, percentage } = IQROutliers(values, 1.5);
+    const min = Math.min(...values);
+    const max = Math.max(...values);
 
     const meta = {
         Normalized: null,
-        Min: Math.min(...values),
-        Max: Math.max(...values),
+        Min: min,
+        Max: max,
         Mean: mean(values),
         Mode: mode(values),
         Median: median(values),
+        Percentile95: percentile(values.map(minmax(min, max)), 0.95),
         OutliersPercentage: percentage,
         Variance: variance(values, mean(values)),
     };
 
     if (percentage !== 0) {
         const normalized = values.filter((val) => outliers.includes(val) === false);
+        const nMin = Math.min(...normalized);
+        const nMax = Math.max(...normalized);
 
         meta.Normalized = {
-            Min: Math.min(...normalized),
-            Max: Math.max(...normalized),
+            Min: nMin,
+            Max: nMax,
             Mean: mean(normalized),
             Mode: mode(normalized),
             Median: median(normalized),
+            Percentile95: percentile(normalized.map(minmax(nMin, nMax)), 0.95),
             Variance: variance(normalized, mean(normalized)),
         };
     }

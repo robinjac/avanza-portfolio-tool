@@ -41,6 +41,7 @@ type Meta = {
     Mean: number;
     Mode: number;
     Median: number;
+    Percentile95: number;
     Variance: number;
 };
 

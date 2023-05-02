@@ -1,10 +1,5 @@
-export function gaussianSimilarity(x: number, y: number, sigma: number): number {
-    const numerator = Math.pow(x - y, 2);
-    const denominator = 2 * Math.pow(sigma, 2);
-    const exponent = -numerator / denominator;
-
-    return Math.exp(exponent);
-}
+export const gaussianSimilarity = (x: number, y: number, variance: number): number =>
+    Math.exp(-((x - y) ** 2) / (2 * variance));
 
 export function jaccardSimilarity(set1: Set<string>, set2: Set<string>): number {
     let intersection = new Set([...set1].filter((x) => set2.has(x)));
@@ -26,6 +21,9 @@ export function cosineSimilarity(vect1: number[], vect2: number[]): number {
 
     return dotProduct / (Math.sqrt(norm1) * Math.sqrt(norm2));
 }
+
+export const normalize = (min: number, max: number) => (val: number) => (val - min) / (max - min);
+
 /**
  * Normalizes data between 0 and 1. Doesn't change the underlying distribution.
  *
@@ -38,13 +36,9 @@ export function nomralizeData(data: number[]) {
     // Find the minimum and maximum values in the data
     const min = Math.min(...data);
     const max = Math.max(...data);
-    const divisor = max - min;
-
-    // Normalize with min max method
-    const normalize = (val: number) => (val - min) / divisor;
 
     // Return the normalized data
-    return data.map(normalize);
+    return data.map(normalize(min, max));
 }
 
 /**
