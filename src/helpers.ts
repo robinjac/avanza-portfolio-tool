@@ -23,23 +23,16 @@ function threshold(num: number, sensitivity: number): number {
 export const formatNumber = (num: number): number => Math.round(num * 10) / 10;
 
 export const rankSort = (a: NumericValues, b: NumericValues, columns: SelectedColumn[]): SortOrder => {
-    let index = 0;
     let comparison = 0;
 
-    while (comparison === 0 && index < columns.length) {
+    for (let index = 0; index < columns.length; index++) {
         const ratio = columns[index];
         const x = a[ratio.name] ?? -Infinity;
         const y = b[ratio.name] ?? -Infinity;
 
         if (distance(x, y) > threshold(x, 8)) {
-            if (x < y) {
-                comparison = columns[index].sortOrder;
-            } else {
-                comparison = -columns[index].sortOrder;
-            }
+            comparison = x < y ? columns[index].sortOrder : -columns[index].sortOrder;
         }
-
-        index++;
     }
 
     return comparison as SortOrder;
