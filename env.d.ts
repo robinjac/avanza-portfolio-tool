@@ -42,10 +42,11 @@ type Meta = {
     Mode: number;
     Median: number;
     Percentile95: number;
-    Variance: number;
+    StdDev: number;
+    OutliersPercentage: number;
 };
 
-type FundMeta = { [name: string]: { Normalized: Meta | null; OutliersPercentage: number } & Meta };
+type FundMeta = { [name: string]: Meta };
 
 type FundData = {
     Rating: number;

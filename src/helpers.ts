@@ -10,7 +10,7 @@ const direction = (x: number, y: number, column: SelectedColumn) =>
     (x > y ? -column.sortOrder : column.sortOrder) as SortOrder;
 
 const notSimilar = (x: number, y: number, column: SelectedColumn) => {
-    return Math.abs(x - y) > 0.01;
+    return Math.abs(x - y) > meta[column.name].StdDev;
 };
 
 export const formatNumber = (num: number): number => Math.round(num * 10) / 10;
