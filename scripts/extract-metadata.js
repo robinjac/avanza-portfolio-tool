@@ -65,11 +65,7 @@ for (const { Data } of funds) {
 }
 
 for (let [key, values] of Object.entries(metadata)) {
-    const { outliers, percentage } = IQROutliers(values, 1.5);
-
-    if (percentage !== 0) {
-        values = values.filter((val) => outliers.includes(val) === false);
-    }
+    const { percentage } = IQROutliers(values, 1.5);
 
     const min = Math.min(...values);
     const max = Math.max(...values);

@@ -20,133 +20,133 @@
         "StdDev": 1
     },
     "1 Day": {
-        "Min": -1.2,
-        "Max": 0.9,
-        "Mean": -0.1,
+        "Min": -3.5,
+        "Max": 1.5,
+        "Mean": -0.2,
         "Mode": 0,
-        "Median": 0,
-        "Percentile95": 0.9,
+        "Median": -0.1,
+        "Percentile95": 0.8,
         "OutliersPercentage": 6.6,
-        "StdDev": 0.4
+        "StdDev": 0.6
     },
     "1 Week": {
-        "Min": -3.7,
-        "Max": 1.9,
-        "Mean": -0.7,
+        "Min": -6.8,
+        "Max": 2.9,
+        "Mean": -1,
         "Mode": -0.9,
         "Median": -0.5,
         "Percentile95": 0.8,
         "OutliersPercentage": 7.8,
-        "StdDev": 1.1
+        "StdDev": 1.5
     },
     "1 Month": {
-        "Min": -6.5,
-        "Max": 11.9,
-        "Mean": 2.6,
-        "Mode": 11.9,
+        "Min": -7.4,
+        "Max": 13.8,
+        "Mean": 2.7,
+        "Mode": 13.8,
         "Median": 2.6,
-        "Percentile95": 0.8,
+        "Percentile95": 0.7,
         "OutliersPercentage": 0.8,
-        "StdDev": 3.4
+        "StdDev": 3.5
     },
     "3 Months": {
-        "Min": -9.2,
-        "Max": 9.6,
-        "Mean": 0.5,
+        "Min": -24.7,
+        "Max": 14.5,
+        "Mean": -0.2,
         "Mode": 1.4,
-        "Median": 0.8,
+        "Median": 0.6,
         "Percentile95": 0.8,
         "OutliersPercentage": 5.5,
-        "StdDev": 3.7
+        "StdDev": 4.7
     },
     "1 Year": {
-        "Min": -16.2,
-        "Max": 19.3,
-        "Mean": 1.8,
-        "Mode": 19.3,
-        "Median": 1.6,
-        "Percentile95": 0.8,
+        "Min": -35.2,
+        "Max": 101.5,
+        "Mean": 1.3,
+        "Mode": 101.5,
+        "Median": 1.5,
+        "Percentile95": 0.4,
         "OutliersPercentage": 4.6,
-        "StdDev": 6.8
+        "StdDev": 8.6
     },
     "This Year": {
-        "Min": -8.7,
-        "Max": 17.5,
+        "Min": -15.3,
+        "Max": 25.3,
         "Mean": 4.4,
         "Mode": 0.1,
         "Median": 3.9,
-        "Percentile95": 0.8,
+        "Percentile95": 0.7,
         "OutliersPercentage": 1,
-        "StdDev": 5
+        "StdDev": 5.2
     },
     "3 Years": {
         "Min": -43.4,
-        "Max": 115.4,
-        "Mean": 31.3,
-        "Mode": 115.4,
-        "Median": 31,
-        "Percentile95": 0.8,
+        "Max": 235.3,
+        "Mean": 32.4,
+        "Mode": 235.3,
+        "Median": 31.5,
+        "Percentile95": 0.4,
         "OutliersPercentage": 0.9,
-        "StdDev": 27.1
+        "StdDev": 28.8
     },
     "5 Years": {
         "Min": -52.2,
-        "Max": 130.5,
-        "Mean": 34.2,
+        "Max": 160.7,
+        "Mean": 34.7,
         "Mode": 21.2,
-        "Median": 30.7,
-        "Percentile95": 0.8,
+        "Median": 30.8,
+        "Percentile95": 0.7,
         "OutliersPercentage": 0.4,
-        "StdDev": 31.3
+        "StdDev": 32
     },
     "10 Years": {
         "Min": -36.7,
-        "Max": 401.6,
-        "Mean": 140,
-        "Mode": 401.6,
-        "Median": 139.1,
-        "Percentile95": 0.8,
+        "Max": 711.1,
+        "Mean": 148.3,
+        "Mode": 711.1,
+        "Median": 143.4,
+        "Percentile95": 0.5,
         "OutliersPercentage": 2,
-        "StdDev": 95.5
+        "StdDev": 110.6
     },
     "Sharpe": {
-        "Min": -0.5,
-        "Max": 2,
-        "Mean": 0.8,
+        "Min": -1.5,
+        "Max": 2.2,
+        "Mean": 0.7,
         "Mode": 1.2,
         "Median": 0.8,
         "Percentile95": 0.8,
         "OutliersPercentage": 3.1,
-        "StdDev": 0.4
+        "StdDev": 0.5
     },
     "StdDev": {
         "Min": 0.3,
-        "Max": 30.8,
-        "Mean": 14.5,
+        "Max": 43.1,
+        "Mean": 14.9,
         "Mode": 14.3,
         "Median": 15,
-        "Percentile95": 0.8,
+        "Percentile95": 0.6,
         "OutliersPercentage": 1.7,
-        "StdDev": 6.2
+        "StdDev": 6.7
     },
     "Fee": {
-        "Min": 0.1,
-        "Max": 3.4,
+        "Min": 0,
+        "Max": 9.5,
         "Mean": 1.7,
         "Mode": 1.9,
         "Median": 1.8,
-        "Percentile95": 0.8,
+        "Percentile95": 0.3,
         "OutliersPercentage": 1.3,
-        "StdDev": 0.7
+        "StdDev": 0.8
     },
     "Owners": {
         "Min": 0,
-        "Max": 3362,
-        "Mean": 461.7,
+        "Max": 607170,
+        "Mean": 5256.8,
         "Mode": 28,
-        "Median": 159,
-        "Percentile95": 0.7,
+        "Median": 246,
+        "Percentile95": 0,
         "OutliersPercentage": 16.2,
-        "StdDev": 706.6
+        "StdDev": 28240.2
     }
 }
