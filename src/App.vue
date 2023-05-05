@@ -58,7 +58,11 @@ export default {
             }
         },
         handleSort(fund1: Fund, fund2: Fund): SortOrder {
-            return rankSort(fund1.Data as unknown as NumericValues, fund2.Data as unknown as NumericValues, this.columnsSelected);
+            return rankSort(
+                fund1.Data as unknown as NumericValues,
+                fund2.Data as unknown as NumericValues,
+                this.columnsSelected
+            );
         },
         formatNumber(num: number | null): string {
             if (typeof num === "number") {
