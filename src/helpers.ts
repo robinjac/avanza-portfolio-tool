@@ -1,9 +1,10 @@
-import { normalize } from "./math";
 import metadata from "../assets/metadata.json";
 
 const meta = metadata as FundMeta;
 
-const value = (a: NumericValues, column: SelectedColumn) => formatNumber(a[column.name] ?? -(Math.abs(meta[column.name].Max) + 1));
+// We need to compare the rounded values and not real values to match with the formatted ones in the table
+const value = (a: NumericValues, column: SelectedColumn) =>
+    formatNumber(a[column.name] ?? -(Math.abs(meta[column.name].Max) + 1));
 
 const direction = (x: number, y: number, column: SelectedColumn) =>
     (x > y ? -column.sortOrder : column.sortOrder) as SortOrder;
