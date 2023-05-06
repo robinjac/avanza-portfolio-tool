@@ -11,11 +11,11 @@ const value = (a: NumericValues, column: SelectedColumn) => a[column.name] ?? me
 const direction = (x: number, y: number, column: SelectedColumn) =>
     (x > y ? -column.sortOrder : column.sortOrder) as SortOrder;
 
-const notSimilar = (x: number, y: number, column: SelectedColumn) => {
+const different = (x: number, y: number, column: SelectedColumn) => {
     const { Min, Max } = meta[column.name];
     const n = initNormalize(Min, Max);
 
-    return Math.abs(n(x) - n(y)) > 0.01;
+    return Math.abs(n(x) - n(y)) < 0.01;
 };
 
 export const round = (num: number): number => Math.round(num * 10) / 10;
@@ -33,14 +33,14 @@ export const rankSort = (a: NumericValues, b: NumericValues, columns: SelectedCo
                 return direction(x, y, column);
             }
         } else {
-            if (notSimilar(x, y, column)) {
+            if (different(x, y, column)) {
                 if (index > 0) {
                     const column_ = columns[index - 1];
                     const x_ = value(a, column_);
                     const y_ = value(b, column_);
 
-                    if (notSimilar(x_, y_, column_)) {
-                        return direction(x_, y_, column_);
+                    if (different(x_, y_, column_)) {
+                        return direction(x, y, column);
                     }
                 }
 
