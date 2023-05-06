@@ -1,6 +1,6 @@
 <script lang="ts">
 import fundsData from "../assets/funds-transformed.json";
-import { rankSort, formatNumber } from "./helpers";
+import { rankSort, round } from "./helpers";
 
 const funds = fundsData as Fund[];
 
@@ -66,7 +66,7 @@ export default {
         },
         formatNumber(num: number | null): string {
             if (typeof num === "number") {
-                return formatNumber(num).toString();
+                return round(num).toString();
             } else {
                 return "-";
             }
