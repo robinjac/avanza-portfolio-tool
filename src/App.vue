@@ -159,8 +159,11 @@ export default {
                                     .slice((page - 1) * nrOfRows, page * nrOfRows)"
                                 :key="fund.Id"
                             >
-                                <td style="min-width: 300px">
-                                    {{ fund.Name }}
+                                <td class="d-flex justify-start align-center overflow-hidden" style="min-width: 300px">
+                                    <span><v-checkbox color="indigo" hide-details /></span>
+                                    <span class="text-indigo-darken-4 text-overline font-weight-bold">{{
+                                        fund.Name
+                                    }}</span>
                                 </td>
                                 <td
                                     v-for="(column, index) in selectedColumns"
